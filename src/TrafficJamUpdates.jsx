@@ -79,7 +79,6 @@ const TrafficJamUpdates = () => {
     <div style={{ display: 'flex' }}>
       <SideNav onClose={() => setOpenNav(false)} open={openNav}/> 
       <div style={{ flex: '1', paddingLeft: '300px', paddingTop: '50px'}}>
-        <TrafficJamTable></TrafficJamTable>
         <Card sx={{ p: 2 }}>
           <OutlinedInput
             defaultValue=""

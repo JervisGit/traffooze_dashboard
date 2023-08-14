@@ -10,7 +10,6 @@ import { MapIcon } from '@heroicons/react/24/solid'
 import {AiOutlineAreaChart}from 'react-icons/ai';
 import { FaTrafficLight } from 'react-icons/fa';
 import Logo from './Logo';
-import { display } from '@mui/system';
 
 const SideNav = ({ open, onClose }) => {
 
@@ -88,8 +87,8 @@ const SideNav = ({ open, onClose }) => {
   return (
     <Drawer
       anchor="left"
-      open={open} //open={isDesktopOrLaptop || open}
-      onClose={onClose} // onClose={isDesktopOrLaptop ? undefined : onClose}
+      open={isDesktopOrLaptop || open}
+      onClose={isDesktopOrLaptop ? undefined : onClose}
       PaperProps={{
         sx: {
           backgroundColor: 'neutral.800',
@@ -98,7 +97,7 @@ const SideNav = ({ open, onClose }) => {
         },
       }}
       sx={isDesktopOrLaptop ? undefined : { zIndex: (theme) => theme.zIndex.appBar + 100 }} 
-      variant="permanent" //variant={lgUp ? 'permanent' : 'temporary'}
+      variant={isDesktopOrLaptop ? 'permanent' : 'temporary'}
     >
       <Box
         sx={{

@@ -16,7 +16,7 @@ import axios from 'axios'
 
 import { LoadScript } from '@react-google-maps/api';
 
-const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+const apiKey = process.env.REACT_APP_APIKEY;
 
 //console.log(apiKey)
 

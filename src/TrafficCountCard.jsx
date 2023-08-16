@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import { FaTachometerAlt } from 'react-icons/fa';
 import { Avatar, Card, CardContent, Stack, SvgIcon, Typography } from '@mui/material';
 
-export const AverageSpeed = (props) => {
-  const { value, sx, jam } = props;
+export const TrafficCountCard = (props) => {
+  const { value, sx } = props;
 
   return (
     <Card sx={sx}>
@@ -19,27 +19,17 @@ export const AverageSpeed = (props) => {
               variant="overline"
               color="text.secondary"
             >
-              Speed
+              Number of Vehicles
             </Typography>
             <Typography variant="h4">
-              {value} km/h
+              {value}
             </Typography>
-            <Typography
-              variant="overline"
-              color="text.secondary"
-            >
-              Jam Factor
-            </Typography>
-            <Typography variant="h4">
-            {jam}
-            </Typography>
-          </Stack>
-
+            </Stack>
           <Avatar
             sx={{
               width: 56,
               height: 56,
-              backgroundColor: jam <= 3 ? '#4CAF50' : jam <= 7 ? '#FFC107' : '#F44336',
+              backgroundColor: '#4CAF50',
             }}
           >
             <SvgIcon>
@@ -52,7 +42,7 @@ export const AverageSpeed = (props) => {
   );
 };
 
-AverageSpeed.propTypes = {
+TrafficCountCard.propTypes = {
   value: PropTypes.string.isRequired,
   sx: PropTypes.object,
 };

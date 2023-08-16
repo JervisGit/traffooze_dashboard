@@ -1,27 +1,22 @@
-import { useCallback, useState } from 'react';
-import {
-  Box,
-  Button,
-  Stack,
-  Card,
-  CardActions,
-  CardContent,
-  CardHeader,
-  Divider,
-  TextField,
-  Unstable_Grid2 as Grid
-} from '@mui/material';
+import React, { useCallback, useState } from 'react';
+import { Box, Button, Stack, Card, CardActions, CardContent, CardHeader, Divider, TextField, Grid } from '@mui/material';
+import axios from 'axios';
 
 const AccountProfileDetails = () => {
-  const [values, setValues] = useState({
-    firstName: 'Traffooze',
-    lastName: 'Admin',
-    email: 'traffooze@gmail.com',
+  const [loginValues, setLoginValues] = useState({
+    username: '',
+    password: '',
   });
 
-  const handleChange = useCallback(
+  const [registerValues, setRegisterValues] = useState({
+    username: '',
+    password: '',
+    confirmPassword: '',
+  });
+
+  const handleLoginChange = useCallback(
     (event) => {
-      setValues((prevValues) => ({
+      setLoginValues((prevValues) => ({
         ...prevValues,
         [event.target.name]: event.target.value
       }));
@@ -29,105 +24,131 @@ const AccountProfileDetails = () => {
     []
   );
 
-  const handleSubmit = useCallback(
+  const handleRegisterChange = useCallback(
     (event) => {
-      event.preventDefault();
-      // You can add save logic here if needed
+      setRegisterValues((prevValues) => ({
+        ...prevValues,
+        [event.target.name]: event.target.value
+      }));
     },
     []
   );
 
+  const handleLoginSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post('https://traffoozebackend.vercel.app/login', {
+        username: loginValues.username,
+        password: loginValues.password,
+      });
+      console.log(response.data); 
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleRegisterSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post('https://traffoozebackend.vercel.app/register', {
+        username: registerValues.username,
+        password: registerValues.password,
+        confirmPassword: registerValues.confirmPassword,
+      });
+      console.log(response.data); 
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <Grid>
-    <Box sx={{ mr: 3}}>
-    <form autoComplete="off" onSubmit={handleSubmit}>
-      <Card>
-        <CardHeader title="Account" />
-        <CardContent sx={{ pt: 0 }}>
-          <Box sx={{ m: -1.5 }}>
-            <Grid container spacing={3}>
-              <Grid xs={12} md={6}>
+      <Box sx={{ mr: 3 }}>
+        <form autoComplete="off" onSubmit={handleLoginSubmit}>
+          <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+            <CardHeader title="Login" />
+            <Divider />
+            <CardContent>
+              <Stack spacing={3} sx={{ maxWidth: 400 }}>
                 <TextField
                   fullWidth
-                  label="First name"
-                  name="firstName"
-                  onChange={handleChange}
+                  label="User Name"
+                  name="username"
+                  onChange={handleLoginChange}
                   required
-                  value={values.firstName}
+                  value={loginValues.username}
+                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
                 />
-              </Grid>
-              <Grid xs={12} md={6}>
                 <TextField
                   fullWidth
-                  label="Last name"
-                  name="lastName"
-                  onChange={handleChange}
+                  label="Password"
+                  name="password"
+                  onChange={handleLoginChange}
                   required
-                  value={values.lastName}
+                  value={loginValues.password}
+                  type="password"
+                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
                 />
-              </Grid>
-              <Grid xs={12} md={6}>
+              </Stack>
+            </CardContent>
+            <Divider />
+            <CardActions sx={{ justifyContent: 'flex-end' }}>
+              <Button type="submit" variant="contained">
+                Login
+              </Button>
+            </CardActions>
+          </Card>
+        </form>
+      </Box>
+
+      <Box sx={{ mt: 3, mr: 3 }}>
+        <form onSubmit={handleRegisterSubmit}>
+        <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+            <CardHeader subheader="Create an account" title="Register" />
+            <Divider />
+            <CardContent>
+              <Stack spacing={3} sx={{ maxWidth: 400 }}>
                 <TextField
                   fullWidth
-                  label="Email Address"
-                  name="email"
-                  onChange={handleChange}
+                  label="User Name"
+                  name="username"
+                  onChange={handleRegisterChange}
                   required
-                  value={values.email}
+                  value={registerValues.username}
+                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
                 />
-              </Grid>
-            </Grid>
-          </Box>
-        </CardContent>
-        <Divider />
-        <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button variant="contained">Save details</Button>
-        </CardActions>
-      </Card>
-    </form>
-    </Box>
-    
-    <Box sx={{ mt: 3, mr: 3}}>
-    <form onSubmit={handleSubmit}>
-    <Card>
-      <CardHeader
-        subheader="Update password"
-        title="Password"
-      />
-      <Divider />
-      <CardContent>
-        <Stack
-          spacing={3}
-          sx={{ maxWidth: 400 }}
-        >
-          <TextField
-            fullWidth
-            label="Password"
-            name="password"
-            onChange={handleChange}
-            type="password"
-            value={values.password}
-          />
-          <TextField
-            fullWidth
-            label="Password (Confirm)"
-            name="confirm"
-            onChange={handleChange}
-            type="password"
-            value={values.confirm}
-          />
-        </Stack>
-      </CardContent>
-      <Divider />
-      <CardActions sx={{ justifyContent: 'flex-end' }}>
-        <Button variant="contained">
-          Update
-        </Button>
-      </CardActions>
-    </Card>
-  </form>
-  </Box>
-  </Grid>
+                <TextField
+                  fullWidth
+                  label="Password"
+                  name="password"
+                  onChange={handleRegisterChange}
+                  required
+                  value={registerValues.password}
+                  type="password"
+                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                />
+                <TextField
+                  fullWidth
+                  label="Confirm Password"
+                  name="confirmPassword"
+                  onChange={handleRegisterChange}
+                  required
+                  value={registerValues.confirmPassword}
+                  type="password"
+                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                />
+              </Stack>
+            </CardContent>
+            <Divider />
+            <CardActions sx={{ justifyContent: 'flex-end' }}>
+              <Button type="submit" variant="contained">
+                Register
+              </Button>
+            </CardActions>
+          </Card>
+        </form>
+      </Box>
+    </Grid>
   );
 };
 

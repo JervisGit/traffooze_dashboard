@@ -95,7 +95,7 @@ const TrafficCountForecast = () => {
   const sampleChartSeries = [
     {
       name: 'Vehicles count',
-      data: [12, 25, 18, 30, 20, 35, 28, 40, 33, 45, 40, 50]
+      data: [0, 25, 18, 30, 20, 35, 28, 40, 33, 45, 40, 50]
     }
   ];
   

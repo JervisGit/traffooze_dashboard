@@ -9,7 +9,7 @@ import {
     Autocomplete,
     Button, 
   } from '@mui/material';
-import { AverageSpeed } from './AverageSpeed';
+import { TrafficCountCard } from './TrafficCountCard';
 import { AverageJamFactor } from './AverageJamFactor';
 import ForecastChart from './ForecastChart';
 import DateTimeInput from './DatetimeInput';
@@ -95,7 +95,7 @@ const TrafficCountForecast = () => {
   const sampleChartSeries = [
     {
       name: 'Vehicles count',
-      data: [12, 25, 18, 30, 20, 35, 28, 40, 33, 45, 40, 50]
+      data: [0, 25, 18, 30, 20, 35, 28, 40, 33, 45, 40, 50]
     }
   ];
   
@@ -106,18 +106,12 @@ const TrafficCountForecast = () => {
       <div style={{ flex: '1', paddingLeft: '300px', paddingTop: '50px'}}>
         <Grid container spacing={3}>
           <Grid xs={12} sm={6} lg={5}>
-            <AverageSpeed
-                difference={12}
-                positive
+            <TrafficCountCard
                 sx={{ height: '100%' }}
-                value="2.100000"
+                value={forecastCount.length > 0 ? forecastCount[0].data[0] : null}
             />
           </Grid>
           <Grid xs={12} sm={6} lg={5}>
-            <AverageJamFactor
-                value={1.5}
-                sx={{ height: '100%' }}
-            />
           </Grid>
           
             <Grid xs={12} lg={4}>

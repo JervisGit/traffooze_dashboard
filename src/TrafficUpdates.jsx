@@ -16,7 +16,7 @@ import axios from 'axios'
 
 import { LoadScript } from '@react-google-maps/api';
 
-const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+const apiKey = process.env.REACT_APP_APIKEY;
 
 //console.log(apiKey)
 
@@ -26,9 +26,7 @@ const center = { lat: 1.3521, lng: 103.8198 }
 
 const UpdatesMap = () => {
     const [activeMarker, setActiveMarker] = useState(null);
-    const [trafficJams, setTrafficJams] = useState([]);
-    const [roadClosures, setRoadClosures] = useState([]);
-    const [roadAccidents, setRoadAccidents] = useState([]);
+    const [trafficUpdates, setTrafficUpdates] = useState([]);
   
     const [map, setMap] = useState(null);
     const [directionsResponse, setDirectionsResponse] = useState(null)
@@ -38,29 +36,14 @@ const UpdatesMap = () => {
       }, []);
 
     function fetchTrafficUpdates() {
-        axios.get('https://traffooze-flask.onrender.com/trafficjam')
+        axios.get('https://traffooze-flask.onrender.com/traffic_icons')
           .then(response => {
-            setTrafficJams(response.data);
+            setTrafficUpdates(response.data);
+            console.log(response.data)
           })
           .catch(error => {
             console.error(error);
           });
-        axios.get('https://traffooze-flask.onrender.com/roadclosure')
-          .then(response => {
-            console.log(response.data);
-            setRoadClosures(response.data);
-          })
-          .catch(error => {
-            console.error(error);
-            });
-        axios.get('https://traffooze-flask.onrender.com/roadaccident')
-          .then(response => {
-            //console.log(response.data);
-            setRoadAccidents(response.data);
-          })
-          .catch(error => {
-            console.error(error);
-        });
     }
 
   
@@ -77,7 +60,7 @@ const UpdatesMap = () => {
     };
     
     const getMarkerPosition = (markerIndex) => {
-        const markersData = [...trafficJams, ...roadClosures, ...roadAccidents];
+        const markersData = [...trafficUpdates];
         const markerData = markersData[markerIndex];
         const [lat, lng] = markerData.location.split(',');
         return { lat: parseFloat(lat), lng: parseFloat(lng) };
@@ -117,83 +100,31 @@ const UpdatesMap = () => {
 
             
 
-            {trafficJams.map(({ address, date, time, message, location }, index) => {
+            {trafficUpdates.map(({ address, date, time, message, location, type }, index) => {
                 const [lat, lng] = location.split(','); // Splitting the location string
                 const position = { lat: parseFloat(lat), lng: parseFloat(lng) }; // Creating position object
                 const markerIndex = index; // Store the original index
+
+                let iconPath, fillColor;
+    
+                // Set icon and fill color based on the type
+                if (type === "jvs_sample_trafficjam") {
+                    iconPath = FaCar().props.children[0].props.d;
+                    fillColor = "#ff9900";
+                } else if (type === "jvs_sample_roadclosure") {
+                    iconPath = FaExclamationTriangle().props.children[0].props.d;
+                    fillColor = "#ffd700";
+                } else if (type === "jvs_sample_roadaccident") {
+                    iconPath = FaCarCrash().props.children[0].props.d;
+                    fillColor = "#ff0000";
+                }
 
                 return (
                     <Marker
                         key={`trafficJam-${markerIndex}`}
                         icon={{
-                            path: FaCar().props.children[0].props.d,
-                            fillColor: "#ff9900",
-                            fillOpacity: 1,
-                            strokeWeight: 1,
-                            strokeColor: "#ffffff",
-                            scale: 0.075
-                        }}
-                        position={position}
-                        onClick={() => handleActiveMarker(markerIndex)}
-                    >
-                        {activeMarker === markerIndex ? (
-                            <InfoWindow onCloseClick={() => setActiveMarker(null)}>
-                                <div>
-                                    <div>Address: {address}</div>
-                                    <div>Date: {date}</div>
-                                    <div>Time: {time}</div>
-                                    <div>{message}</div>
-                                </div>
-                            </InfoWindow>
-                        ) : null}
-                    </Marker>
-                );
-            })}
-
-            {roadClosures.map(({ address, date, time, message, location }, index) => {
-                const [lat, lng] = location.split(','); // Splitting the location string
-                const position = { lat: parseFloat(lat), lng: parseFloat(lng) }; // Creating position object
-                const markerIndex = index + trafficJams.length;
-
-                return (
-                    <Marker
-                        key={`roadClosure-${markerIndex}`}
-                        icon={{
-                            path: FaExclamationTriangle().props.children[0].props.d,
-                            fillColor: "#ffd700",
-                            fillOpacity: 1,
-                            strokeWeight: 1,
-                            strokeColor: "#ffffff",
-                            scale: 0.075
-                        }}
-                        position={position}
-                        onClick={() => handleActiveMarker(markerIndex)}
-                    >
-                        {activeMarker === markerIndex ? (
-                            <InfoWindow onCloseClick={() => setActiveMarker(null)}>
-                                <div>
-                                    <div>Address: {address}</div>
-                                    <div>Date: {date}</div>
-                                    <div>Time: {time}</div>
-                                    <div>{message}</div>
-                                </div>
-                            </InfoWindow>
-                        ) : null}
-                    </Marker>
-                );
-            })}
-
-            {roadAccidents.map(({ address, date, time, message, location }, index) => {
-                const [lat, lng] = location.split(','); // Splitting the location string
-                const position = { lat: parseFloat(lat), lng: parseFloat(lng) }; // Creating position object
-                const markerIndex = index + trafficJams.length + roadClosures.length;
-
-                return (
-                    <Marker
-                        key={`roadClosure-${markerIndex}`}
-                        icon={{
-                            path: FaCarCrash().props.children[0].props.d,
-                            fillColor: "#ff0000",
+                            path: iconPath,
+                            fillColor: fillColor,
                             fillOpacity: 1,
                             strokeWeight: 1,
                             strokeColor: "#ffffff",
@@ -224,4 +155,4 @@ const UpdatesMap = () => {
     )
   }
 
-  export default UpdatesMap;
+export default UpdatesMap;

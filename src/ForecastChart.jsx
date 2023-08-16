@@ -16,7 +16,7 @@ import { alpha, useTheme } from '@mui/material/styles';
 import ApexChart from 'react-apexcharts';
 
 const ForecastChart = (props) => {
-  const { chartSeries, sx } = props;
+  const { chartSeries, timestamps, sx } = props;
   const theme = useTheme();
 
   const chartOptions = {
@@ -38,10 +38,7 @@ const ForecastChart = (props) => {
       mode: theme.palette.mode
     },
     xaxis: {
-      categories: [
-        '12:00 PM', '13:00 PM', '14:00 PM', '15:00 PM', '16:00 PM', '17:00 PM',
-        '18:00 PM', '19:00 PM', '20:00 PM', '21:00 PM', '22:00 PM', '23:00 PM'
-      ],
+      categories: timestamps,
       labels: {
         offsetY: 5,
         style: {
@@ -51,7 +48,7 @@ const ForecastChart = (props) => {
     },
     yaxis: {
       labels: {
-        formatter: (value) => (value > 0 ? `${value} km/h` : `${value}`),
+        formatter: (value) => (value > 0 ? `${value}` : `${value}`),
         offsetX: -10,
         style: {
           colors: theme.palette.text.secondary
@@ -76,7 +73,7 @@ const ForecastChart = (props) => {
             Sync
           </Button>
         )}
-        title="Traffic Flow Forecast" subheader="Speed"
+        title="Traffic Flow Forecast"
       />
       <CardContent>
         <ApexChart

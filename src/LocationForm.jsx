@@ -15,6 +15,7 @@ import { AddressAutofill } from '@mapbox/search-js-react';
 const LocationForm = () => {
   const [showHomeFormExpanded, setShowHomeFormExpanded] = useState(false);
   const [showWorkFormExpanded, setShowWorkFormExpanded] = useState(false);
+  const [textFieldValue, setTextFieldValue] = useState('');
 
   const handleSubmit = useCallback(
     (event) => {
@@ -23,6 +24,10 @@ const LocationForm = () => {
     },
     []
   );
+
+  const handleTextFieldBlur = () => {
+    console.log('Text Field Value:', textFieldValue);
+  };
 
   const access_token = process.env.REACT_APP_MAPBOX_API_KEY;
 
@@ -46,6 +51,8 @@ const LocationForm = () => {
                     <TextField 
                       fullWidth 
                       label="Address" 
+                      onChange={(event) => setTextFieldValue(event.target.value)}
+                      onBlur={handleTextFieldBlur}
                     >
                   
                     </TextField>

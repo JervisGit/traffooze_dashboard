@@ -3,10 +3,11 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import SideNav from './SideNav';
 import { 
-    Button,
+    Card,
     TextField, 
     Unstable_Grid2 as Grid, 
-    Autocomplete, 
+    Autocomplete,
+    Button, 
   } from '@mui/material';
 import { AverageSpeed } from './AverageSpeed';
 import { AverageJamFactor } from './AverageJamFactor';
@@ -18,14 +19,14 @@ import { LocalizationProvider } from '@mui/x-date-pickers';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import Loading from './Loading';
 
-const TrafficFlowForecast = () => {
+const TrafficCountForecast = () => {
   const [openNav, setOpenNav] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
-  const [roads, setRoads] = useState([]);
-  const [selectedRoad, setSelectedRoad] = useState(null);
+  const [cameras, setCameras] = useState([]);
+  const [selectedCamera, setSelectedCamera] = useState(null);
   const [selectedDatetime, setSelectedDatetime] = useState(null);
   const [forecastTimestamp, setForecastTimestamp] = useState([]);
-  const [forecastSpeed, setForecastSpeed] = useState([]);
+  const [forecastCount, setForecastCount] = useState([]);
 
   const today = dayjs();
   const tomorrow = dayjs().add(5, 'day').set('hour', 23).set('minute', 50);
@@ -33,56 +34,49 @@ const TrafficFlowForecast = () => {
   useEffect(() => {
     
     setIsLoading(true);
-    setForecastSpeed(sampleChartSeries);
-    fetchMetadata();
+    setForecastCount(sampleChartSeries);
+    import('./camera_metadata.json')
+      .then((data) => {
+        setCameras(data.default);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error loading cameras JSON:', error);
+      });
 
   }, []);
 
-  function fetchMetadata() {
-    axios.get('https://traffooze-flask.onrender.com/metadata')
-      .then(response => {
-        //console.log(response.data);
-        setRoads(response.data);
-        setIsLoading(false);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }
-const handleGenerateForecast = () => {
+  const handleGenerateForecast = () => {
 
     setIsLoading(true);
 
-    if (selectedRoad && selectedDatetime) {
-      const roadId = selectedRoad.road_id;
+    if (selectedCamera && selectedDatetime) {
+      const cameraId = selectedCamera.camera_id;
       const formattedDate = selectedDatetime.format('YYYY-MM-DD HH:mm:ss');
 
+      console.log("datetime: ", formattedDate);
+
       const requestData = {
-        road_id: roadId,
+        camera_id: cameraId,
         timestamp: formattedDate,
       };
   
-      axios.post('https://traffooze-flask.onrender.com/get_traffic_flow', requestData)
+      axios.post('https://traffooze-flask.onrender.com/get_traffic_count', requestData)
         .then(response => {
           // Handle the response here if needed
           console.log("Forecast generated successfully:", response.data);
 
-          const forecastSpeed = response.data.speed;
-          const forecastJamfactor = response.data.jamFactor;
+          const forecastCount = response.data.count;
           const forecastTimestamps = response.data.timestamp;
 
           const forecastSeries = [
             {
-              name: 'Speed (Km/h)',
-              data: forecastSpeed,
-            },
-            {
-              name: 'Jam Factor',
-              data: forecastJamfactor,
+              name: 'Vehicles count',
+              data: forecastCount,
             }
           ];
 
-          setForecastSpeed(forecastSeries);
+          setForecastCount(forecastSeries);
           setForecastTimestamp(forecastTimestamps);
           
 
@@ -94,14 +88,13 @@ const handleGenerateForecast = () => {
         });
     } else {
       // Handle the case where either the road or datetime is not selected
-      console.log("Please select a road and datetime.");
+      console.log("Please select a camera and datetime.");
     }
   };
 
-
   const sampleChartSeries = [
     {
-      name: 'Speed',
+      name: 'Vehicles count',
       data: [12, 25, 18, 30, 20, 35, 28, 40, 33, 45, 40, 50]
     }
   ];
@@ -111,34 +104,33 @@ const handleGenerateForecast = () => {
     <div style={{ display: 'flex' }}>
       <SideNav onClose={() => setOpenNav(false)} open={openNav}/> 
       <div style={{ flex: '1', paddingLeft: '300px', paddingTop: '50px'}}>
-      <Grid container spacing={3}>
-      <Grid xs={12} sm={6} lg={5}>
-        <AverageSpeed
-            difference={12}
-            positive
-            sx={{ height: '100%' }}
-            value="2.1248"
-        />
-        </Grid>
-        <Grid xs={12} sm={6} lg={5}>
-        <AverageJamFactor
-            value={1.5}
-            sx={{ height: '100%' }}
-        />
-        </Grid>
-        <Grid
-            xs={12}
-            lg={4}>
-          <Autocomplete
-            options={roads}
-            getOptionLabel={(road) => road.description}
-            renderInput={(params) => <TextField {...params} label="Select a road" />}
-            isOptionEqualToValue={(option, value) => option.road_id === value.road_id}
-            onChange={(event, newValue) => setSelectedRoad(newValue)}
-          />
-        </Grid>
-        <Grid xs={12} lg={4}>
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <Grid container spacing={3}>
+          <Grid xs={12} sm={6} lg={5}>
+            <AverageSpeed
+                difference={12}
+                positive
+                sx={{ height: '100%' }}
+                value="2.100000"
+            />
+          </Grid>
+          <Grid xs={12} sm={6} lg={5}>
+            <AverageJamFactor
+                value={1.5}
+                sx={{ height: '100%' }}
+            />
+          </Grid>
+          
+            <Grid xs={12} lg={4}>
+                <Autocomplete
+                    options={cameras}
+                    getOptionLabel={(camera) => camera.label}
+                    renderInput={(params) => <TextField {...params} label="Select a camera" />}
+                    isOptionEqualToValue={(option, value) => option.camera_id === value.camera_id}
+                    onChange={(event, newValue) => setSelectedCamera(newValue)}
+                />
+            </Grid>
+            <Grid xs={12} lg={4}>
+              <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DateTimePicker
                   label="Select Date and Time"
                   minDateTime={today}
@@ -146,15 +138,15 @@ const handleGenerateForecast = () => {
                   onChange={(datetime) => setSelectedDatetime(datetime)}
                 />
                 </LocalizationProvider>
-        </Grid>
-        <Grid xs={12} lg={4} sx={{ p:2 }}>
+            </Grid>
+            <Grid xs={12} lg={4} sx={{ p:2 }}>
               <Button variant='contained' onClick={handleGenerateForecast}>Generate Forecast</Button>
             </Grid>
-        <Grid
-            xs={12}
-            lg={10}>
-          <ForecastChart chartSeries={forecastSpeed || sampleChartSeries} timestamps={forecastTimestamp} sx={{ height: '100%'}}/>
-        </Grid>
+          <Grid
+              xs={12}
+              lg={10}>
+            <ForecastChart chartSeries={forecastCount || sampleChartSeries} timestamps={forecastTimestamp} sx={{ height: '100%'}}/>
+          </Grid>
         </Grid>
       </div>
     </div>
@@ -163,4 +155,4 @@ const handleGenerateForecast = () => {
   );
 };
 
-export default TrafficFlowForecast;
+export default TrafficCountForecast;

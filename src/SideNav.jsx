@@ -9,6 +9,7 @@ import UserPlusIcon from '@heroicons/react/24/solid/UserPlusIcon';
 import { MapIcon } from '@heroicons/react/24/solid'
 import {AiOutlineAreaChart}from 'react-icons/ai';
 import { FaTrafficLight } from 'react-icons/fa';
+import { BiNavigation } from 'react-icons/bi';
 import Logo from './Logo';
 
 const SideNav = ({ open, onClose }) => {
@@ -43,6 +44,15 @@ const SideNav = ({ open, onClose }) => {
       icon: (
         <SvgIcon fontSize="small">
           <FaTrafficLight />
+        </SvgIcon>
+      )
+    },
+    {
+      title: 'Traffic Updates Map',
+      path: '/updates_map',
+      icon: (
+        <SvgIcon fontSize="small">
+          <MapIcon />
         </SvgIcon>
       )
     },

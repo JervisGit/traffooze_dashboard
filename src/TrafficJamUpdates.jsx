@@ -41,10 +41,17 @@ const TrafficJamUpdates = () => {
   const [openNav, setOpenNav] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [trafficJamData, setTrafficJamData] = useState([]);
+  const [searchKeyword, setSearchKeyword] = useState('');
 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
   //const customers = useCustomers(page, rowsPerPage);
+
+  const filteredTrafficJamData = trafficJamData.filter(jam => 
+    (jam.message && jam.message.toLowerCase().includes(searchKeyword.toLowerCase())) || 
+    (jam.address && jam.address.toLowerCase().includes(searchKeyword.toLowerCase()))
+  );  
+  
 
   useEffect(() => {
     // Simulate loading content for a few seconds
@@ -57,7 +64,7 @@ const TrafficJamUpdates = () => {
 
 
   function fetchAPI() {
-    axios.get('https://traffooze-flask.onrender.com/trafficjam')
+    axios.get('https://traffooze-flask.onrender.com/traffic_updates')
       .then(response => {
         // Handle the response data here
         console.log(response.data);
@@ -80,22 +87,24 @@ const TrafficJamUpdates = () => {
       <SideNav onClose={() => setOpenNav(false)} open={openNav}/> 
       <div style={{ flex: '1', paddingLeft: '300px', paddingTop: '50px'}}>
         <Card sx={{ p: 2 }}>
-          <OutlinedInput
-            defaultValue=""
-            fullWidth
-            placeholder="Search Traffic Jam Update"
-            startAdornment={(
-              <InputAdornment position="start">
-                <SvgIcon
-                  color="action"
-                  fontSize="small"
-                >
-                  <MagnifyingGlassIcon />
-                </SvgIcon>
-              </InputAdornment>
-            )}
-            sx={{ maxWidth: 500 }}
-          />
+        <OutlinedInput
+          defaultValue=""
+          fullWidth
+          placeholder="Search Traffic Jam Update"
+          value={searchKeyword}
+          onChange={(e) => setSearchKeyword(e.target.value)}
+          startAdornment={(
+            <InputAdornment position="start">
+              <SvgIcon
+                color="action"
+                fontSize="small"
+              >
+                <MagnifyingGlassIcon />
+              </SvgIcon>
+            </InputAdornment>
+          )}
+          sx={{ maxWidth: 500 }}
+        />
           <Button>
             <SvgIcon fontSize="large">
               <AdjustmentsHorizontalIcon/>
@@ -129,7 +138,7 @@ const TrafficJamUpdates = () => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {trafficJamData.map((jam) => {
+                  {filteredTrafficJamData.map((jam) => {
                     //const isSelected = selected.includes(customer.id);
                     //const createdAt = format(customer.createdAt, 'dd/MM/yyyy');
 

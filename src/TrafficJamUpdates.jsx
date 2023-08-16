@@ -64,7 +64,7 @@ const TrafficJamUpdates = () => {
 
 
   function fetchAPI() {
-    axios.get('https://traffooze-flask.onrender.com/trafficjam')
+    axios.get('https://traffooze-flask.onrender.com/traffic_updates')
       .then(response => {
         // Handle the response data here
         console.log(response.data);

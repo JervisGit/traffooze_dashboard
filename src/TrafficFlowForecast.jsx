@@ -102,7 +102,11 @@ const handleGenerateForecast = () => {
   const sampleChartSeries = [
     {
       name: 'Speed',
-      data: [12, 25, 18, 30, 20, 35, 28, 40, 33, 45, 40, 50]
+      data: [0, 25, 18, 30, 20, 35, 28, 40, 33, 45, 40, 50]
+    },
+    {
+      name: 'Jam Factor',
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     }
   ];
   
@@ -114,10 +118,9 @@ const handleGenerateForecast = () => {
       <Grid container spacing={3}>
       <Grid xs={12} sm={6} lg={5}>
         <AverageSpeed
-            difference={12}
-            positive
             sx={{ height: '100%' }}
-            value="2.1248"
+            value={forecastSpeed.length > 0 ? forecastSpeed[0].data[0] : null}
+            jam={forecastSpeed.length > 0 ? forecastSpeed[1].data[0] : null}
         />
         </Grid>
         <Grid xs={12} sm={6} lg={5}>

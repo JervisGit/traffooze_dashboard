@@ -139,7 +139,7 @@ const TrafficCountForecast = () => {
           <Grid
               xs={12}
               lg={10}>
-            <ForecastChart chartSeries={forecastCount || sampleChartSeries} timestamps={forecastTimestamp} sx={{ height: '100%'}}/>
+            <ForecastChart chartSeries={forecastCount || sampleChartSeries} timestamps={forecastTimestamp} trafficCount={true} sx={{ height: '100%'}}/>
           </Grid>
         </Grid>
       </div>

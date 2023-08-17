@@ -28,7 +28,7 @@ const TrafficFlowForecast = () => {
   const [forecastSpeed, setForecastSpeed] = useState([]);
 
   const today = dayjs();
-  const tomorrow = dayjs().add(5, 'day').set('hour', 23).set('minute', 50);
+  const tomorrow = dayjs().add(4, 'day').set('hour', 23).set('minute', 50);
 
   useEffect(() => {
     
@@ -49,6 +49,7 @@ const TrafficFlowForecast = () => {
         console.error(error);
       });
   }
+  
 const handleGenerateForecast = () => {
 
     setIsLoading(true);

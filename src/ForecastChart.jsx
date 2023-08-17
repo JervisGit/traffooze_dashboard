@@ -16,8 +16,11 @@ import { alpha, useTheme } from '@mui/material/styles';
 import ApexChart from 'react-apexcharts';
 
 const ForecastChart = (props) => {
-  const { chartSeries, timestamps, sx } = props;
+  const { chartSeries, timestamps, trafficCount, sx } = props;
   const theme = useTheme();
+  
+  const title = trafficCount ? 'Traffic Count Forecast' : 'Traffic Flow Forecast';
+  const chartType = trafficCount ? 'bar' : 'line';
 
   const chartOptions = {
     chart: {
@@ -73,13 +76,13 @@ const ForecastChart = (props) => {
             Sync
           </Button>
         )}
-        title="Traffic Flow Forecast"
+        title={title}
       />
       <CardContent>
         <ApexChart
           options={chartOptions}
           series={chartSeries}
-          type="line"
+          type={chartType}
           height={350}
           width="100%"
         />

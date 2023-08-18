@@ -39,7 +39,7 @@ const SideNav = ({ open, onClose }) => {
       )
     },
     {
-      title: 'Traffic Jam Updates',
+      title: 'Traffic Updates',
       path: '/trafficjam',
       icon: (
         <SvgIcon fontSize="small">
@@ -53,6 +53,15 @@ const SideNav = ({ open, onClose }) => {
       icon: (
         <SvgIcon fontSize="small">
           <MapIcon />
+        </SvgIcon>
+      )
+    },
+    {
+      title: 'Navigation',
+      path: '/navigation',
+      icon: (
+        <SvgIcon fontSize="small">
+          <BiNavigation />
         </SvgIcon>
       )
     },
@@ -71,24 +80,6 @@ const SideNav = ({ open, onClose }) => {
       icon: (
         <SvgIcon fontSize="small">
           <MapPinIcon />
-        </SvgIcon>
-      )
-    },
-    {
-      title: 'Map',
-      path: '/mapcontainer',
-      icon: (
-        <SvgIcon fontSize="small">
-          <MapIcon />
-        </SvgIcon>
-      )
-    },
-    {
-      title: 'chart',
-      path: '/chart',
-      icon: (
-        <SvgIcon fontSize="small">
-          <UserPlusIcon />
         </SvgIcon>
       )
     },

@@ -10,6 +10,7 @@ import FavoriteLocations from './FavoriteLocations';
 import TrafficJamUpdates from './TrafficJamUpdates';
 import TrafficUpdatesMap from './TrafficUpdatesMap';
 import MapContainer from './MapContainer';
+import NavigationMap from './NavigationMap';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/count" element={<TrafficCountForecast />} />
         <Route path="/trafficjam" element={<TrafficJamUpdates />} />
         <Route path="/updates_map" element={<TrafficUpdatesMap />} />
+        <Route path="/navigation" element={<NavigationMap />} />
         <Route path="/account" element={<Account />} />
         <Route path="/favorite" element={<FavoriteLocations />} />
         <Route path="/mapcontainer" element={<MapContainer />} />

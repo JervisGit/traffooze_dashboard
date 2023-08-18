@@ -76,7 +76,7 @@ const handleGenerateForecast = () => {
 
           const forecastSeries = [
             {
-              name: 'Speed (Km/h)',
+              name: 'Speed (m/s)',
               data: forecastSpeed,
             },
             {

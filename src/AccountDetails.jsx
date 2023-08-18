@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import { Box, Button, Stack, Card, CardActions, CardContent, CardHeader, Divider, TextField, Grid } from '@mui/material';
 import axios from 'axios';
 import Swal from 'sweetalert2';
@@ -13,10 +13,33 @@ const AccountProfileDetails = () => {
     username: '',
     password: '',
     confirmPassword: '',
-    email: '', // Added email field
+    email: '',
   });
 
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('token') !== null);
+  const [loggedInUsername, setLoggedInUsername] = useState('');
+
+  const fetchLoggedInUser = async () => {
+    try {
+      const response = await axios.get('https://traffoozebackend.vercel.app/me', {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
+        },
+      });
+
+      if (response.status === 200) {
+        setLoggedInUsername(response.data.username);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      fetchLoggedInUser();
+    }
+  }, [isLoggedIn]);
 
   const handleLoginChange = useCallback(
     (event) => {
@@ -42,7 +65,6 @@ const AccountProfileDetails = () => {
     event.preventDefault();
 
     const { username, password } = loginValues;
-    console.log('Logging in with:', username, password); // Log the login data
 
     if (!username.trim() || !password.trim()) {
       Swal.fire('Error', 'Please enter both username and password', 'error');
@@ -54,8 +76,6 @@ const AccountProfileDetails = () => {
         username: username,
         password: password,
       });
-
-      console.log('Login response:', response); // Log the login response
 
       if (response.status === 200) {
         localStorage.setItem('token', response.data.token);
@@ -74,7 +94,6 @@ const AccountProfileDetails = () => {
     event.preventDefault();
 
     const { username, password, confirmPassword, email } = registerValues;
-    console.log('Registering with:', username, password, email); // Log the registration data
 
     if (!username.trim() || !password.trim() || !confirmPassword.trim() || !email.trim()) {
       Swal.fire('Error', 'Please fill out all the fields', 'error');
@@ -90,11 +109,9 @@ const AccountProfileDetails = () => {
       const response = await axios.post('https://traffoozebackend.vercel.app/register/', {
         username,
         password,
-        email, // Include email in the request
+        email,
         confirmPassword,
       });
-
-      console.log('Register response:', response); // Log the registration response
 
       if (response.status === 201) {
         Swal.fire('Success', 'Registered successfully', 'success');
@@ -106,24 +123,54 @@ const AccountProfileDetails = () => {
     }
   };
 
+  /*const handleLogout = async () => {
+    try {
+      const response = await axios.post('https://traffoozebackend.vercel.app/logout/', null, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
+        },
+      });
+  
+      if (response.status === 200) {
+        localStorage.removeItem('token');
+        setIsLoggedIn(false);
+        setLoggedInUsername('');
+        Swal.fire('Success', 'Logged out successfully', 'success');
+      } else {
+        console.error('Logout failed with status:', response.status);
+        Swal.fire('Error', 'Logout failed', 'error');
+      }
+    } catch (error) {
+      console.error('An error occurred during logout:', error);
+      Swal.fire('Error', 'An error occurred during logout', 'error');
+    }
+  };*/
+  
   const handleLogout = () => {
-    localStorage.removeItem('token');
-    setIsLoggedIn(false);
+    try {
+      localStorage.removeItem('token');
+      setIsLoggedIn(false);
+      setLoggedInUsername('');
+      Swal.fire('Success', 'Logged out successfully', 'success');
+    } catch (error) {
+      console.error('An error occurred during logout:', error);
+      Swal.fire('Error', 'An error occurred during logout', 'error');
+    }
   };
-
+  
   return (
     <Grid>
       <Box sx={{ mr: 3 }}>
         {isLoggedIn ? (
           <div>
-            <h2>Welcome, User!</h2>
+            <h2>Welcome, {loggedInUsername}!</h2>
             <Button onClick={handleLogout} variant="contained">
               Logout
             </Button>
           </div>
         ) : (
           <form autoComplete="off" onSubmit={handleLoginSubmit}>
-            <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+<Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
               <CardHeader title="Login" />
               <Divider />
               <CardContent>
@@ -155,14 +202,13 @@ const AccountProfileDetails = () => {
                   Login
                 </Button>
               </CardActions>
-            </Card>
-          </form>
+            </Card>          </form>
         )}
       </Box>
 
       <Box sx={{ mt: 3, mr: 3 }}>
         <form onSubmit={handleRegisterSubmit}>
-          <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+        <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
             <CardHeader subheader="Create an account" title="Register" />
             <Divider />
             <CardContent>
@@ -174,6 +220,15 @@ const AccountProfileDetails = () => {
                   onChange={handleRegisterChange}
                   required
                   value={registerValues.username}
+                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                />
+                <TextField
+                  fullWidth
+                  label="Email"
+                  name="email"
+                  onChange={handleRegisterChange}
+                  required
+                  value={registerValues.email}
                   InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
                 />
                 <TextField
@@ -196,15 +251,7 @@ const AccountProfileDetails = () => {
                   type="password"
                   InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
                 />
-                <TextField
-                  fullWidth
-                  label="Email"
-                  name="email"
-                  onChange={handleRegisterChange}
-                  required
-                  value={registerValues.email}
-                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
-                />
+                
               </Stack>
             </CardContent>
             <Divider />
@@ -213,8 +260,7 @@ const AccountProfileDetails = () => {
                 Register
               </Button>
             </CardActions>
-          </Card>
-        </form>
+          </Card>        </form>
       </Box>
     </Grid>
   );

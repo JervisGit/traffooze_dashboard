@@ -113,9 +113,9 @@ const AccountProfileDetails = () => {
         confirmPassword,
       });
 
-      if (response.status === 201) {
+      if (response.status === 200) {
         Swal.fire('Success', 'Registered successfully', 'success');
-        setRegisterValues({ username: '', password: '', confirmPassword: '', email: '' });
+        setRegisterValues({ username: '', password: '', email: '' });
       }
     } catch (error) {
       console.error(error);

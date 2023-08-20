@@ -138,12 +138,18 @@ const NavigationMap = () => {
 
                 } catch (error) {
                   console.error("Error generating forecast:", error);
+                  setIsLoading(false);
+                  window.alert("An error occured, Please make sure you enter valid locations.");
                 }
               } else {
                 console.log("Error geocoding addresses.");
+                setIsLoading(false);
+                window.alert("An error occured, Please make sure you enter valid locations.");
               }
             } else {
               console.log("Please select a road, destination, and datetime.");
+              setIsLoading(false);
+              window.alert("Please select a road, destination, and datetime.");
             }
     };
 

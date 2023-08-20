@@ -7,10 +7,11 @@ import TrafficFlowForecast from './TrafficFlowForecast';
 import TrafficCountForecast from './TrafficCountForecast';
 import Account from './account';
 import FavoriteLocations from './FavoriteLocations';
-import TrafficJamUpdates from './TrafficJamUpdates';
+import TrafficUpdatesTable from './TrafficUpdatesTable'
 import TrafficUpdatesMap from './TrafficUpdatesMap';
 import MapContainer from './MapContainer';
 import NavigationMap from './NavigationMap';
+import ErpTable from './ErpTable'
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
         <Route path="/trafficUpdates" element={<UpdatesMap />} />
         <Route path="/flow" element={<TrafficFlowForecast />} />
         <Route path="/count" element={<TrafficCountForecast />} />
-        <Route path="/trafficjam" element={<TrafficJamUpdates />} />
+        <Route path="/traffic_updates" element={<TrafficUpdatesTable />} />
         <Route path="/updates_map" element={<TrafficUpdatesMap />} />
+        <Route path="/erp" element={<ErpTable />} />
         <Route path="/navigation" element={<NavigationMap />} />
         <Route path="/account" element={<Account />} />
         <Route path="/favorite" element={<FavoriteLocations />} />

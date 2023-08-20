@@ -20,10 +20,8 @@ import {
   TextField,
   Typography
 } from '@mui/material';
-import PlusIcon from '@heroicons/react/24/solid/PlusIcon';
 import MagnifyingGlassIcon from '@heroicons/react/24/solid/MagnifyingGlassIcon';
 import { AdjustmentsHorizontalIcon } from '@heroicons/react/24/solid';
-import TrafficJamTable from './TrafficJamTable';
 import axios from 'axios';
 import Loading from './Loading';
 
@@ -37,7 +35,7 @@ const useCustomers = (data, page, rowsPerPage) => {
     );
 };*/
 
-const TrafficJamUpdates = () => {
+const TrafficUpdates = () => {
   const [openNav, setOpenNav] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [trafficJamData, setTrafficJamData] = useState([]);
@@ -55,10 +53,7 @@ const TrafficJamUpdates = () => {
 
   useEffect(() => {
     // Simulate loading content for a few seconds
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-
+    setIsLoading(true);
     fetchAPI();
   }, []);
 
@@ -70,10 +65,13 @@ const TrafficJamUpdates = () => {
         console.log(response.data);
         const temp_data = response.data.reverse();
         setTrafficJamData(temp_data);
+        setIsLoading(false);
       })
       .catch(error => {
         // Handle the error here
         console.error(error);
+        window.alert("An error occured, Server may be busy right now.")
+        setIsLoading(false);
       });
   }
 
@@ -197,4 +195,4 @@ const TrafficJamUpdates = () => {
   );
 };
 
-export default TrafficJamUpdates;
+export default TrafficUpdates;

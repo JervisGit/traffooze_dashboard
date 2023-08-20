@@ -10,6 +10,7 @@ import { MapIcon } from '@heroicons/react/24/solid'
 import {AiOutlineAreaChart}from 'react-icons/ai';
 import { FaTrafficLight } from 'react-icons/fa';
 import { BiNavigation } from 'react-icons/bi';
+import CurrencyDollarIcon from '@heroicons/react/24/solid/CurrencyDollarIcon';
 import Logo from './Logo';
 
 const SideNav = ({ open, onClose }) => {
@@ -40,7 +41,7 @@ const SideNav = ({ open, onClose }) => {
     },
     {
       title: 'Traffic Updates',
-      path: '/trafficjam',
+      path: '/traffic_updates',
       icon: (
         <SvgIcon fontSize="small">
           <FaTrafficLight />
@@ -53,6 +54,15 @@ const SideNav = ({ open, onClose }) => {
       icon: (
         <SvgIcon fontSize="small">
           <MapIcon />
+        </SvgIcon>
+      )
+    },
+    {
+      title: 'ERP Rates',
+      path: '/erp',
+      icon: (
+        <SvgIcon fontSize="small">
+          <CurrencyDollarIcon />
         </SvgIcon>
       )
     },

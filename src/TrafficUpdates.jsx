@@ -16,15 +16,14 @@ import axios from 'axios'
 
 import { LoadScript } from '@react-google-maps/api';
 
+import Loading from './Loading';
+
 const apiKey = process.env.REACT_APP_APIKEY;
-
-//console.log(apiKey)
-
-//window.alert(apiKey)
 
 const center = { lat: 1.3521, lng: 103.8198 }
 
 const UpdatesMap = () => {
+    const [isLoading, setIsLoading] = useState(true);
     const [activeMarker, setActiveMarker] = useState(null);
     const [trafficUpdates, setTrafficUpdates] = useState([]);
   
@@ -32,6 +31,7 @@ const UpdatesMap = () => {
     const [directionsResponse, setDirectionsResponse] = useState(null)
 
     useEffect(() => {
+        setIsLoading(true);
         fetchTrafficUpdates();
       }, []);
 
@@ -39,7 +39,8 @@ const UpdatesMap = () => {
         axios.get('https://traffooze-flask.onrender.com/traffic_icons')
           .then(response => {
             setTrafficUpdates(response.data);
-            console.log(response.data)
+            setIsLoading(false);
+            //console.log(response.data)
           })
           .catch(error => {
             console.error(error);
@@ -55,7 +56,7 @@ const UpdatesMap = () => {
         if (map) {
             const markerPosition = marker === null ? center : getMarkerPosition(marker);
             map.panTo(markerPosition);
-            map.setZoom(14); // Set your desired zoom level here
+            map.setZoom(14);
         }
     };
     
@@ -67,7 +68,7 @@ const UpdatesMap = () => {
     };
 
     return (
-        
+      <div className="app-container">
       <Flex
         position='relative'
         flexDirection='column'
@@ -151,6 +152,8 @@ const UpdatesMap = () => {
           </LoadScript>
         </Box>
       </Flex>
+      {isLoading && <Loading />}
+      </div>
       
     )
   }

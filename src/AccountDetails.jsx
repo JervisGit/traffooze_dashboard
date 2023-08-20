@@ -25,6 +25,8 @@ const AccountProfileDetails = () => {
   const [loggedInUsername, setLoggedInUsername] = useState('');
   const [loggedInEmail, setLoggedInEmail] = useState('');
   const [showUpdateAccountCard, setShowUpdateAccountCard] = useState(false);
+  const [emailToUpdate, setEmailToUpdate] = useState('');
+  const [passwordToUpdate, setPasswordToUpdate] = useState('');
 
   const handleLoginChange = (event) => {
     const { name, value } = event.target;
@@ -91,13 +93,17 @@ const AccountProfileDetails = () => {
   
         // Fetch and set the logged-in user's email
         try {
-          const emailResponse = await axios.post('https://traffoozebackend.vercel.app/get-email-by-username/', {
-            username: username,
-          }, {
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem('token')}`,
+          const emailResponse = await axios.post(
+            'https://traffoozebackend.vercel.app/get-email-by-username/',
+            {
+              username: username,
             },
-          });
+            {
+              headers: {
+                Authorization: `Bearer ${localStorage.getItem('token')}`,
+              },
+            }
+          );
   
           if (emailResponse.data && emailResponse.data.email) {
             setLoggedInEmail(emailResponse.data.email);
@@ -150,50 +156,108 @@ const AccountProfileDetails = () => {
       Swal.fire('Error', 'Failed to register. Please try again.', 'error');
     }
   };
-
+  const validateEmail = (email) => {
+    if (!email.trim()) return false;  // Check if email is only spaces
+  
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return regex.test(email);
+  };
+  
+  const validatePassword = (password) => {
+    if (!password.trim()) return false;  // Check if password is only spaces
+    return password.length >= 8;
+  };
   const handleUpdateAccountSubmit = async (event) => {
     event.preventDefault();
   
     const { newEmail, newPassword } = updateValues;
   
     try {
-      const response = await axios.put(
-        'https://traffoozebackend.vercel.app/change_password_and_email/',
+      const token = localStorage.getItem('token'); // Retrieve the token from localStorage
+      const username = loggedInUsername; // Retrieve the username from state
+  
+      if (newEmail && !validateEmail(newEmail)) {
+        Swal.fire('Error', 'Please enter a valid email address.', 'error');
+        return;
+      }
+  
+      if (newPassword && !validatePassword(newPassword)) {
+        Swal.fire('Error', 'Password must be at least 8 characters long.', 'error');
+        return;
+      }
+  
+      const response = await axios.post(
+        'https://traffoozebackend.vercel.app/change-password-and-email/',
         {
+          username: username,
           new_email: newEmail,
           new_password: newPassword,
         },
         {
           headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`,
+            Authorization: `Bearer ${token}`,
           },
         }
       );
   
       if (response.status === 200) {
-        Swal.fire('Success', 'Account updated successfully', 'success');
+        // Update loggedInEmail with the new email
+        setLoggedInEmail(newEmail);
+  
+        // Clear newEmail and newPassword in updateValues state
         setUpdateValues({ newEmail: '', newPassword: '' });
+  
+        Swal.fire('Success', 'Account updated successfully', 'success');
+      } else {
+        Swal.fire('Error', 'Failed to update account. Please try again.', 'error');
       }
     } catch (error) {
       console.error(error);
-      Swal.fire('Error', 'Failed to update account. Please try again.', 'error');
+      Swal.fire('Error', 'An unexpected error occurred. Please try again.', 'error');
     }
   };
-  
-
-  const handleLogout = () => {
+      const handleLogout = () => {
+        try {
+          localStorage.removeItem('token');
+          setIsLoggedIn(false);
+          setLoggedInUsername('');
+          setLoggedInEmail('');
+          setShowUpdateAccountCard(false);
+          Swal.fire('Success', 'Logged out successfully', 'success');
+        } catch (error) {
+          console.error('An error occurred during logout:', error);
+          Swal.fire('Error', 'An error occurred during logout', 'error');
+        }
+      };
+  /*const handleLogout = async () => {
     try {
-      localStorage.removeItem('token');
-      setIsLoggedIn(false);
-      setLoggedInUsername('');
-      setLoggedInEmail('');
-      setShowUpdateAccountCard(false);
-      Swal.fire('Success', 'Logged out successfully', 'success');
+      const token = localStorage.getItem('token'); // Retrieve the token from localStorage
+  
+      // Make a POST request to the logout API endpoint
+      const response = await axios.post('https://traffoozebackend.vercel.app/logout/',
+        {},
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+  
+      if (response.status === 200) {
+        localStorage.removeItem('token');
+        setIsLoggedIn(false);
+        setLoggedInUsername('');
+        setLoggedInEmail('');
+        setShowUpdateAccountCard(false);
+        Swal.fire('Success', 'Logged out successfully', 'success');
+      } else {
+        Swal.fire('Error', 'Failed to log out. Please try again.', 'error');
+      }
     } catch (error) {
       console.error('An error occurred during logout:', error);
-      Swal.fire('Error', 'An error occurred during logout', 'error');
+      Swal.fire('Error', 'An unexpected error occurred. Please try again.', 'error');
     }
-  };
+  };*/
 
   return (
     <Grid>
@@ -209,23 +273,24 @@ const AccountProfileDetails = () => {
                   <Stack spacing={3} sx={{ maxWidth: 400 }}>
                   <p>Email: {loggedInEmail}</p>
 
-                    <TextField
-                      fullWidth
-                      label="New Email"
-                      name="newEmail"
-                      onChange={handleUpdateChange}
-                      value={updateValues.newEmail}
-                      InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
-                    />
-                    <TextField
-                      fullWidth
-                      label="New Password"
-                      name="newPassword"
-                      onChange={handleUpdateChange}
-                      value={updateValues.newPassword}
-                      type="password"
-                      InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
-                    />
+                  <TextField
+                    fullWidth
+                    label="New Email"
+                    name="newEmail"
+                    onChange={handleUpdateChange}
+                    value={updateValues.newEmail}
+                    InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                  />
+                  <TextField
+                    fullWidth
+                    label="New Password"
+                    name="newPassword"
+                    onChange={handleUpdateChange}
+                    value={updateValues.newPassword}
+                    type="password"
+                    InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                  />
+
                   </Stack>
                 </CardContent>
                 <Divider />

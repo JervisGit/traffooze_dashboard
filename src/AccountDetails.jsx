@@ -1,7 +1,7 @@
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Box, Button, Stack, Card, CardActions, CardContent, CardHeader, Divider, TextField, Grid } from '@mui/material';
-import axios from 'axios';
 import Swal from 'sweetalert2';
+import axios from 'axios';
 
 const AccountProfileDetails = () => {
   const [loginValues, setLoginValues] = useState({
@@ -16,50 +16,30 @@ const AccountProfileDetails = () => {
     email: '',
   });
 
+  const [updateValues, setUpdateValues] = useState({
+    newUsername: '',
+    newPassword: '',
+  });
+
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('token') !== null);
   const [loggedInUsername, setLoggedInUsername] = useState('');
+  const [loggedInEmail, setLoggedInEmail] = useState('');
+  const [showUpdateAccountCard, setShowUpdateAccountCard] = useState(false);
 
-  const fetchLoggedInUser = async () => {
-    try {
-      const response = await axios.get('https://traffoozebackend.vercel.app/me', {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem('token')}`,
-        },
-      });
-
-      if (response.status === 200) {
-        setLoggedInUsername(response.data.username);
-      }
-    } catch (error) {
-      console.error(error);
-    }
+  const handleLoginChange = (event) => {
+    const { name, value } = event.target;
+    setLoginValues((prevValues) => ({ ...prevValues, [name]: value }));
   };
 
-  useEffect(() => {
-    if (isLoggedIn) {
-      fetchLoggedInUser();
-    }
-  }, [isLoggedIn]);
+  const handleRegisterChange = (event) => {
+    const { name, value } = event.target;
+    setRegisterValues((prevValues) => ({ ...prevValues, [name]: value }));
+  };
 
-  const handleLoginChange = useCallback(
-    (event) => {
-      setLoginValues((prevValues) => ({
-        ...prevValues,
-        [event.target.name]: event.target.value,
-      }));
-    },
-    []
-  );
-
-  const handleRegisterChange = useCallback(
-    (event) => {
-      setRegisterValues((prevValues) => ({
-        ...prevValues,
-        [event.target.name]: event.target.value,
-      }));
-    },
-    []
-  );
+  const handleUpdateChange = (event) => {
+    const { name, value } = event.target;
+    setUpdateValues((prevValues) => ({ ...prevValues, [name]: value }));
+  };
 
   const handleLoginSubmit = async (event) => {
     event.preventDefault();
@@ -79,7 +59,9 @@ const AccountProfileDetails = () => {
 
       if (response.status === 200) {
         localStorage.setItem('token', response.data.token);
+        setLoggedInUsername(username);
         setIsLoggedIn(true);
+        setShowUpdateAccountCard(true);
         Swal.fire('Success', 'Logged in successfully', 'success');
       } else {
         Swal.fire('Error', 'Invalid credentials', 'error');
@@ -110,7 +92,6 @@ const AccountProfileDetails = () => {
         username,
         password,
         email,
-        confirmPassword,
       });
 
       if (response.status === 200) {
@@ -123,54 +104,99 @@ const AccountProfileDetails = () => {
     }
   };
 
-  /*const handleLogout = async () => {
+  const handleUpdateAccountSubmit = async (event) => {
+    event.preventDefault();
+
+    const { newUsername, newPassword } = updateValues;
+
+    // You can add validation for the update fields here
+
     try {
-      const response = await axios.post('https://traffoozebackend.vercel.app/logout/', null, {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem('token')}`,
+      const response = await axios.put(
+        'https://traffoozebackend.vercel.app/',
+        {
+          newUsername,
+          newPassword,
         },
-      });
-  
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`,
+          },
+        }
+      );
+
       if (response.status === 200) {
-        localStorage.removeItem('token');
-        setIsLoggedIn(false);
-        setLoggedInUsername('');
-        Swal.fire('Success', 'Logged out successfully', 'success');
-      } else {
-        console.error('Logout failed with status:', response.status);
-        Swal.fire('Error', 'Logout failed', 'error');
+        Swal.fire('Success', 'Account updated successfully', 'success');
+        setUpdateValues({ newUsername: '', newPassword: '' });
       }
     } catch (error) {
-      console.error('An error occurred during logout:', error);
-      Swal.fire('Error', 'An error occurred during logout', 'error');
+      console.error(error);
+      Swal.fire('Error', 'Failed to update account. Please try again.', 'error');
     }
-  };*/
-  
+  };
+
   const handleLogout = () => {
     try {
       localStorage.removeItem('token');
       setIsLoggedIn(false);
       setLoggedInUsername('');
+      setLoggedInEmail('');
+      setShowUpdateAccountCard(false);
       Swal.fire('Success', 'Logged out successfully', 'success');
     } catch (error) {
       console.error('An error occurred during logout:', error);
       Swal.fire('Error', 'An error occurred during logout', 'error');
     }
   };
-  
+
   return (
     <Grid>
       <Box sx={{ mr: 3 }}>
         {isLoggedIn ? (
           <div>
             <h2>Welcome, {loggedInUsername}!</h2>
+            <p>Email: {loggedInEmail}</p>
+            {showUpdateAccountCard && (
+              <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+                <CardHeader subheader="Update your account" title="Update Account" />
+                <Divider />
+                <CardContent>
+                  <Stack spacing={3} sx={{ maxWidth: 400 }}>
+                    <TextField
+                      fullWidth
+                      label="New Username"
+                      name="newUsername"
+                      onChange={handleUpdateChange}
+                      value={updateValues.newUsername}
+                      InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                    />
+                    <TextField
+                      fullWidth
+                      label="New Password"
+                      name="newPassword"
+                      onChange={handleUpdateChange}
+                      value={updateValues.newPassword}
+                      type="password"
+                      InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                    />
+                    {/* You can add other fields for updating */}
+                  </Stack>
+                </CardContent>
+                <Divider />
+                <CardActions sx={{ justifyContent: 'flex-end' }}>
+                  <Button variant="contained" onClick={handleUpdateAccountSubmit}>
+                    Update
+                  </Button>
+                </CardActions>
+              </Card>
+            )}
             <Button onClick={handleLogout} variant="contained">
               Logout
             </Button>
           </div>
         ) : (
           <form autoComplete="off" onSubmit={handleLoginSubmit}>
-<Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+            <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
               <CardHeader title="Login" />
               <Divider />
               <CardContent>
@@ -202,20 +228,22 @@ const AccountProfileDetails = () => {
                   Login
                 </Button>
               </CardActions>
-            </Card>          </form>
+            </Card>
+          </form>
         )}
       </Box>
 
       <Box sx={{ mt: 3, mr: 3 }}>
-        <form onSubmit={handleRegisterSubmit}>
-        <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
-            <CardHeader subheader="Create an account" title="Register" />
-            <Divider />
-            <CardContent>
-              <Stack spacing={3} sx={{ maxWidth: 400 }}>
+        {!isLoggedIn && (
+          <form onSubmit={handleRegisterSubmit}>
+            <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+              <CardHeader subheader="Create an account" title="Register" />
+              <Divider />
+              <CardContent>
+                <Stack spacing={3} sx={{ maxWidth: 400 }}>
                 <TextField
                   fullWidth
-                  label="Username ID"
+                  label="Username"
                   name="username"
                   onChange={handleRegisterChange}
                   required
@@ -251,16 +279,18 @@ const AccountProfileDetails = () => {
                   type="password"
                   InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
                 />
-                
-              </Stack>
-            </CardContent>
-            <Divider />
-            <CardActions sx={{ justifyContent: 'flex-end' }}>
-              <Button type="submit" variant="contained">
-                Register
-              </Button>
-            </CardActions>
-          </Card>        </form>
+
+                </Stack>
+              </CardContent>
+              <Divider />
+              <CardActions sx={{ justifyContent: 'flex-end' }}>
+                <Button type="submit" variant="contained">
+                  Register
+                </Button>
+              </CardActions>
+            </Card>
+          </form>
+        )}
       </Box>
     </Grid>
   );

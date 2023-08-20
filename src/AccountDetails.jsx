@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Button, Stack, Card, CardActions, CardContent, CardHeader, Divider, TextField, Grid } from '@mui/material';
 import Swal from 'sweetalert2';
 import axios from 'axios';
@@ -17,7 +17,7 @@ const AccountProfileDetails = () => {
   });
 
   const [updateValues, setUpdateValues] = useState({
-    newUsername: '',
+    newEmail: '',
     newPassword: '',
   });
 
@@ -41,27 +41,72 @@ const AccountProfileDetails = () => {
     setUpdateValues((prevValues) => ({ ...prevValues, [name]: value }));
   };
 
+  useEffect(() => {
+    if (isLoggedIn && loggedInUsername) {
+      const fetchEmail = async () => {
+        try {
+          const emailResponse = await axios.get(
+            'https://traffoozebackend.vercel.app/get-email-by-username/',
+            {
+              params: { username: loggedInUsername },
+              headers: {
+                Authorization: `Bearer ${localStorage.getItem('token')}`,
+              },
+            }
+          );
+
+          if (emailResponse.status === 200) {
+            setLoggedInEmail(emailResponse.data.email);
+          }
+        } catch (emailError) {
+          console.error(emailError);
+        }
+      };
+
+      fetchEmail();
+    }
+  }, [isLoggedIn, loggedInUsername]);
+
   const handleLoginSubmit = async (event) => {
     event.preventDefault();
-
+  
     const { username, password } = loginValues;
-
+  
     if (!username.trim() || !password.trim()) {
       Swal.fire('Error', 'Please enter both username and password', 'error');
       return;
     }
-
+  
     try {
       const response = await axios.post('https://traffoozebackend.vercel.app/login/', {
         username: username,
         password: password,
       });
-
+  
       if (response.status === 200) {
         localStorage.setItem('token', response.data.token);
         setLoggedInUsername(username);
         setIsLoggedIn(true);
         setShowUpdateAccountCard(true);
+  
+        // Fetch and set the logged-in user's email
+        try {
+          const emailResponse = await axios.post('https://traffoozebackend.vercel.app/get-email-by-username/', {
+            username: username,
+          }, {
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem('token')}`,
+            },
+          });
+  
+          if (emailResponse.data && emailResponse.data.email) {
+            setLoggedInEmail(emailResponse.data.email);
+          }
+        } catch (emailError) {
+          console.error('Error fetching email:', emailError);
+          Swal.fire('Error', 'Failed to fetch email for the logged-in user', 'error');
+        }
+  
         Swal.fire('Success', 'Logged in successfully', 'success');
       } else {
         Swal.fire('Error', 'Invalid credentials', 'error');
@@ -71,6 +116,8 @@ const AccountProfileDetails = () => {
       Swal.fire('Error', 'An error occurred', 'error');
     }
   };
+  
+  
 
   const handleRegisterSubmit = async (event) => {
     event.preventDefault();
@@ -106,17 +153,15 @@ const AccountProfileDetails = () => {
 
   const handleUpdateAccountSubmit = async (event) => {
     event.preventDefault();
-
-    const { newUsername, newPassword } = updateValues;
-
-    // You can add validation for the update fields here
-
+  
+    const { newEmail, newPassword } = updateValues;
+  
     try {
       const response = await axios.put(
-        'https://traffoozebackend.vercel.app/',
+        'https://traffoozebackend.vercel.app/change_password_and_email/',
         {
-          newUsername,
-          newPassword,
+          new_email: newEmail,
+          new_password: newPassword,
         },
         {
           headers: {
@@ -124,16 +169,17 @@ const AccountProfileDetails = () => {
           },
         }
       );
-
+  
       if (response.status === 200) {
         Swal.fire('Success', 'Account updated successfully', 'success');
-        setUpdateValues({ newUsername: '', newPassword: '' });
+        setUpdateValues({ newEmail: '', newPassword: '' });
       }
     } catch (error) {
       console.error(error);
       Swal.fire('Error', 'Failed to update account. Please try again.', 'error');
     }
   };
+  
 
   const handleLogout = () => {
     try {
@@ -155,19 +201,20 @@ const AccountProfileDetails = () => {
         {isLoggedIn ? (
           <div>
             <h2>Welcome, {loggedInUsername}!</h2>
-            <p>Email: {loggedInEmail}</p>
             {showUpdateAccountCard && (
               <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
                 <CardHeader subheader="Update your account" title="Update Account" />
                 <Divider />
                 <CardContent>
                   <Stack spacing={3} sx={{ maxWidth: 400 }}>
+                  <p>Email: {loggedInEmail}</p>
+
                     <TextField
                       fullWidth
-                      label="New Username"
-                      name="newUsername"
+                      label="New Email"
+                      name="newEmail"
                       onChange={handleUpdateChange}
-                      value={updateValues.newUsername}
+                      value={updateValues.newEmail}
                       InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
                     />
                     <TextField
@@ -179,7 +226,6 @@ const AccountProfileDetails = () => {
                       type="password"
                       InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
                     />
-                    {/* You can add other fields for updating */}
                   </Stack>
                 </CardContent>
                 <Divider />
@@ -241,45 +287,44 @@ const AccountProfileDetails = () => {
               <Divider />
               <CardContent>
                 <Stack spacing={3} sx={{ maxWidth: 400 }}>
-                <TextField
-                  fullWidth
-                  label="Username"
-                  name="username"
-                  onChange={handleRegisterChange}
-                  required
-                  value={registerValues.username}
-                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
-                />
-                <TextField
-                  fullWidth
-                  label="Email"
-                  name="email"
-                  onChange={handleRegisterChange}
-                  required
-                  value={registerValues.email}
-                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
-                />
-                <TextField
-                  fullWidth
-                  label="Password"
-                  name="password"
-                  onChange={handleRegisterChange}
-                  required
-                  value={registerValues.password}
-                  type="password"
-                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
-                />
-                <TextField
-                  fullWidth
-                  label="Confirm Password"
-                  name="confirmPassword"
-                  onChange={handleRegisterChange}
-                  required
-                  value={registerValues.confirmPassword}
-                  type="password"
-                  InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
-                />
-
+                  <TextField
+                    fullWidth
+                    label="Username"
+                    name="username"
+                    onChange={handleRegisterChange}
+                    required
+                    value={registerValues.username}
+                    InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                  />
+                  <TextField
+                    fullWidth
+                    label="Email"
+                    name="email"
+                    onChange={handleRegisterChange}
+                    required
+                    value={registerValues.email}
+                    InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                  />
+                  <TextField
+                    fullWidth
+                    label="Password"
+                    name="password"
+                    onChange={handleRegisterChange}
+                    required
+                    value={registerValues.password}
+                    type="password"
+                    InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                  />
+                  <TextField
+                    fullWidth
+                    label="Confirm Password"
+                    name="confirmPassword"
+                    onChange={handleRegisterChange}
+                    required
+                    value={registerValues.confirmPassword}
+                    type="password"
+                    InputProps={{ style: { backgroundColor: '#fff', border: '1px solid #ccc' } }}
+                  />
                 </Stack>
               </CardContent>
               <Divider />

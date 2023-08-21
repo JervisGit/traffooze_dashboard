@@ -62,6 +62,8 @@ const handleGenerateForecast = () => {
         road_id: roadId,
         timestamp: formattedDate,
       };
+
+      console.log("datetime:", requestData);
   
       axios.post('https://traffooze-flask.onrender.com/get_traffic_flow', requestData)
         .then(response => {
@@ -74,7 +76,7 @@ const handleGenerateForecast = () => {
 
           const forecastSeries = [
             {
-              name: 'Speed (Km/h)',
+              name: 'Speed (m/s)',
               data: forecastSpeed,
             },
             {

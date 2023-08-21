@@ -10,6 +10,7 @@ import { MapIcon } from '@heroicons/react/24/solid'
 import {AiOutlineAreaChart}from 'react-icons/ai';
 import { FaTrafficLight } from 'react-icons/fa';
 import { BiNavigation } from 'react-icons/bi';
+import CurrencyDollarIcon from '@heroicons/react/24/solid/CurrencyDollarIcon';
 import Logo from './Logo';
 
 const SideNav = ({ open, onClose }) => {
@@ -39,8 +40,8 @@ const SideNav = ({ open, onClose }) => {
       )
     },
     {
-      title: 'Traffic Jam Updates',
-      path: '/trafficjam',
+      title: 'Traffic Updates',
+      path: '/traffic_updates',
       icon: (
         <SvgIcon fontSize="small">
           <FaTrafficLight />
@@ -53,6 +54,24 @@ const SideNav = ({ open, onClose }) => {
       icon: (
         <SvgIcon fontSize="small">
           <MapIcon />
+        </SvgIcon>
+      )
+    },
+    {
+      title: 'ERP Rates',
+      path: '/erp',
+      icon: (
+        <SvgIcon fontSize="small">
+          <CurrencyDollarIcon />
+        </SvgIcon>
+      )
+    },
+    {
+      title: 'Navigation',
+      path: '/navigation',
+      icon: (
+        <SvgIcon fontSize="small">
+          <BiNavigation />
         </SvgIcon>
       )
     },
@@ -71,24 +90,6 @@ const SideNav = ({ open, onClose }) => {
       icon: (
         <SvgIcon fontSize="small">
           <MapPinIcon />
-        </SvgIcon>
-      )
-    },
-    {
-      title: 'Map',
-      path: '/mapcontainer',
-      icon: (
-        <SvgIcon fontSize="small">
-          <MapIcon />
-        </SvgIcon>
-      )
-    },
-    {
-      title: 'chart',
-      path: '/chart',
-      icon: (
-        <SvgIcon fontSize="small">
-          <UserPlusIcon />
         </SvgIcon>
       )
     },

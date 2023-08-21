@@ -13,7 +13,7 @@ const Account = () => {
     // Simulate loading content for a few seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
   

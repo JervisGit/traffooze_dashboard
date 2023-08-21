@@ -135,7 +135,7 @@ const SideNav = ({ open, onClose }) => {
       onClose={isDesktopOrLaptop ? undefined : onClose}
       PaperProps={{
         sx: {
-          backgroundColor: 'neutral.800',
+          backgroundColor: '#1C2536',
           color: 'common.white',
           width: 280,
         },
@@ -151,7 +151,7 @@ const SideNav = ({ open, onClose }) => {
         }}
       >
         <SideNavHeader />
-        <Divider sx={{ borderColor: 'neutral.700' }} />
+        <Divider sx={{ borderColor: '#2F3746' }} />
         <Box component="nav" sx={{  px: 2, py: 3, flexGrow: 1 }}>
           <Stack component="ul" sx={{ listStyle: 'none', m: 0, p: 0 }} spacing={0.5}>
             {items.map((item) => (
@@ -172,7 +172,7 @@ const SideNav = ({ open, onClose }) => {
                       component="span"
                       sx={{
                         ...styles.iconContainer,
-                        color: item.path === window.location.pathname ? 'primary.main' : 'neutral.400',
+                        color: item.path === window.location.pathname ? 'primary.main' : '#9DA4AE',
                       }}
                     >
                       {item.icon}
@@ -181,7 +181,7 @@ const SideNav = ({ open, onClose }) => {
                   <Box
                     component="span"
                     sx={{
-                      color: item.path === window.location.pathname ? 'common.white' : 'neutral.400',
+                      color: item.path === window.location.pathname ? 'common.white' : '#9DA4AE',
                       ...styles.linkTitle,
                       fontFamily: (theme) => theme.typography.fontFamily,
                     }}
@@ -195,7 +195,7 @@ const SideNav = ({ open, onClose }) => {
         </Box>
       </Box>
       <Box>
-        <Typography color="neutral.600" variant="body2">
+        <Typography color="#4D5761" variant="body2">
           Credit to LTA DataMall, HERE, OpenWeatherMap, Open Meteo, Lordicon
         </Typography>
       </Box>

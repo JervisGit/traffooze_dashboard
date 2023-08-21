@@ -19,7 +19,7 @@ const SideNavHeader = () => {
           <Typography color="inherit" variant="subtitle1">
             Traffooze
           </Typography>
-          <Typography color="neutral.400" variant="body2">
+          <Typography color="#9DA4AE" variant="body2">
             Dashboard
           </Typography>
           <div style={{display:'flex', marginTop:'-85px', justifyContent: 'flex-end'}}><Logo/></div>

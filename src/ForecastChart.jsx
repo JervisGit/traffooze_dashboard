@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-//import ArrowPathIcon from '@heroicons/react/outline/ArrowPathIcon';
-//import ArrowRightIcon from '@heroicons/react/outline/ArrowRightIcon';
 import ArrowPathIcon from '@heroicons/react/24/solid/ArrowPathIcon';
 import {
   Button,
@@ -21,6 +19,10 @@ const ForecastChart = (props) => {
   
   const title = trafficCount ? 'Traffic Count Forecast' : 'Traffic Flow Forecast';
   const chartType = trafficCount ? 'bar' : 'line';
+
+  const handleRefreshClick = () => {
+    window.location.reload(); // Reload the page
+  };
 
   const chartOptions = {
     chart: {
@@ -72,8 +74,9 @@ const ForecastChart = (props) => {
                 <ArrowPathIcon />
               </SvgIcon>
             )}
+            onClick={handleRefreshClick}
           >
-            Sync
+            Refresh
           </Button>
         )}
         title={title}

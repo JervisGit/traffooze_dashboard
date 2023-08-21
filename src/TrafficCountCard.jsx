@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { FaTachometerAlt } from 'react-icons/fa';
+import { FaCarSide } from 'react-icons/fa';
 import { Avatar, Card, CardContent, Stack, SvgIcon, Typography } from '@mui/material';
 
 export const TrafficCountCard = (props) => {
@@ -29,11 +29,11 @@ export const TrafficCountCard = (props) => {
             sx={{
               width: 56,
               height: 56,
-              backgroundColor: '#4CAF50',
+              backgroundColor: '#6A5ACD',
             }}
           >
             <SvgIcon>
-              <FaTachometerAlt />
+            <FaCarSide />
             </SvgIcon>
           </Avatar>
         </Stack>

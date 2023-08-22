@@ -24,7 +24,7 @@ const AccountProfileDetails = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('token') !== null);
   const [loggedInUsername, setLoggedInUsername] = useState(localStorage.getItem('username') || '');
   const [loggedInEmail, setLoggedInEmail] = useState('');
-  const [showUpdateAccountCard, setShowUpdateAccountCard] = useState(false);
+  const [showUpdateAccountCard, setShowUpdateAccountCard] = useState(localStorage.getItem('token') !== null);
   const [emailToUpdate, setEmailToUpdate] = useState('');
   const [passwordToUpdate, setPasswordToUpdate] = useState('');
 

@@ -11,13 +11,10 @@ import {
   Unstable_Grid2 as Grid
 } from '@mui/material';
 import { AddressAutofill } from '@mapbox/search-js-react';
-import { useHistory } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import axios from 'axios';
 
 const LocationForm = () => {
-  const history = useHistory();
-  
   const [showHomeFormExpanded, setShowHomeFormExpanded] = useState(false);
   const [showWorkFormExpanded, setShowWorkFormExpanded] = useState(false);
   const [textFieldValue, setTextFieldValue] = useState('');
@@ -73,12 +70,12 @@ const LocationForm = () => {
           text: `Address for ${addressType} updated successfully!`,
           icon: 'success',
           confirmButtonText: 'OK'
-      }).then((result) => {
-          if (result.isConfirmed) {
-              // Navigate to /favorite when OK is clicked.
-              history.push('/favorite');
-          }
-      });
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Reload the page when OK is clicked.
+                window.location.reload();
+            }
+        });
     } catch (error) {
       Swal.fire({
         icon: 'error',
@@ -112,14 +109,14 @@ const LocationForm = () => {
         if (addressType === 'work') setWorkAddress('');  // clear the work address in the UI
 
         Swal.fire({
-            title: 'Success',
-            text: `Address for ${addressType} deleted successfully!`,
-            icon: 'success',
-            confirmButtonText: 'OK'
+          title: 'Success',
+          text: `Address for ${addressType} deleted successfully!`,
+          icon: 'success',
+          confirmButtonText: 'OK'
         }).then((result) => {
             if (result.isConfirmed) {
-                // Navigate to /favorite when OK is clicked.
-                history.push('/favorite');
+                // Reload the page when OK is clicked.
+                window.location.reload();
             }
         });
 

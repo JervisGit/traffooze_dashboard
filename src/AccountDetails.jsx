@@ -22,7 +22,7 @@ const AccountProfileDetails = () => {
   });
 
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('token') !== null);
-  const [loggedInUsername, setLoggedInUsername] = useState('');
+  const [loggedInUsername, setLoggedInUsername] = useState(localStorage.getItem('username') || '');
   const [loggedInEmail, setLoggedInEmail] = useState('');
   const [showUpdateAccountCard, setShowUpdateAccountCard] = useState(false);
   const [emailToUpdate, setEmailToUpdate] = useState('');
@@ -235,6 +235,7 @@ const AccountProfileDetails = () => {
   
       if (response.status === 200) {
         localStorage.removeItem('token');
+        localStorage.removeItem('username');
         setIsLoggedIn(false);
         setLoggedInUsername('');
         setLoggedInEmail('');
@@ -254,7 +255,7 @@ const AccountProfileDetails = () => {
       <Box sx={{ mr: 3 }}>
         {isLoggedIn ? (
           <div>
-            <h2>Welcome, {loggedInUsername}!</h2>
+            <h2>Welcome, {localStorage.getItem('username')}!</h2>
             {showUpdateAccountCard && (
               <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
                 <CardHeader subheader="Update your account" title="Update Account" />

@@ -93,15 +93,6 @@ const SideNav = ({ open, onClose }) => {
         </SvgIcon>
       )
     },
-    {
-      title: 'Login',
-      path: '/login',
-      icon: (
-        <SvgIcon fontSize="small">
-          <ArrowRightOnRectangleIcon />
-        </SvgIcon>
-      )
-    },
   ];
 
   const styles = {

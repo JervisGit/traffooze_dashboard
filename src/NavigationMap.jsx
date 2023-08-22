@@ -77,8 +77,11 @@ const NavigationMap = () => {
     }, [routes]);
 
     const geocodeAddress = async (address) => {
+
+        const modifiedAddress = address.endsWith(", SG") ? address : address + ", SG";
+
         const apiUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
-          address
+          modifiedAddress
         )}.json?access_token=${access_token}`;
     
         try {

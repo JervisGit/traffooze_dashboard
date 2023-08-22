@@ -33,9 +33,13 @@ const FavoriteLocations = () => {
         username: usernameNOW
       });
   
-      if (response.data && response.data.homeAddress && response.data.workAddress) {
-        const homeLocation = { title: 'Home', address: response.data.homeAddress };
-        const workLocation = { title: 'Work', address: response.data.workAddress };
+      if (response.data) {
+        const homeAddress = response.data.homeAddress || "None";
+        const workAddress = response.data.workAddress || "None";
+
+        const homeLocation = { title: 'Home', address: homeAddress };
+        const workLocation = { title: 'Work', address: workAddress };
+
         return [homeLocation, workLocation];
       } else {
         throw new Error("Invalid response data");

@@ -113,6 +113,7 @@ const AccountProfileDetails = () => {
           if (emailResponse.data && emailResponse.data.email) {
             setLoggedInEmail(emailResponse.data.email);
             localStorage.setItem('email', emailResponse.data.email);
+            window.location.reload();
           }
         } catch (emailError) {
           console.error('Error fetching email:', emailError);

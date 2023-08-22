@@ -60,6 +60,7 @@ const AccountProfileDetails = () => {
   
         if (emailResponse.status === 200) {
           setLoggedInEmail(emailResponse.data.email);
+          localStorage.setItem('email', emailResponse.data.email);
         }
       } catch (emailError) {
         console.error(emailError);
@@ -258,6 +259,7 @@ const AccountProfileDetails = () => {
       if (response.status === 200) {
         localStorage.removeItem('token');
         localStorage.removeItem('username');
+        localStorage.removeItem('email');
         setIsLoggedIn(false);
         setLoggedInUsername('');
         setLoggedInEmail('');
@@ -284,7 +286,7 @@ const AccountProfileDetails = () => {
                 <Divider />
                 <CardContent>
                   <Stack spacing={3} sx={{ maxWidth: 400 }}>
-                  <p>Email: {loggedInEmail}</p>
+                  <p>Email: {localStorage.getItem('email')}</p>
 
                   <TextField
                     fullWidth

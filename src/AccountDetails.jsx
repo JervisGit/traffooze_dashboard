@@ -50,7 +50,7 @@ const AccountProfileDetails = () => {
           const emailResponse = await axios.get(
             'https://traffoozebackend.vercel.app/get-email-by-username/',
             {
-              params: { username: loggedInUsername },
+              params: { username: localStorage.getItem('username') },
               headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`,
               },

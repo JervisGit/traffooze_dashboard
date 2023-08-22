@@ -33,51 +33,6 @@ export const neutral = {
     800: '#1C2536',
     900: '#111927'
 };
-  
-export const indigo = withAlphas({
-    //lightest: '#F5F7FF',
-    //light: '#EBEEFE',
-    main: '#6A5ACD',
-    //dark: '#4338CA',
-    //darkest: '#312E81',
-    contrastText: '#FFFFFF'
-});
-  
-export const success = withAlphas({
-    lightest: '#F0FDF9',
-    light: '#3FC79A',
-    main: '#10B981',
-    dark: '#0B815A',
-    darkest: '#134E48',
-    contrastText: '#FFFFFF'
-});
-  
-export const info = withAlphas({
-    lightest: '#ECFDFF',
-    light: '#CFF9FE',
-    main: '#06AED4',
-    dark: '#0E7090',
-    darkest: '#164C63',
-    contrastText: '#FFFFFF'
-});
-  
-export const warning = withAlphas({
-    lightest: '#FFFAEB',
-    light: '#FEF0C7',
-    main: '#F79009',
-    dark: '#B54708',
-    darkest: '#7A2E0E',
-    contrastText: '#FFFFFF'
-});
-  
-export const error = withAlphas({
-    lightest: '#FEF3F2',
-    light: '#FEE4E2',
-    main: '#F04438',
-    dark: '#B42318',
-    darkest: '#7A271A',
-    contrastText: '#FFFFFF'
-});
 
 // create-component.js
 const muiTheme = createMuiTheme();
@@ -85,40 +40,88 @@ const muiTheme = createMuiTheme();
 export function createComponents(config) {
   const { palette } = config;
 
+  const avatarStyles = {
+    root: {
+      fontSize: 14,
+      fontWeight: 600,
+      letterSpacing: 0
+    }
+  };
+  
+  const buttonRoot = {
+    borderRadius: '12px',
+    textTransform: 'none'
+  };
+
+  const buttonSizeSmall = {
+    padding: '6px 16px'
+  };
+
+  const buttonSizeMedium = {
+    padding: '8px 20px'
+  };
+
+  const buttonSizeLarge = {
+    padding: '11px 24px'
+  };
+
+  const textSizeSmall = {
+    padding: '7px 12px'
+  };
+
+  const textSizeMedium = {
+    padding: '9px 16px'
+  };
+
+  const textSizeLarge = {
+    padding: '12px 16px'
+  };
+
+  const cssBaselineGlobalStyles = {
+    all: {
+      boxSizing: 'border-box'
+    },
+    html: {
+      MozOsxFontSmoothing: 'grayscale',
+      WebkitFontSmoothing: 'antialiased',
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100%',
+      width: '100%'
+    },
+    body: {
+      display: 'flex',
+      flex: '1 1 auto',
+      flexDirection: 'column',
+      minHeight: '100%',
+      width: '100%'
+    },
+  };
+
+  const cssTabStyles = {
+      fontSize: 14,
+      fontWeight: 500,
+      lineHeight: 1.71,
+      minWidth: 'auto',
+      paddingLeft: 0,
+      paddingRight: 0,
+      textTransform: 'none',
+      '& + &': {
+        marginLeft: 24
+      }
+  };
+
   return {
-    MuiAvatar: {
-        styleOverrides: {
-          root: {
-            fontSize: 14,
-            fontWeight: 600,
-            letterSpacing: 0
-          }
-        }
-      },
+    MuiAvatar: {styleOverrides: { avatarStyles }},
       MuiButton: {
         styleOverrides: {
-          root: {
-            borderRadius: '12px',
-            textTransform: 'none'
-          },
-          sizeSmall: {
-            padding: '6px 16px'
-          },
-          sizeMedium: {
-            padding: '8px 20px'
-          },
-          sizeLarge: {
-            padding: '11px 24px'
-          },
-          textSizeSmall: {
-            padding: '7px 12px'
-          },
-          textSizeMedium: {
-            padding: '9px 16px'
-          },
-          textSizeLarge: {
-            padding: '12px 16px'
-          }
+          root: buttonRoot,
+          sizeSmall: buttonSizeSmall,
+          sizeMedium: buttonSizeMedium,
+          sizeLarge: buttonSizeLarge,
+          textSizeSmall: textSizeSmall,
+          textSizeMedium: textSizeMedium,
+          textSizeLarge: textSizeLarge
         }
       },
       MuiCard: {
@@ -158,24 +161,9 @@ export function createComponents(config) {
       },
       MuiCssBaseline: {
         styleOverrides: {
-          '*': {
-            boxSizing: 'border-box'
-          },
-          html: {
-            MozOsxFontSmoothing: 'grayscale',
-            WebkitFontSmoothing: 'antialiased',
-            display: 'flex',
-            flexDirection: 'column',
-            minHeight: '100%',
-            width: '100%'
-          },
-          body: {
-            display: 'flex',
-            flex: '1 1 auto',
-            flexDirection: 'column',
-            minHeight: '100%',
-            width: '100%'
-          },
+          '*': cssBaselineGlobalStyles.all,
+          html: cssBaselineGlobalStyles.html,
+          body: cssBaselineGlobalStyles.body,
           '#__next': {
             display: 'flex',
             flex: '1 1 auto',
@@ -321,18 +309,7 @@ export function createComponents(config) {
       },
       MuiTab: {
         styleOverrides: {
-          root: {
-            fontSize: 14,
-            fontWeight: 500,
-            lineHeight: 1.71,
-            minWidth: 'auto',
-            paddingLeft: 0,
-            paddingRight: 0,
-            textTransform: 'none',
-            '& + &': {
-              marginLeft: 24
-            }
-          }
+          root: cssTabStyles,
         }
       },
       MuiTableCell: {
@@ -372,6 +349,36 @@ export function createComponents(config) {
     };
   }
 
+export const indigo = withAlphas({
+    main: '#6A5ACD',
+});
+  
+export const success = withAlphas({
+    lightest: '#F0FDF9',
+    light: '#3FC79A',
+    main: '#10B981',
+    dark: '#0B815A',
+    darkest: '#134E48',
+    contrastText: '#FFFFFF'
+});
+  
+export const warning = withAlphas({
+    lightest: '#FFFAEB',
+    light: '#FEF0C7',
+    main: '#F79009',
+    dark: '#B54708',
+    darkest: '#7A2E0E',
+    contrastText: '#FFFFFF'
+});
+  
+export const error = withAlphas({
+    lightest: '#FEF3F2',
+    light: '#FEE4E2',
+    main: '#F04438',
+    dark: '#B42318',
+    darkest: '#7A271A',
+    contrastText: '#FFFFFF'
+});
 
 // create-palette.js
 export function createPalette() {
@@ -390,7 +397,6 @@ export function createPalette() {
         },
         divider: '#F2F4F7',
         error,
-        info,
         mode: 'light',
         neutral,
         primary: indigo,
@@ -406,6 +412,38 @@ export function createPalette() {
 
 // create-typography.js
 export const createTypography = () => {
+
+    const customStyles = {
+      body1: {
+        fontSize: '1rem',
+        fontWeight: 300,
+        lineHeight: 1.6,
+      },
+      customSub1: {
+        fontSize: '1rem',
+        fontWeight: 500,
+        lineHeight: 1.57
+      },
+      customOverline: {
+        fontSize: '0.75rem',
+        fontWeight: 600,
+        letterSpacing: '0.5px',
+        lineHeight: 2.5,
+        textTransform: 'uppercase'
+      },
+      customSub2: {
+        fontSize: '1rem',
+        fontWeight: 500,
+        lineHeight: 1.57
+      },
+      customHeading: {
+        fontFamily: '\'Plus Jakarta Sans\', sans-serif',
+        fontWeight: 700,
+        lineHeight: 1.2,
+      }
+      // ... (other custom styles)
+  };
+
     return {
         fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
         body1: {
@@ -427,57 +465,37 @@ export const createTypography = () => {
           lineHeight: 1.66
         },
         subtitle1: {
-          fontSize: '1rem',
-          fontWeight: 500,
-          lineHeight: 1.57
+          ...customStyles.customSub1,
         },
         subtitle2: {
-          fontSize: '0.875rem',
-          fontWeight: 500,
-          lineHeight: 1.57
+          ...customStyles.customSub2,
         },
         overline: {
-          fontSize: '0.75rem',
-          fontWeight: 600,
-          letterSpacing: '0.5px',
-          lineHeight: 2.5,
-          textTransform: 'uppercase'
+          ...customStyles.customOverline,
         },
         h1: {
-          fontFamily: '\'Plus Jakarta Sans\', sans-serif',
-          fontWeight: 700,
           fontSize: '3.5rem',
-          lineHeight: 1.2
+          ...customStyles.customHeading,
         },
         h2: {
-          fontFamily: '\'Plus Jakarta Sans\', sans-serif',
-          fontWeight: 700,
           fontSize: '3rem',
-          lineHeight: 1.2
+          ...customStyles.customHeading,
         },
         h3: {
-          fontFamily: '\'Plus Jakarta Sans\', sans-serif',
-          fontWeight: 700,
           fontSize: '2.25rem',
-          lineHeight: 1.2
+          ...customStyles.customHeading,
         },
         h4: {
-          fontFamily: '\'Plus Jakarta Sans\', sans-serif',
-          fontWeight: 700,
           fontSize: '2rem',
-          lineHeight: 1.2
+          ...customStyles.customHeading,
         },
         h5: {
-          fontFamily: '\'Plus Jakarta Sans\', sans-serif',
-          fontWeight: 700,
           fontSize: '1.5rem',
-          lineHeight: 1.2
+          ...customStyles.customHeading,
         },
         h6: {
-          fontFamily: '\'Plus Jakarta Sans\', sans-serif',
-          fontWeight: 700,
           fontSize: '1.125rem',
-          lineHeight: 1.2
+          ...customStyles.customHeading,
         }
       };
 };
@@ -486,7 +504,6 @@ export const createTypography = () => {
 export function createTheme() {
   const palette = createPalette();
   const components = createComponents({ palette });
-  //const shadows = createShadows();
   const typography = createTypography();
 
   return createMuiTheme({
@@ -501,7 +518,6 @@ export function createTheme() {
     },
     components,
     palette,
-    //shadows,
     shape: {
       borderRadius: 8
     },

@@ -179,6 +179,11 @@ const AccountProfileDetails = () => {
     try {
       const token = localStorage.getItem('token'); // Retrieve the token from localStorage
       const username = localStorage.getItem('username'); // Retrieve the username from state
+
+      if (newEmail.length == 0 && newPassword.length == 0) {
+        Swal.fire('Error', 'Please enter something to update.', 'error');
+        return;
+      }
   
       // Only check for email validity if newEmail is provided and not empty
       if (newEmail && newEmail.length > 0 && !validateEmail(newEmail)) {

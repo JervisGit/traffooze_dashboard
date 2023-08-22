@@ -44,30 +44,38 @@ const AccountProfileDetails = () => {
   };
 
   useEffect(() => {
-    if (isLoggedIn && loggedInUsername && !loggedInEmail) {
-      const fetchEmail = async () => {
-        try {
-          const emailResponse = await axios.get(
-            'https://traffoozebackend.vercel.app/get-email-by-username/',
-            {
-              params: { username: loggedInUsername },
-              headers: {
-                Authorization: `Bearer ${localStorage.getItem('token')}`,
-              },
-            }
-          );
-
-          if (emailResponse.status === 200) {
-            setLoggedInEmail(emailResponse.data.email);
+    const fetchEmail = async () => {
+      if (!loggedInUsername) return;  // Ensure that there's a username to fetch the email for
+  
+      try {
+        const emailResponse = await axios.get(
+          'https://traffoozebackend.vercel.app/get-email-by-username/',
+          {
+            params: { username: loggedInUsername },
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem('token')}`,
+            },
           }
-        } catch (emailError) {
-          console.error(emailError);
+        );
+  
+        if (emailResponse.status === 200) {
+          setLoggedInEmail(emailResponse.data.email);
         }
-      };
-
+      } catch (emailError) {
+        console.error(emailError);
+      }
+    };
+  
+    // If the user is logged in but we don't have their email, fetch it
+    if (isLoggedIn && loggedInUsername && !loggedInEmail) {
       fetchEmail();
     }
-  }, [isLoggedIn, loggedInUsername, loggedInEmail]);
+    
+    // Also fetch the email when the component mounts if the user is logged in
+    if (isLoggedIn && loggedInUsername) {
+      fetchEmail();
+    }
+  }, [isLoggedIn, loggedInUsername]);  
 
   const handleLoginSubmit = async (event) => {
     event.preventDefault();

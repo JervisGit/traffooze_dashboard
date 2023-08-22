@@ -5,18 +5,20 @@ import Loading from './Loading';
 import axios from 'axios';
 import { Box, Card, CardContent, CardHeader } from '@mui/material';
 
-const FavoriteLocations = ({ currentUser }) => {
+const FavoriteLocations = () => {
   const [openNav, setOpenNav] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [favoriteLocations, setFavoriteLocations] = useState([]);
 
   useEffect(() => {
     const username = localStorage.getItem('username');
+    console.log(username);
     if (username) {
       // Simulate loading content for a few seconds
       setTimeout(async () => {
         setIsLoading(false);
         const userFavoriteLocations = await getFavoriteLocationsForUser(username);
+        console.log(userFavoriteLocations);
         setFavoriteLocations(userFavoriteLocations);
       }, 1000);
     } else {
@@ -24,11 +26,11 @@ const FavoriteLocations = ({ currentUser }) => {
     }
   }, []);  
 
-  const getFavoriteLocationsForUser = async (username) => {
+  const getFavoriteLocationsForUser = async () => {
     try {
-      console.log(username);
+      const usernameNOW = localStorage.getItem('username');
       const response = await axios.post('https://traffoozebackend.vercel.app/get-address/', {
-        username: username
+        username: usernameNOW
       });
   
       if (response.data && response.data.homeAddress && response.data.workAddress) {
@@ -57,7 +59,6 @@ const FavoriteLocations = ({ currentUser }) => {
             flexDirection: 'column',
           }}
         >
-          {/* Display Favorite Locations if there's a token in localStorage */}
           {!isLoading && favoriteLocations.length > 0 && localStorage.getItem('token') && (
             <Card sx={{ mb: 2 }}>
               <CardHeader title="Favorite Locations" />
@@ -73,8 +74,7 @@ const FavoriteLocations = ({ currentUser }) => {
               </CardContent>
             </Card>
           )}
-  
-          {/* Location Form */}
+
           <Box mt={2}>
             <LocationForm />
           </Box>

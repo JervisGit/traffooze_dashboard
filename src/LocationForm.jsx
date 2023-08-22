@@ -11,11 +11,17 @@ import {
   Unstable_Grid2 as Grid
 } from '@mui/material';
 import { AddressAutofill } from '@mapbox/search-js-react';
+import Swal from 'sweetalert2';
+import axios from 'axios';
 
 const LocationForm = () => {
   const [showHomeFormExpanded, setShowHomeFormExpanded] = useState(false);
   const [showWorkFormExpanded, setShowWorkFormExpanded] = useState(false);
   const [textFieldValue, setTextFieldValue] = useState('');
+
+  const [homeAddress, setHomeAddress] = useState('');
+  const [workAddress, setWorkAddress] = useState('');
+
 
   const handleSubmit = useCallback(
     (event) => {
@@ -24,6 +30,84 @@ const LocationForm = () => {
     },
     []
   );
+
+  const handleSaveDetails = async () => {
+    const username = localStorage.getItem('username');
+    if (!username) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Username not found!',
+      });
+      return;
+    }
+
+    // Get current addresses
+    let currentAddresses = {};
+    try {
+        const response = await axios.post('https://traffoozebackend.vercel.app/get-address/', { username });
+        currentAddresses = response.data;
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Error fetching current addresses!',
+      });
+    }
+
+    // Prepare data for API call
+    const data = {
+        username: username,
+        homeAddress: homeAddress || currentAddresses.homeAddress,
+        workAddress: workAddress || currentAddresses.workAddress,
+    };
+
+    // Update addresses
+    try {
+        await axios.post('https://traffoozebackend.vercel.app/update-address/', data);
+        Swal.fire('Success', 'Addresses updated successfully!', 'success');
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Error updating addresses!',
+      });
+    }
+  };
+
+  const handleDeleteDetails = async (addressType) => {
+    const username = localStorage.getItem('username');
+    if (!username) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Username not found!',
+      });
+      return;
+    }
+
+    const data = {
+        username: username,
+        homeAddress: addressType === 'home' ? '' : homeAddress,
+        workAddress: addressType === 'work' ? '' : workAddress,
+    };
+
+    try {
+        await axios.post('https://traffoozebackend.vercel.app/update-address/', data);
+        Swal.fire('Success', `Address for ${addressType} deleted successfully!`, 'success');
+
+        if (addressType === 'home') setHomeAddress('');  // clear the home address in the UI
+        if (addressType === 'work') setWorkAddress('');  // clear the work address in the UI
+
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: `Error deleting ${addressType} address!`,
+      });
+    }
+  };
+
 
   const handleTextFieldBlur = () => {
     console.log('Text Field Value:', textFieldValue);
@@ -49,13 +133,11 @@ const LocationForm = () => {
                   >
                     
                     <TextField 
-                      fullWidth 
-                      label="Address" 
-                      onChange={(event) => setTextFieldValue(event.target.value)}
-                      onBlur={handleTextFieldBlur}
-                    >
-                  
-                    </TextField>
+                        fullWidth 
+                        label="Address" 
+                        value={homeAddress}
+                        onChange={(event) => setHomeAddress(event.target.value)}
+                    />
                   
                   </AddressAutofill>
                 </Grid>
@@ -120,8 +202,17 @@ const LocationForm = () => {
         </CardContent>
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button variant="contained">Save details</Button>
+          <Button 
+            variant="contained" 
+            color="error" 
+            onClick={() => handleDeleteDetails('home')}
+            sx={{ marginRight: '1em' }}
+          >
+            Delete Home
+          </Button>
+          <Button variant="contained" onClick={handleSaveDetails}>Save details</Button>
         </CardActions>
+
       </Card>
     </form>
     </Box>
@@ -142,11 +233,13 @@ const LocationForm = () => {
                 >
                   
                   <TextField 
-                    fullWidth 
-                    label="Address" 
-                  >
-                
-                  </TextField>
+                      fullWidth 
+                      label="Address" 
+                      value={workAddress}
+                      onChange={(event) => setWorkAddress(event.target.value)}
+                  />
+
+
                 
                 </AddressAutofill>
                 </Grid>
@@ -212,8 +305,17 @@ const LocationForm = () => {
         </CardContent>
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button variant="contained">Save details</Button>
+          <Button 
+            variant="contained" 
+            color="error" 
+            onClick={() => handleDeleteDetails('work')}
+            sx={{ marginRight: '1em' }}
+          >
+            Delete Work
+          </Button>
+          <Button variant="contained" onClick={handleSaveDetails}>Save details</Button>
         </CardActions>
+
       </Card>
     </form>
     </Box>

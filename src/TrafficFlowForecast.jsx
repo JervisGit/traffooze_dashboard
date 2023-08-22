@@ -8,7 +8,7 @@ import {
     Unstable_Grid2 as Grid, 
     Autocomplete, 
   } from '@mui/material';
-import { AverageSpeed } from './AverageSpeed';
+import { TrafficFlowCard } from './TrafficFlowCard';
 import { AverageJamFactor } from './AverageJamFactor';
 import { AverageFlowCard } from './AverageFlowCard';
 import ForecastChart from './ForecastChart';
@@ -121,7 +121,7 @@ const handleGenerateForecast = () => {
       <div style={{ flex: '1', paddingLeft: '300px', paddingTop: '50px'}}>
       <Grid container spacing={3}>
       <Grid xs={12} sm={6} lg={5}>
-        <AverageSpeed
+        <TrafficFlowCard
             sx={{ height: '100%' }}
             value={forecastSpeed.length > 0 ? forecastSpeed[0].data[0] : null}
             jam={forecastSpeed.length > 0 ? forecastSpeed[1].data[0] : null}

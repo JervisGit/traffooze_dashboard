@@ -1,0 +1,7702 @@
+[
+    {
+        "road_id": 1,
+        "speed": 8.26,
+        "jamFactor": 3.06
+    },
+    {
+        "road_id": 2,
+        "speed": 15.55,
+        "jamFactor": 0.1
+    },
+    {
+        "road_id": 3,
+        "speed": 5.63,
+        "jamFactor": 1.69
+    },
+    {
+        "road_id": 4,
+        "speed": 14.26,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 5,
+        "speed": 11.38,
+        "jamFactor": 1.8
+    },
+    {
+        "road_id": 6,
+        "speed": 12.82,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 7,
+        "speed": 12.52,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 8,
+        "speed": 13.93,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 9,
+        "speed": 11.66,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 10,
+        "speed": 11.49,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 11,
+        "speed": 8.36,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 12,
+        "speed": 15.21,
+        "jamFactor": 0.16
+    },
+    {
+        "road_id": 13,
+        "speed": 15.86,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 14,
+        "speed": 14.0,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 15,
+        "speed": 14.05,
+        "jamFactor": 0.05
+    },
+    {
+        "road_id": 16,
+        "speed": 11.83,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 17,
+        "speed": 14.3,
+        "jamFactor": 0.29
+    },
+    {
+        "road_id": 18,
+        "speed": 12.35,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 19,
+        "speed": 7.36,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 20,
+        "speed": 10.27,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 21,
+        "speed": 13.11,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 22,
+        "speed": 12.58,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 23,
+        "speed": 10.16,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 24,
+        "speed": 12.91,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 25,
+        "speed": 8.85,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 26,
+        "speed": 7.77,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 27,
+        "speed": 12.93,
+        "jamFactor": 0.08
+    },
+    {
+        "road_id": 28,
+        "speed": 9.66,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 29,
+        "speed": 11.43,
+        "jamFactor": 0.63
+    },
+    {
+        "road_id": 30,
+        "speed": 10.82,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 31,
+        "speed": 13.66,
+        "jamFactor": 0.13
+    },
+    {
+        "road_id": 32,
+        "speed": 10.39,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 33,
+        "speed": 11.35,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 34,
+        "speed": 10.73,
+        "jamFactor": 0.46
+    },
+    {
+        "road_id": 35,
+        "speed": 12.75,
+        "jamFactor": 0.52
+    },
+    {
+        "road_id": 36,
+        "speed": 13.5,
+        "jamFactor": 0.24
+    },
+    {
+        "road_id": 37,
+        "speed": 7.26,
+        "jamFactor": 1.23
+    },
+    {
+        "road_id": 38,
+        "speed": 12.6,
+        "jamFactor": 0.51
+    },
+    {
+        "road_id": 39,
+        "speed": 11.98,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 40,
+        "speed": 11.74,
+        "jamFactor": 0.75
+    },
+    {
+        "road_id": 41,
+        "speed": 14.94,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 42,
+        "speed": 15.03,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 43,
+        "speed": 15.24,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 44,
+        "speed": 8.89,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 45,
+        "speed": 3.68,
+        "jamFactor": 0.61
+    },
+    {
+        "road_id": 46,
+        "speed": 21.13,
+        "jamFactor": 0.38
+    },
+    {
+        "road_id": 47,
+        "speed": 9.83,
+        "jamFactor": 1.38
+    },
+    {
+        "road_id": 48,
+        "speed": 13.01,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 49,
+        "speed": 10.11,
+        "jamFactor": 1.23
+    },
+    {
+        "road_id": 50,
+        "speed": 11.45,
+        "jamFactor": 0.08
+    },
+    {
+        "road_id": 51,
+        "speed": 10.53,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 52,
+        "speed": 8.7,
+        "jamFactor": 2.0
+    },
+    {
+        "road_id": 53,
+        "speed": 9.3,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 54,
+        "speed": 8.83,
+        "jamFactor": 1.6
+    },
+    {
+        "road_id": 55,
+        "speed": 11.61,
+        "jamFactor": 1.52
+    },
+    {
+        "road_id": 56,
+        "speed": 5.7,
+        "jamFactor": 1.33
+    },
+    {
+        "road_id": 57,
+        "speed": 9.42,
+        "jamFactor": 1.34
+    },
+    {
+        "road_id": 58,
+        "speed": 9.63,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 59,
+        "speed": 7.72,
+        "jamFactor": 1.82
+    },
+    {
+        "road_id": 60,
+        "speed": 16.33,
+        "jamFactor": 0.28
+    },
+    {
+        "road_id": 61,
+        "speed": 18.0,
+        "jamFactor": 0.09
+    },
+    {
+        "road_id": 62,
+        "speed": 13.64,
+        "jamFactor": 0.88
+    },
+    {
+        "road_id": 63,
+        "speed": 20.41,
+        "jamFactor": 0.81
+    },
+    {
+        "road_id": 64,
+        "speed": 11.19,
+        "jamFactor": 1.34
+    },
+    {
+        "road_id": 65,
+        "speed": 17.3,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 66,
+        "speed": 9.63,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 67,
+        "speed": 9.96,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 68,
+        "speed": 8.39,
+        "jamFactor": 1.27
+    },
+    {
+        "road_id": 69,
+        "speed": 9.14,
+        "jamFactor": 0.8
+    },
+    {
+        "road_id": 70,
+        "speed": 9.28,
+        "jamFactor": 1.3
+    },
+    {
+        "road_id": 71,
+        "speed": 9.43,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 72,
+        "speed": 12.76,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 73,
+        "speed": 8.1,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 74,
+        "speed": 7.32,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 75,
+        "speed": 13.34,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 76,
+        "speed": 9.16,
+        "jamFactor": 1.36
+    },
+    {
+        "road_id": 77,
+        "speed": 12.32,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 78,
+        "speed": 21.51,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 79,
+        "speed": 8.76,
+        "jamFactor": 1.75
+    },
+    {
+        "road_id": 80,
+        "speed": 9.93,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 81,
+        "speed": 7.49,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 82,
+        "speed": 6.66,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 83,
+        "speed": 11.47,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 84,
+        "speed": 7.39,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 85,
+        "speed": 9.73,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 86,
+        "speed": 13.54,
+        "jamFactor": 0.29
+    },
+    {
+        "road_id": 87,
+        "speed": 11.79,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 88,
+        "speed": 6.51,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 89,
+        "speed": 7.8,
+        "jamFactor": 1.62
+    },
+    {
+        "road_id": 90,
+        "speed": 16.01,
+        "jamFactor": 0.52
+    },
+    {
+        "road_id": 91,
+        "speed": 10.36,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 92,
+        "speed": 7.54,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 93,
+        "speed": 21.07,
+        "jamFactor": 1.31
+    },
+    {
+        "road_id": 94,
+        "speed": 9.41,
+        "jamFactor": 1.58
+    },
+    {
+        "road_id": 95,
+        "speed": 11.07,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 96,
+        "speed": 9.06,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 97,
+        "speed": 21.24,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 98,
+        "speed": 9.54,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 99,
+        "speed": 9.3,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 100,
+        "speed": 9.46,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 101,
+        "speed": 22.22,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 102,
+        "speed": 8.67,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 103,
+        "speed": 11.95,
+        "jamFactor": 1.21
+    },
+    {
+        "road_id": 104,
+        "speed": 8.75,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 105,
+        "speed": 11.76,
+        "jamFactor": 1.34
+    },
+    {
+        "road_id": 106,
+        "speed": 8.95,
+        "jamFactor": 1.22
+    },
+    {
+        "road_id": 107,
+        "speed": 10.28,
+        "jamFactor": 0.4
+    },
+    {
+        "road_id": 108,
+        "speed": 11.39,
+        "jamFactor": 0.35
+    },
+    {
+        "road_id": 109,
+        "speed": 8.63,
+        "jamFactor": 1.2
+    },
+    {
+        "road_id": 110,
+        "speed": 6.15,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 111,
+        "speed": 8.19,
+        "jamFactor": 0.26
+    },
+    {
+        "road_id": 112,
+        "speed": 15.69,
+        "jamFactor": 0.17
+    },
+    {
+        "road_id": 113,
+        "speed": 12.39,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 114,
+        "speed": 6.65,
+        "jamFactor": 0.78
+    },
+    {
+        "road_id": 115,
+        "speed": 11.87,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 116,
+        "speed": 11.36,
+        "jamFactor": 0.18
+    },
+    {
+        "road_id": 117,
+        "speed": 12.81,
+        "jamFactor": 0.44
+    },
+    {
+        "road_id": 118,
+        "speed": 7.65,
+        "jamFactor": 0.52
+    },
+    {
+        "road_id": 119,
+        "speed": 13.08,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 120,
+        "speed": 7.39,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 121,
+        "speed": 11.87,
+        "jamFactor": 0.28
+    },
+    {
+        "road_id": 122,
+        "speed": 14.1,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 123,
+        "speed": 13.26,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 124,
+        "speed": 12.13,
+        "jamFactor": 0.7
+    },
+    {
+        "road_id": 125,
+        "speed": 12.75,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 126,
+        "speed": 15.08,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 127,
+        "speed": 18.13,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 128,
+        "speed": 16.84,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 129,
+        "speed": 11.93,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 130,
+        "speed": 20.12,
+        "jamFactor": 0.96
+    },
+    {
+        "road_id": 131,
+        "speed": 6.96,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 132,
+        "speed": 13.38,
+        "jamFactor": 0.24
+    },
+    {
+        "road_id": 133,
+        "speed": 8.84,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 134,
+        "speed": 12.34,
+        "jamFactor": 0.25
+    },
+    {
+        "road_id": 135,
+        "speed": 13.24,
+        "jamFactor": 0.38
+    },
+    {
+        "road_id": 136,
+        "speed": 9.86,
+        "jamFactor": 0.4
+    },
+    {
+        "road_id": 137,
+        "speed": 8.26,
+        "jamFactor": 0.54
+    },
+    {
+        "road_id": 138,
+        "speed": 11.43,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 139,
+        "speed": 8.18,
+        "jamFactor": 1.49
+    },
+    {
+        "road_id": 140,
+        "speed": 7.21,
+        "jamFactor": 2.32
+    },
+    {
+        "road_id": 141,
+        "speed": 11.75,
+        "jamFactor": 1.63
+    },
+    {
+        "road_id": 142,
+        "speed": 14.63,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 143,
+        "speed": 12.33,
+        "jamFactor": 0.63
+    },
+    {
+        "road_id": 144,
+        "speed": 15.29,
+        "jamFactor": 0.88
+    },
+    {
+        "road_id": 145,
+        "speed": 20.12,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 146,
+        "speed": 15.63,
+        "jamFactor": 0.29
+    },
+    {
+        "road_id": 147,
+        "speed": 5.77,
+        "jamFactor": 1.37
+    },
+    {
+        "road_id": 148,
+        "speed": 9.53,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 149,
+        "speed": 8.03,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 150,
+        "speed": 23.39,
+        "jamFactor": 0.54
+    },
+    {
+        "road_id": 151,
+        "speed": 8.68,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 152,
+        "speed": 8.9,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 153,
+        "speed": 9.29,
+        "jamFactor": 0.61
+    },
+    {
+        "road_id": 154,
+        "speed": 8.59,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 155,
+        "speed": 8.63,
+        "jamFactor": 1.21
+    },
+    {
+        "road_id": 156,
+        "speed": 9.68,
+        "jamFactor": 1.33
+    },
+    {
+        "road_id": 157,
+        "speed": 22.06,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 158,
+        "speed": 7.76,
+        "jamFactor": 1.33
+    },
+    {
+        "road_id": 159,
+        "speed": 13.56,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 160,
+        "speed": 21.09,
+        "jamFactor": 1.45
+    },
+    {
+        "road_id": 161,
+        "speed": 7.05,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 162,
+        "speed": 7.89,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 163,
+        "speed": 10.31,
+        "jamFactor": 1.07
+    },
+    {
+        "road_id": 164,
+        "speed": 9.58,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 165,
+        "speed": 9.19,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 166,
+        "speed": 10.9,
+        "jamFactor": 1.54
+    },
+    {
+        "road_id": 167,
+        "speed": 17.27,
+        "jamFactor": 0.76
+    },
+    {
+        "road_id": 168,
+        "speed": 22.6,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 169,
+        "speed": 10.75,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 170,
+        "speed": 10.07,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 171,
+        "speed": 9.57,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 172,
+        "speed": 9.52,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 173,
+        "speed": 9.02,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 174,
+        "speed": 7.3,
+        "jamFactor": 1.62
+    },
+    {
+        "road_id": 175,
+        "speed": 7.82,
+        "jamFactor": 1.14
+    },
+    {
+        "road_id": 176,
+        "speed": 9.28,
+        "jamFactor": 1.68
+    },
+    {
+        "road_id": 177,
+        "speed": 7.31,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 178,
+        "speed": 6.43,
+        "jamFactor": 1.61
+    },
+    {
+        "road_id": 179,
+        "speed": 19.3,
+        "jamFactor": 1.46
+    },
+    {
+        "road_id": 180,
+        "speed": 11.46,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 181,
+        "speed": 19.42,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 182,
+        "speed": 4.19,
+        "jamFactor": 1.22
+    },
+    {
+        "road_id": 183,
+        "speed": 11.01,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 184,
+        "speed": 15.52,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 185,
+        "speed": 8.23,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 186,
+        "speed": 6.79,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 187,
+        "speed": 9.81,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 188,
+        "speed": 8.4,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 189,
+        "speed": 7.33,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 190,
+        "speed": 7.49,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 191,
+        "speed": 8.24,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 192,
+        "speed": 9.34,
+        "jamFactor": 1.48
+    },
+    {
+        "road_id": 193,
+        "speed": 10.87,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 194,
+        "speed": 8.72,
+        "jamFactor": 0.78
+    },
+    {
+        "road_id": 195,
+        "speed": 9.79,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 196,
+        "speed": 7.81,
+        "jamFactor": 1.2
+    },
+    {
+        "road_id": 197,
+        "speed": 10.35,
+        "jamFactor": 1.43
+    },
+    {
+        "road_id": 198,
+        "speed": 9.05,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 199,
+        "speed": 9.73,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 200,
+        "speed": 11.32,
+        "jamFactor": 0.63
+    },
+    {
+        "road_id": 201,
+        "speed": 7.17,
+        "jamFactor": 1.36
+    },
+    {
+        "road_id": 202,
+        "speed": 9.04,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 203,
+        "speed": 12.04,
+        "jamFactor": 0.38
+    },
+    {
+        "road_id": 204,
+        "speed": 17.1,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 205,
+        "speed": 14.89,
+        "jamFactor": 0.17
+    },
+    {
+        "road_id": 206,
+        "speed": 11.09,
+        "jamFactor": 1.26
+    },
+    {
+        "road_id": 207,
+        "speed": 14.04,
+        "jamFactor": 0.14
+    },
+    {
+        "road_id": 208,
+        "speed": 12.24,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 209,
+        "speed": 21.69,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 210,
+        "speed": 6.96,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 211,
+        "speed": 3.9,
+        "jamFactor": 1.63
+    },
+    {
+        "road_id": 212,
+        "speed": 7.04,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 213,
+        "speed": 23.28,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 214,
+        "speed": 9.01,
+        "jamFactor": 1.37
+    },
+    {
+        "road_id": 215,
+        "speed": 12.86,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 216,
+        "speed": 21.93,
+        "jamFactor": 0.28
+    },
+    {
+        "road_id": 217,
+        "speed": 6.58,
+        "jamFactor": 1.7
+    },
+    {
+        "road_id": 218,
+        "speed": 11.22,
+        "jamFactor": 1.23
+    },
+    {
+        "road_id": 219,
+        "speed": 9.01,
+        "jamFactor": 1.3
+    },
+    {
+        "road_id": 220,
+        "speed": 10.24,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 221,
+        "speed": 9.05,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 222,
+        "speed": 8.24,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 223,
+        "speed": 8.72,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 224,
+        "speed": 8.93,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 225,
+        "speed": 8.18,
+        "jamFactor": 1.23
+    },
+    {
+        "road_id": 226,
+        "speed": 7.99,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 227,
+        "speed": 9.3,
+        "jamFactor": 1.39
+    },
+    {
+        "road_id": 228,
+        "speed": 11.0,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 229,
+        "speed": 9.25,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 230,
+        "speed": 10.3,
+        "jamFactor": 1.07
+    },
+    {
+        "road_id": 231,
+        "speed": 10.44,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 232,
+        "speed": 9.69,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 233,
+        "speed": 9.73,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 234,
+        "speed": 8.63,
+        "jamFactor": 0.75
+    },
+    {
+        "road_id": 235,
+        "speed": 12.8,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 236,
+        "speed": 8.95,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 237,
+        "speed": 9.95,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 238,
+        "speed": 9.22,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 239,
+        "speed": 5.31,
+        "jamFactor": 1.39
+    },
+    {
+        "road_id": 240,
+        "speed": 8.61,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 241,
+        "speed": 8.39,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 242,
+        "speed": 8.56,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 243,
+        "speed": 21.95,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 244,
+        "speed": 11.58,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 245,
+        "speed": 11.26,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 246,
+        "speed": 11.47,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 247,
+        "speed": 12.05,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 248,
+        "speed": 20.53,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 249,
+        "speed": 7.87,
+        "jamFactor": 1.44
+    },
+    {
+        "road_id": 250,
+        "speed": 7.8,
+        "jamFactor": 2.42
+    },
+    {
+        "road_id": 251,
+        "speed": 6.91,
+        "jamFactor": 1.56
+    },
+    {
+        "road_id": 252,
+        "speed": 7.11,
+        "jamFactor": 1.4
+    },
+    {
+        "road_id": 253,
+        "speed": 13.05,
+        "jamFactor": 1.39
+    },
+    {
+        "road_id": 254,
+        "speed": 12.01,
+        "jamFactor": 1.73
+    },
+    {
+        "road_id": 255,
+        "speed": 9.45,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 256,
+        "speed": 7.38,
+        "jamFactor": 0.7
+    },
+    {
+        "road_id": 257,
+        "speed": 10.17,
+        "jamFactor": 0.96
+    },
+    {
+        "road_id": 258,
+        "speed": 20.87,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 259,
+        "speed": 13.83,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 260,
+        "speed": 7.28,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 261,
+        "speed": 13.1,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 262,
+        "speed": 6.52,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 263,
+        "speed": 11.27,
+        "jamFactor": 0.06
+    },
+    {
+        "road_id": 264,
+        "speed": 8.94,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 265,
+        "speed": 9.26,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 266,
+        "speed": 12.01,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 267,
+        "speed": 10.93,
+        "jamFactor": 0.21
+    },
+    {
+        "road_id": 268,
+        "speed": 13.88,
+        "jamFactor": 0.2
+    },
+    {
+        "road_id": 269,
+        "speed": 10.82,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 270,
+        "speed": 10.68,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 271,
+        "speed": 11.97,
+        "jamFactor": 0.54
+    },
+    {
+        "road_id": 272,
+        "speed": 10.23,
+        "jamFactor": 0.35
+    },
+    {
+        "road_id": 273,
+        "speed": 14.06,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 274,
+        "speed": 10.07,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 275,
+        "speed": 9.61,
+        "jamFactor": 1.31
+    },
+    {
+        "road_id": 276,
+        "speed": 6.78,
+        "jamFactor": 1.86
+    },
+    {
+        "road_id": 277,
+        "speed": 12.0,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 278,
+        "speed": 8.67,
+        "jamFactor": 1.34
+    },
+    {
+        "road_id": 279,
+        "speed": 9.77,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 280,
+        "speed": 13.78,
+        "jamFactor": 1.36
+    },
+    {
+        "road_id": 281,
+        "speed": 16.0,
+        "jamFactor": 1.72
+    },
+    {
+        "road_id": 282,
+        "speed": 13.56,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 283,
+        "speed": 12.81,
+        "jamFactor": 0.23
+    },
+    {
+        "road_id": 284,
+        "speed": 14.14,
+        "jamFactor": 0.05
+    },
+    {
+        "road_id": 285,
+        "speed": 14.5,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 286,
+        "speed": 14.91,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 287,
+        "speed": 12.3,
+        "jamFactor": 0.42
+    },
+    {
+        "road_id": 288,
+        "speed": 10.91,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 289,
+        "speed": 17.87,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 290,
+        "speed": 9.0,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 291,
+        "speed": 19.39,
+        "jamFactor": 1.41
+    },
+    {
+        "road_id": 292,
+        "speed": 7.45,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 293,
+        "speed": 8.01,
+        "jamFactor": 1.21
+    },
+    {
+        "road_id": 294,
+        "speed": 12.79,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 295,
+        "speed": 11.39,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 296,
+        "speed": 8.74,
+        "jamFactor": 0.88
+    },
+    {
+        "road_id": 297,
+        "speed": 20.89,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 298,
+        "speed": 17.87,
+        "jamFactor": 0.08
+    },
+    {
+        "road_id": 299,
+        "speed": 16.26,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 300,
+        "speed": 16.54,
+        "jamFactor": 1.27
+    },
+    {
+        "road_id": 301,
+        "speed": 13.89,
+        "jamFactor": 0.08
+    },
+    {
+        "road_id": 302,
+        "speed": 12.08,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 303,
+        "speed": 14.08,
+        "jamFactor": 0.28
+    },
+    {
+        "road_id": 304,
+        "speed": 11.5,
+        "jamFactor": 1.95
+    },
+    {
+        "road_id": 305,
+        "speed": 15.16,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 306,
+        "speed": 9.69,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 307,
+        "speed": 7.76,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 308,
+        "speed": 10.98,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 309,
+        "speed": 8.15,
+        "jamFactor": 1.68
+    },
+    {
+        "road_id": 310,
+        "speed": 7.24,
+        "jamFactor": 2.34
+    },
+    {
+        "road_id": 311,
+        "speed": 6.78,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 312,
+        "speed": 9.12,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 313,
+        "speed": 11.31,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 314,
+        "speed": 11.43,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 315,
+        "speed": 11.36,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 316,
+        "speed": 7.62,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 317,
+        "speed": 6.6,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 318,
+        "speed": 9.33,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 319,
+        "speed": 8.94,
+        "jamFactor": 2.21
+    },
+    {
+        "road_id": 320,
+        "speed": 6.36,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 321,
+        "speed": 8.81,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 322,
+        "speed": 7.15,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 323,
+        "speed": 21.52,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 324,
+        "speed": 9.61,
+        "jamFactor": 1.6
+    },
+    {
+        "road_id": 325,
+        "speed": 10.16,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 326,
+        "speed": 10.22,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 327,
+        "speed": 16.43,
+        "jamFactor": 0.23
+    },
+    {
+        "road_id": 328,
+        "speed": 14.51,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 329,
+        "speed": 8.79,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 330,
+        "speed": 6.24,
+        "jamFactor": 1.51
+    },
+    {
+        "road_id": 331,
+        "speed": 10.36,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 332,
+        "speed": 8.23,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 333,
+        "speed": 11.11,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 334,
+        "speed": 22.01,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 335,
+        "speed": 10.3,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 336,
+        "speed": 6.41,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 337,
+        "speed": 10.56,
+        "jamFactor": 0.44
+    },
+    {
+        "road_id": 338,
+        "speed": 11.89,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 339,
+        "speed": 21.1,
+        "jamFactor": 0.16
+    },
+    {
+        "road_id": 340,
+        "speed": 9.42,
+        "jamFactor": 1.89
+    },
+    {
+        "road_id": 341,
+        "speed": 7.99,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 342,
+        "speed": 9.78,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 343,
+        "speed": 8.65,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 344,
+        "speed": 8.72,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 345,
+        "speed": 11.11,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 346,
+        "speed": 8.14,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 347,
+        "speed": 9.28,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 348,
+        "speed": 10.94,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 349,
+        "speed": 8.2,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 350,
+        "speed": 7.55,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 351,
+        "speed": 22.89,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 352,
+        "speed": 6.84,
+        "jamFactor": 1.31
+    },
+    {
+        "road_id": 353,
+        "speed": 8.84,
+        "jamFactor": 0.8
+    },
+    {
+        "road_id": 354,
+        "speed": 12.16,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 355,
+        "speed": 7.79,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 356,
+        "speed": 10.64,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 357,
+        "speed": 10.55,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 358,
+        "speed": 8.15,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 359,
+        "speed": 8.65,
+        "jamFactor": 1.42
+    },
+    {
+        "road_id": 360,
+        "speed": 10.49,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 361,
+        "speed": 16.79,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 362,
+        "speed": 8.37,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 363,
+        "speed": 23.06,
+        "jamFactor": 0.29
+    },
+    {
+        "road_id": 364,
+        "speed": 11.87,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 365,
+        "speed": 5.76,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 366,
+        "speed": 7.72,
+        "jamFactor": 1.48
+    },
+    {
+        "road_id": 367,
+        "speed": 7.73,
+        "jamFactor": 1.42
+    },
+    {
+        "road_id": 368,
+        "speed": 8.92,
+        "jamFactor": 1.26
+    },
+    {
+        "road_id": 369,
+        "speed": 6.3,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 370,
+        "speed": 8.92,
+        "jamFactor": 1.86
+    },
+    {
+        "road_id": 371,
+        "speed": 8.69,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 372,
+        "speed": 11.68,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 373,
+        "speed": 9.07,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 374,
+        "speed": 20.25,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 375,
+        "speed": 9.18,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 376,
+        "speed": 8.25,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 377,
+        "speed": 10.96,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 378,
+        "speed": 13.71,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 379,
+        "speed": 13.72,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 380,
+        "speed": 20.93,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 381,
+        "speed": 22.71,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 382,
+        "speed": 12.17,
+        "jamFactor": 0.78
+    },
+    {
+        "road_id": 383,
+        "speed": 6.96,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 384,
+        "speed": 7.48,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 385,
+        "speed": 21.24,
+        "jamFactor": 0.81
+    },
+    {
+        "road_id": 386,
+        "speed": 13.37,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 387,
+        "speed": 6.53,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 388,
+        "speed": 11.91,
+        "jamFactor": 0.78
+    },
+    {
+        "road_id": 389,
+        "speed": 7.24,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 390,
+        "speed": 9.11,
+        "jamFactor": 1.22
+    },
+    {
+        "road_id": 391,
+        "speed": 8.88,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 392,
+        "speed": 12.54,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 393,
+        "speed": 5.55,
+        "jamFactor": 1.72
+    },
+    {
+        "road_id": 394,
+        "speed": 6.12,
+        "jamFactor": 1.39
+    },
+    {
+        "road_id": 395,
+        "speed": 10.38,
+        "jamFactor": 0.79
+    },
+    {
+        "road_id": 396,
+        "speed": 11.11,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 397,
+        "speed": 7.35,
+        "jamFactor": 0.8
+    },
+    {
+        "road_id": 398,
+        "speed": 9.94,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 399,
+        "speed": 8.92,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 400,
+        "speed": 7.42,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 401,
+        "speed": 13.79,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 402,
+        "speed": 9.05,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 403,
+        "speed": 10.88,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 404,
+        "speed": 20.22,
+        "jamFactor": 0.24
+    },
+    {
+        "road_id": 405,
+        "speed": 20.98,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 406,
+        "speed": 7.72,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 407,
+        "speed": 8.17,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 408,
+        "speed": 7.89,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 409,
+        "speed": 10.13,
+        "jamFactor": 0.4
+    },
+    {
+        "road_id": 410,
+        "speed": 7.3,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 411,
+        "speed": 13.68,
+        "jamFactor": 0.11
+    },
+    {
+        "road_id": 412,
+        "speed": 10.8,
+        "jamFactor": 0.81
+    },
+    {
+        "road_id": 413,
+        "speed": 22.65,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 414,
+        "speed": 12.79,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 415,
+        "speed": 9.51,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 416,
+        "speed": 9.45,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 417,
+        "speed": 9.41,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 418,
+        "speed": 11.33,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 419,
+        "speed": 10.0,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 420,
+        "speed": 10.93,
+        "jamFactor": 0.52
+    },
+    {
+        "road_id": 421,
+        "speed": 10.72,
+        "jamFactor": 0.96
+    },
+    {
+        "road_id": 422,
+        "speed": 7.75,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 423,
+        "speed": 12.79,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 424,
+        "speed": 10.55,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 425,
+        "speed": 8.82,
+        "jamFactor": 1.35
+    },
+    {
+        "road_id": 426,
+        "speed": 8.01,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 427,
+        "speed": 5.31,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 428,
+        "speed": 13.69,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 429,
+        "speed": 14.13,
+        "jamFactor": 0.09
+    },
+    {
+        "road_id": 430,
+        "speed": 13.53,
+        "jamFactor": 0.2
+    },
+    {
+        "road_id": 431,
+        "speed": 13.79,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 432,
+        "speed": 12.21,
+        "jamFactor": 0.2
+    },
+    {
+        "road_id": 433,
+        "speed": 14.6,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 434,
+        "speed": 13.31,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 435,
+        "speed": 17.36,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 436,
+        "speed": 7.47,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 437,
+        "speed": 3.14,
+        "jamFactor": 0.22
+    },
+    {
+        "road_id": 438,
+        "speed": 14.36,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 439,
+        "speed": 12.23,
+        "jamFactor": 0.03
+    },
+    {
+        "road_id": 440,
+        "speed": 12.62,
+        "jamFactor": 0.14
+    },
+    {
+        "road_id": 441,
+        "speed": 11.3,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 442,
+        "speed": 13.77,
+        "jamFactor": 0.2
+    },
+    {
+        "road_id": 443,
+        "speed": 8.95,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 444,
+        "speed": 12.23,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 445,
+        "speed": 15.77,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 446,
+        "speed": 13.98,
+        "jamFactor": 0.12
+    },
+    {
+        "road_id": 447,
+        "speed": 7.68,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 448,
+        "speed": 11.62,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 449,
+        "speed": 21.49,
+        "jamFactor": 0.44
+    },
+    {
+        "road_id": 450,
+        "speed": 12.86,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 451,
+        "speed": 13.29,
+        "jamFactor": 0.17
+    },
+    {
+        "road_id": 452,
+        "speed": 8.07,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 453,
+        "speed": 6.02,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 454,
+        "speed": 4.08,
+        "jamFactor": 0.7
+    },
+    {
+        "road_id": 455,
+        "speed": 9.36,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 456,
+        "speed": 22.32,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 457,
+        "speed": 12.11,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 458,
+        "speed": 20.44,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 459,
+        "speed": 9.3,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 460,
+        "speed": 8.16,
+        "jamFactor": 1.8
+    },
+    {
+        "road_id": 461,
+        "speed": 9.41,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 462,
+        "speed": 8.62,
+        "jamFactor": 1.39
+    },
+    {
+        "road_id": 463,
+        "speed": 9.86,
+        "jamFactor": 1.63
+    },
+    {
+        "road_id": 464,
+        "speed": 8.55,
+        "jamFactor": 1.62
+    },
+    {
+        "road_id": 465,
+        "speed": 8.82,
+        "jamFactor": 1.93
+    },
+    {
+        "road_id": 466,
+        "speed": 8.93,
+        "jamFactor": 1.44
+    },
+    {
+        "road_id": 467,
+        "speed": 8.12,
+        "jamFactor": 0.61
+    },
+    {
+        "road_id": 468,
+        "speed": 7.71,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 469,
+        "speed": 13.71,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 470,
+        "speed": 10.76,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 471,
+        "speed": 10.75,
+        "jamFactor": 0.32
+    },
+    {
+        "road_id": 472,
+        "speed": 8.49,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 473,
+        "speed": 14.99,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 474,
+        "speed": 11.93,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 475,
+        "speed": 11.58,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 476,
+        "speed": 11.25,
+        "jamFactor": 1.5
+    },
+    {
+        "road_id": 477,
+        "speed": 11.47,
+        "jamFactor": 0.81
+    },
+    {
+        "road_id": 478,
+        "speed": 5.65,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 479,
+        "speed": 9.14,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 480,
+        "speed": 6.84,
+        "jamFactor": 1.51
+    },
+    {
+        "road_id": 481,
+        "speed": 16.36,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 482,
+        "speed": 22.6,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 483,
+        "speed": 9.93,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 484,
+        "speed": 11.65,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 485,
+        "speed": 10.98,
+        "jamFactor": 1.28
+    },
+    {
+        "road_id": 486,
+        "speed": 11.19,
+        "jamFactor": 2.68
+    },
+    {
+        "road_id": 487,
+        "speed": 5.92,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 488,
+        "speed": 10.1,
+        "jamFactor": 1.28
+    },
+    {
+        "road_id": 489,
+        "speed": 11.1,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 490,
+        "speed": 10.83,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 491,
+        "speed": 12.87,
+        "jamFactor": 0.42
+    },
+    {
+        "road_id": 492,
+        "speed": 9.02,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 493,
+        "speed": 8.43,
+        "jamFactor": 1.43
+    },
+    {
+        "road_id": 494,
+        "speed": 7.86,
+        "jamFactor": 0.96
+    },
+    {
+        "road_id": 495,
+        "speed": 3.91,
+        "jamFactor": 1.63
+    },
+    {
+        "road_id": 496,
+        "speed": 11.22,
+        "jamFactor": 1.14
+    },
+    {
+        "road_id": 497,
+        "speed": 7.93,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 498,
+        "speed": 9.14,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 499,
+        "speed": 9.22,
+        "jamFactor": 1.23
+    },
+    {
+        "road_id": 500,
+        "speed": 10.93,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 501,
+        "speed": 5.51,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 502,
+        "speed": 10.42,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 503,
+        "speed": 8.96,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 504,
+        "speed": 10.13,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 505,
+        "speed": 10.11,
+        "jamFactor": 0.7
+    },
+    {
+        "road_id": 506,
+        "speed": 8.53,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 507,
+        "speed": 8.59,
+        "jamFactor": 1.14
+    },
+    {
+        "road_id": 508,
+        "speed": 9.07,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 509,
+        "speed": 8.63,
+        "jamFactor": 0.78
+    },
+    {
+        "road_id": 510,
+        "speed": 8.23,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 511,
+        "speed": 8.73,
+        "jamFactor": 0.63
+    },
+    {
+        "road_id": 512,
+        "speed": 9.27,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 513,
+        "speed": 8.09,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 514,
+        "speed": 9.03,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 515,
+        "speed": 9.1,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 516,
+        "speed": 12.15,
+        "jamFactor": 1.07
+    },
+    {
+        "road_id": 517,
+        "speed": 12.29,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 518,
+        "speed": 10.78,
+        "jamFactor": 0.63
+    },
+    {
+        "road_id": 519,
+        "speed": 8.88,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 520,
+        "speed": 18.66,
+        "jamFactor": 0.27
+    },
+    {
+        "road_id": 521,
+        "speed": 15.85,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 522,
+        "speed": 15.74,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 523,
+        "speed": 9.72,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 524,
+        "speed": 8.53,
+        "jamFactor": 1.35
+    },
+    {
+        "road_id": 525,
+        "speed": 8.58,
+        "jamFactor": 1.58
+    },
+    {
+        "road_id": 526,
+        "speed": 14.69,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 527,
+        "speed": 7.37,
+        "jamFactor": 1.07
+    },
+    {
+        "road_id": 528,
+        "speed": 6.22,
+        "jamFactor": 1.92
+    },
+    {
+        "road_id": 529,
+        "speed": 7.61,
+        "jamFactor": 1.36
+    },
+    {
+        "road_id": 530,
+        "speed": 10.97,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 531,
+        "speed": 9.88,
+        "jamFactor": 1.33
+    },
+    {
+        "road_id": 532,
+        "speed": 6.27,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 533,
+        "speed": 9.45,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 534,
+        "speed": 12.08,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 535,
+        "speed": 10.37,
+        "jamFactor": 0.96
+    },
+    {
+        "road_id": 536,
+        "speed": 7.3,
+        "jamFactor": 2.18
+    },
+    {
+        "road_id": 537,
+        "speed": 8.5,
+        "jamFactor": 2.26
+    },
+    {
+        "road_id": 538,
+        "speed": 3.36,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 539,
+        "speed": 4.4,
+        "jamFactor": 1.46
+    },
+    {
+        "road_id": 540,
+        "speed": 7.83,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 541,
+        "speed": 7.46,
+        "jamFactor": 0.62
+    },
+    {
+        "road_id": 542,
+        "speed": 13.77,
+        "jamFactor": 0.24
+    },
+    {
+        "road_id": 543,
+        "speed": 8.96,
+        "jamFactor": 0.88
+    },
+    {
+        "road_id": 544,
+        "speed": 11.48,
+        "jamFactor": 0.75
+    },
+    {
+        "road_id": 545,
+        "speed": 11.38,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 546,
+        "speed": 9.03,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 547,
+        "speed": 11.63,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 548,
+        "speed": 11.48,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 549,
+        "speed": 14.12,
+        "jamFactor": 0.61
+    },
+    {
+        "road_id": 550,
+        "speed": 13.29,
+        "jamFactor": 1.21
+    },
+    {
+        "road_id": 551,
+        "speed": 9.45,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 552,
+        "speed": 7.91,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 553,
+        "speed": 7.44,
+        "jamFactor": 1.26
+    },
+    {
+        "road_id": 554,
+        "speed": 10.07,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 555,
+        "speed": 8.46,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 556,
+        "speed": 11.4,
+        "jamFactor": 0.65
+    },
+    {
+        "road_id": 557,
+        "speed": 9.17,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 558,
+        "speed": 11.06,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 559,
+        "speed": 9.75,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 560,
+        "speed": 10.82,
+        "jamFactor": 1.27
+    },
+    {
+        "road_id": 561,
+        "speed": 9.39,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 562,
+        "speed": 7.0,
+        "jamFactor": 1.75
+    },
+    {
+        "road_id": 563,
+        "speed": 8.63,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 564,
+        "speed": 8.07,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 565,
+        "speed": 10.74,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 566,
+        "speed": 7.86,
+        "jamFactor": 0.28
+    },
+    {
+        "road_id": 567,
+        "speed": 10.35,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 568,
+        "speed": 10.13,
+        "jamFactor": 1.63
+    },
+    {
+        "road_id": 569,
+        "speed": 9.85,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 570,
+        "speed": 9.12,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 571,
+        "speed": 13.37,
+        "jamFactor": 0.65
+    },
+    {
+        "road_id": 572,
+        "speed": 6.78,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 573,
+        "speed": 11.65,
+        "jamFactor": 0.08
+    },
+    {
+        "road_id": 574,
+        "speed": 7.95,
+        "jamFactor": 1.63
+    },
+    {
+        "road_id": 575,
+        "speed": 14.71,
+        "jamFactor": 0.76
+    },
+    {
+        "road_id": 576,
+        "speed": 16.46,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 577,
+        "speed": 13.78,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 578,
+        "speed": 15.27,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 579,
+        "speed": 11.04,
+        "jamFactor": 0.25
+    },
+    {
+        "road_id": 580,
+        "speed": 9.15,
+        "jamFactor": 0.28
+    },
+    {
+        "road_id": 581,
+        "speed": 12.28,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 582,
+        "speed": 6.72,
+        "jamFactor": 0.79
+    },
+    {
+        "road_id": 583,
+        "speed": 10.41,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 584,
+        "speed": 8.15,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 585,
+        "speed": 11.91,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 586,
+        "speed": 11.48,
+        "jamFactor": 0.51
+    },
+    {
+        "road_id": 587,
+        "speed": 13.05,
+        "jamFactor": 0.54
+    },
+    {
+        "road_id": 588,
+        "speed": 12.65,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 589,
+        "speed": 11.71,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 590,
+        "speed": 14.19,
+        "jamFactor": 0.09
+    },
+    {
+        "road_id": 591,
+        "speed": 8.6,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 592,
+        "speed": 13.03,
+        "jamFactor": 0.18
+    },
+    {
+        "road_id": 593,
+        "speed": 13.05,
+        "jamFactor": 0.1
+    },
+    {
+        "road_id": 594,
+        "speed": 8.61,
+        "jamFactor": 0.76
+    },
+    {
+        "road_id": 595,
+        "speed": 8.98,
+        "jamFactor": 0.75
+    },
+    {
+        "road_id": 596,
+        "speed": 9.33,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 597,
+        "speed": 12.78,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 598,
+        "speed": 21.6,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 599,
+        "speed": 15.94,
+        "jamFactor": 0.11
+    },
+    {
+        "road_id": 600,
+        "speed": 15.93,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 601,
+        "speed": 6.51,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 602,
+        "speed": 20.26,
+        "jamFactor": 1.56
+    },
+    {
+        "road_id": 603,
+        "speed": 7.62,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 604,
+        "speed": 22.03,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 605,
+        "speed": 5.69,
+        "jamFactor": 1.54
+    },
+    {
+        "road_id": 606,
+        "speed": 9.85,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 607,
+        "speed": 8.89,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 608,
+        "speed": 11.52,
+        "jamFactor": 1.21
+    },
+    {
+        "road_id": 609,
+        "speed": 20.1,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 610,
+        "speed": 9.3,
+        "jamFactor": 1.2
+    },
+    {
+        "road_id": 611,
+        "speed": 21.02,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 612,
+        "speed": 12.34,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 613,
+        "speed": 8.63,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 614,
+        "speed": 10.1,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 615,
+        "speed": 9.52,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 616,
+        "speed": 8.71,
+        "jamFactor": 1.44
+    },
+    {
+        "road_id": 617,
+        "speed": 11.79,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 618,
+        "speed": 5.06,
+        "jamFactor": 3.0
+    },
+    {
+        "road_id": 619,
+        "speed": 9.16,
+        "jamFactor": 1.6
+    },
+    {
+        "road_id": 620,
+        "speed": 20.86,
+        "jamFactor": 1.62
+    },
+    {
+        "road_id": 621,
+        "speed": 6.59,
+        "jamFactor": 1.54
+    },
+    {
+        "road_id": 622,
+        "speed": 16.72,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 623,
+        "speed": 8.77,
+        "jamFactor": 0.24
+    },
+    {
+        "road_id": 624,
+        "speed": 12.39,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 625,
+        "speed": 4.47,
+        "jamFactor": 2.22
+    },
+    {
+        "road_id": 626,
+        "speed": 10.57,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 627,
+        "speed": 10.44,
+        "jamFactor": 2.1
+    },
+    {
+        "road_id": 628,
+        "speed": 10.4,
+        "jamFactor": 1.94
+    },
+    {
+        "road_id": 629,
+        "speed": 9.59,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 630,
+        "speed": 10.91,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 631,
+        "speed": 21.58,
+        "jamFactor": 1.31
+    },
+    {
+        "road_id": 632,
+        "speed": 9.9,
+        "jamFactor": 1.66
+    },
+    {
+        "road_id": 633,
+        "speed": 11.64,
+        "jamFactor": 1.14
+    },
+    {
+        "road_id": 634,
+        "speed": 8.37,
+        "jamFactor": 1.87
+    },
+    {
+        "road_id": 635,
+        "speed": 13.65,
+        "jamFactor": 1.56
+    },
+    {
+        "road_id": 636,
+        "speed": 12.98,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 637,
+        "speed": 12.33,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 638,
+        "speed": 18.94,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 639,
+        "speed": 12.12,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 640,
+        "speed": 15.12,
+        "jamFactor": 0.38
+    },
+    {
+        "road_id": 641,
+        "speed": 11.48,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 642,
+        "speed": 15.13,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 643,
+        "speed": 6.88,
+        "jamFactor": 3.11
+    },
+    {
+        "road_id": 644,
+        "speed": 8.0,
+        "jamFactor": 1.22
+    },
+    {
+        "road_id": 645,
+        "speed": 8.01,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 646,
+        "speed": 11.78,
+        "jamFactor": 1.31
+    },
+    {
+        "road_id": 647,
+        "speed": 5.17,
+        "jamFactor": 2.69
+    },
+    {
+        "road_id": 648,
+        "speed": 10.36,
+        "jamFactor": 1.36
+    },
+    {
+        "road_id": 649,
+        "speed": 17.38,
+        "jamFactor": 0.14
+    },
+    {
+        "road_id": 650,
+        "speed": 5.96,
+        "jamFactor": 2.65
+    },
+    {
+        "road_id": 651,
+        "speed": 11.05,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 652,
+        "speed": 9.4,
+        "jamFactor": 2.1
+    },
+    {
+        "road_id": 653,
+        "speed": 7.43,
+        "jamFactor": 1.68
+    },
+    {
+        "road_id": 654,
+        "speed": 5.21,
+        "jamFactor": 1.72
+    },
+    {
+        "road_id": 655,
+        "speed": 9.42,
+        "jamFactor": 1.98
+    },
+    {
+        "road_id": 656,
+        "speed": 8.79,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 657,
+        "speed": 7.97,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 658,
+        "speed": 10.85,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 659,
+        "speed": 9.17,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 660,
+        "speed": 10.92,
+        "jamFactor": 3.34
+    },
+    {
+        "road_id": 661,
+        "speed": 6.08,
+        "jamFactor": 1.72
+    },
+    {
+        "road_id": 662,
+        "speed": 7.81,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 663,
+        "speed": 8.01,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 664,
+        "speed": 9.8,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 665,
+        "speed": 8.58,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 666,
+        "speed": 10.01,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 667,
+        "speed": 6.78,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 668,
+        "speed": 9.12,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 669,
+        "speed": 7.9,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 670,
+        "speed": 22.5,
+        "jamFactor": 0.61
+    },
+    {
+        "road_id": 671,
+        "speed": 8.27,
+        "jamFactor": 1.26
+    },
+    {
+        "road_id": 672,
+        "speed": 9.85,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 673,
+        "speed": 10.46,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 674,
+        "speed": 10.56,
+        "jamFactor": 1.45
+    },
+    {
+        "road_id": 675,
+        "speed": 9.74,
+        "jamFactor": 0.34
+    },
+    {
+        "road_id": 676,
+        "speed": 10.84,
+        "jamFactor": 1.35
+    },
+    {
+        "road_id": 677,
+        "speed": 11.41,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 678,
+        "speed": 12.32,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 679,
+        "speed": 9.34,
+        "jamFactor": 1.27
+    },
+    {
+        "road_id": 680,
+        "speed": 22.28,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 681,
+        "speed": 21.47,
+        "jamFactor": 0.61
+    },
+    {
+        "road_id": 682,
+        "speed": 8.78,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 683,
+        "speed": 6.05,
+        "jamFactor": 1.5
+    },
+    {
+        "road_id": 684,
+        "speed": 22.17,
+        "jamFactor": 0.51
+    },
+    {
+        "road_id": 685,
+        "speed": 9.83,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 686,
+        "speed": 8.46,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 687,
+        "speed": 8.7,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 688,
+        "speed": 10.31,
+        "jamFactor": 1.3
+    },
+    {
+        "road_id": 689,
+        "speed": 7.96,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 690,
+        "speed": 12.98,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 691,
+        "speed": 14.06,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 692,
+        "speed": 16.55,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 693,
+        "speed": 16.93,
+        "jamFactor": 0.19
+    },
+    {
+        "road_id": 694,
+        "speed": 8.79,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 695,
+        "speed": 10.62,
+        "jamFactor": 1.44
+    },
+    {
+        "road_id": 696,
+        "speed": 20.47,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 697,
+        "speed": 22.04,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 698,
+        "speed": 13.09,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 699,
+        "speed": 8.71,
+        "jamFactor": 1.41
+    },
+    {
+        "road_id": 700,
+        "speed": 13.62,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 701,
+        "speed": 14.71,
+        "jamFactor": 0.29
+    },
+    {
+        "road_id": 702,
+        "speed": 13.4,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 703,
+        "speed": 8.63,
+        "jamFactor": 1.21
+    },
+    {
+        "road_id": 704,
+        "speed": 8.82,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 705,
+        "speed": 12.42,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 706,
+        "speed": 21.68,
+        "jamFactor": 0.62
+    },
+    {
+        "road_id": 707,
+        "speed": 12.98,
+        "jamFactor": 0.26
+    },
+    {
+        "road_id": 708,
+        "speed": 13.28,
+        "jamFactor": 0.61
+    },
+    {
+        "road_id": 709,
+        "speed": 13.0,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 710,
+        "speed": 20.25,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 711,
+        "speed": 12.45,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 712,
+        "speed": 19.63,
+        "jamFactor": 1.48
+    },
+    {
+        "road_id": 713,
+        "speed": 21.49,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 714,
+        "speed": 10.81,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 715,
+        "speed": 22.53,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 716,
+        "speed": 14.74,
+        "jamFactor": 0.22
+    },
+    {
+        "road_id": 717,
+        "speed": 11.79,
+        "jamFactor": 0.1
+    },
+    {
+        "road_id": 718,
+        "speed": 8.52,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 719,
+        "speed": 9.65,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 720,
+        "speed": 18.78,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 721,
+        "speed": 10.99,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 722,
+        "speed": 9.62,
+        "jamFactor": 1.22
+    },
+    {
+        "road_id": 723,
+        "speed": 11.91,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 724,
+        "speed": 6.68,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 725,
+        "speed": 16.52,
+        "jamFactor": 0.62
+    },
+    {
+        "road_id": 726,
+        "speed": 20.29,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 727,
+        "speed": 9.95,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 728,
+        "speed": 6.06,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 729,
+        "speed": 10.12,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 730,
+        "speed": 8.07,
+        "jamFactor": 1.2
+    },
+    {
+        "road_id": 731,
+        "speed": 8.65,
+        "jamFactor": 1.58
+    },
+    {
+        "road_id": 732,
+        "speed": 20.57,
+        "jamFactor": 0.26
+    },
+    {
+        "road_id": 733,
+        "speed": 10.34,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 734,
+        "speed": 9.71,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 735,
+        "speed": 10.41,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 736,
+        "speed": 12.41,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 737,
+        "speed": 8.0,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 738,
+        "speed": 9.57,
+        "jamFactor": 1.22
+    },
+    {
+        "road_id": 739,
+        "speed": 12.71,
+        "jamFactor": 0.21
+    },
+    {
+        "road_id": 740,
+        "speed": 9.65,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 741,
+        "speed": 20.21,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 742,
+        "speed": 8.71,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 743,
+        "speed": 5.84,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 744,
+        "speed": 8.32,
+        "jamFactor": 1.21
+    },
+    {
+        "road_id": 745,
+        "speed": 6.17,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 746,
+        "speed": 9.95,
+        "jamFactor": 0.65
+    },
+    {
+        "road_id": 747,
+        "speed": 7.0,
+        "jamFactor": 1.28
+    },
+    {
+        "road_id": 748,
+        "speed": 7.5,
+        "jamFactor": 2.17
+    },
+    {
+        "road_id": 749,
+        "speed": 10.5,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 750,
+        "speed": 11.83,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 751,
+        "speed": 9.98,
+        "jamFactor": 0.51
+    },
+    {
+        "road_id": 752,
+        "speed": 11.82,
+        "jamFactor": 0.4
+    },
+    {
+        "road_id": 753,
+        "speed": 14.52,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 754,
+        "speed": 14.2,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 755,
+        "speed": 11.31,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 756,
+        "speed": 12.28,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 757,
+        "speed": 13.55,
+        "jamFactor": 0.42
+    },
+    {
+        "road_id": 758,
+        "speed": 9.42,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 759,
+        "speed": 13.2,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 760,
+        "speed": 12.62,
+        "jamFactor": 0.1
+    },
+    {
+        "road_id": 761,
+        "speed": 9.82,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 762,
+        "speed": 8.71,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 763,
+        "speed": 9.94,
+        "jamFactor": 0.25
+    },
+    {
+        "road_id": 764,
+        "speed": 7.12,
+        "jamFactor": 1.31
+    },
+    {
+        "road_id": 765,
+        "speed": 9.92,
+        "jamFactor": 1.21
+    },
+    {
+        "road_id": 766,
+        "speed": 8.95,
+        "jamFactor": 1.47
+    },
+    {
+        "road_id": 767,
+        "speed": 9.33,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 768,
+        "speed": 11.4,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 769,
+        "speed": 23.58,
+        "jamFactor": 0.57
+    },
+    {
+        "road_id": 770,
+        "speed": 9.83,
+        "jamFactor": 1.07
+    },
+    {
+        "road_id": 771,
+        "speed": 12.7,
+        "jamFactor": 0.63
+    },
+    {
+        "road_id": 772,
+        "speed": 12.12,
+        "jamFactor": 0.35
+    },
+    {
+        "road_id": 773,
+        "speed": 6.12,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 774,
+        "speed": 5.86,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 775,
+        "speed": 14.22,
+        "jamFactor": 0.29
+    },
+    {
+        "road_id": 776,
+        "speed": 7.75,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 777,
+        "speed": 9.09,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 778,
+        "speed": 7.38,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 779,
+        "speed": 7.81,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 780,
+        "speed": 7.75,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 781,
+        "speed": 8.84,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 782,
+        "speed": 8.68,
+        "jamFactor": 1.28
+    },
+    {
+        "road_id": 783,
+        "speed": 20.73,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 784,
+        "speed": 9.64,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 785,
+        "speed": 7.97,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 786,
+        "speed": 8.21,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 787,
+        "speed": 8.32,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 788,
+        "speed": 7.62,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 789,
+        "speed": 10.45,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 790,
+        "speed": 6.54,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 791,
+        "speed": 7.78,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 792,
+        "speed": 8.86,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 793,
+        "speed": 11.26,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 794,
+        "speed": 6.75,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 795,
+        "speed": 7.42,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 796,
+        "speed": 8.61,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 797,
+        "speed": 13.24,
+        "jamFactor": 1.07
+    },
+    {
+        "road_id": 798,
+        "speed": 9.83,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 799,
+        "speed": 13.06,
+        "jamFactor": 0.06
+    },
+    {
+        "road_id": 800,
+        "speed": 13.39,
+        "jamFactor": 0.34
+    },
+    {
+        "road_id": 801,
+        "speed": 14.09,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 802,
+        "speed": 10.55,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 803,
+        "speed": 16.96,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 804,
+        "speed": 9.09,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 805,
+        "speed": 21.14,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 806,
+        "speed": 8.43,
+        "jamFactor": 0.75
+    },
+    {
+        "road_id": 807,
+        "speed": 7.7,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 808,
+        "speed": 6.76,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 809,
+        "speed": 22.24,
+        "jamFactor": 0.62
+    },
+    {
+        "road_id": 810,
+        "speed": 11.6,
+        "jamFactor": 0.75
+    },
+    {
+        "road_id": 811,
+        "speed": 12.04,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 812,
+        "speed": 14.0,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 813,
+        "speed": 10.1,
+        "jamFactor": 0.63
+    },
+    {
+        "road_id": 814,
+        "speed": 11.35,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 815,
+        "speed": 11.32,
+        "jamFactor": 0.21
+    },
+    {
+        "road_id": 816,
+        "speed": 10.67,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 817,
+        "speed": 14.73,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 818,
+        "speed": 11.5,
+        "jamFactor": 0.22
+    },
+    {
+        "road_id": 819,
+        "speed": 16.07,
+        "jamFactor": 0.18
+    },
+    {
+        "road_id": 820,
+        "speed": 13.43,
+        "jamFactor": 0.34
+    },
+    {
+        "road_id": 821,
+        "speed": 11.8,
+        "jamFactor": 0.3
+    },
+    {
+        "road_id": 822,
+        "speed": 7.31,
+        "jamFactor": 0.51
+    },
+    {
+        "road_id": 823,
+        "speed": 8.75,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 824,
+        "speed": 5.39,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 825,
+        "speed": 12.88,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 826,
+        "speed": 9.22,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 827,
+        "speed": 6.75,
+        "jamFactor": 1.31
+    },
+    {
+        "road_id": 828,
+        "speed": 6.72,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 829,
+        "speed": 21.22,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 830,
+        "speed": 14.1,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 831,
+        "speed": 21.99,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 832,
+        "speed": 21.64,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 833,
+        "speed": 9.44,
+        "jamFactor": 1.44
+    },
+    {
+        "road_id": 834,
+        "speed": 10.31,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 835,
+        "speed": 6.78,
+        "jamFactor": 1.47
+    },
+    {
+        "road_id": 836,
+        "speed": 7.06,
+        "jamFactor": 1.49
+    },
+    {
+        "road_id": 837,
+        "speed": 8.37,
+        "jamFactor": 1.2
+    },
+    {
+        "road_id": 838,
+        "speed": 10.24,
+        "jamFactor": 0.8
+    },
+    {
+        "road_id": 839,
+        "speed": 9.63,
+        "jamFactor": 0.96
+    },
+    {
+        "road_id": 840,
+        "speed": 9.31,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 841,
+        "speed": 8.82,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 842,
+        "speed": 10.81,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 843,
+        "speed": 9.9,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 844,
+        "speed": 11.04,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 845,
+        "speed": 8.01,
+        "jamFactor": 0.96
+    },
+    {
+        "road_id": 846,
+        "speed": 6.36,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 847,
+        "speed": 9.3,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 848,
+        "speed": 22.68,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 849,
+        "speed": 10.88,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 850,
+        "speed": 8.95,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 851,
+        "speed": 14.1,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 852,
+        "speed": 12.28,
+        "jamFactor": 0.81
+    },
+    {
+        "road_id": 853,
+        "speed": 9.72,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 854,
+        "speed": 17.97,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 855,
+        "speed": 7.3,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 856,
+        "speed": 9.83,
+        "jamFactor": 0.62
+    },
+    {
+        "road_id": 857,
+        "speed": 4.4,
+        "jamFactor": 0.96
+    },
+    {
+        "road_id": 858,
+        "speed": 6.78,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 859,
+        "speed": 20.86,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 860,
+        "speed": 7.81,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 861,
+        "speed": 7.61,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 862,
+        "speed": 9.44,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 863,
+        "speed": 10.1,
+        "jamFactor": 1.98
+    },
+    {
+        "road_id": 864,
+        "speed": 7.58,
+        "jamFactor": 1.58
+    },
+    {
+        "road_id": 865,
+        "speed": 20.8,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 866,
+        "speed": 6.0,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 867,
+        "speed": 11.21,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 868,
+        "speed": 19.99,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 869,
+        "speed": 9.72,
+        "jamFactor": 0.25
+    },
+    {
+        "road_id": 870,
+        "speed": 7.15,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 871,
+        "speed": 8.78,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 872,
+        "speed": 13.2,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 873,
+        "speed": 7.79,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 874,
+        "speed": 10.79,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 875,
+        "speed": 14.85,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 876,
+        "speed": 17.1,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 877,
+        "speed": 11.83,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 878,
+        "speed": 10.07,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 879,
+        "speed": 9.99,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 880,
+        "speed": 7.93,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 881,
+        "speed": 21.16,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 882,
+        "speed": 7.15,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 883,
+        "speed": 13.8,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 884,
+        "speed": 13.63,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 885,
+        "speed": 10.31,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 886,
+        "speed": 9.83,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 887,
+        "speed": 9.75,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 888,
+        "speed": 10.02,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 889,
+        "speed": 12.11,
+        "jamFactor": 0.1
+    },
+    {
+        "road_id": 890,
+        "speed": 13.26,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 891,
+        "speed": 6.89,
+        "jamFactor": 1.52
+    },
+    {
+        "road_id": 892,
+        "speed": 7.18,
+        "jamFactor": 1.7
+    },
+    {
+        "road_id": 893,
+        "speed": 10.69,
+        "jamFactor": 0.27
+    },
+    {
+        "road_id": 894,
+        "speed": 8.4,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 895,
+        "speed": 8.11,
+        "jamFactor": 0.88
+    },
+    {
+        "road_id": 896,
+        "speed": 7.65,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 897,
+        "speed": 10.96,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 898,
+        "speed": 8.5,
+        "jamFactor": 1.2
+    },
+    {
+        "road_id": 899,
+        "speed": 14.24,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 900,
+        "speed": 6.64,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 901,
+        "speed": 7.35,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 902,
+        "speed": 15.99,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 903,
+        "speed": 11.72,
+        "jamFactor": 0.4
+    },
+    {
+        "road_id": 904,
+        "speed": 8.48,
+        "jamFactor": 0.18
+    },
+    {
+        "road_id": 905,
+        "speed": 10.71,
+        "jamFactor": 0.13
+    },
+    {
+        "road_id": 906,
+        "speed": 10.64,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 907,
+        "speed": 21.44,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 908,
+        "speed": 10.53,
+        "jamFactor": 0.46
+    },
+    {
+        "road_id": 909,
+        "speed": 7.18,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 910,
+        "speed": 6.13,
+        "jamFactor": 1.33
+    },
+    {
+        "road_id": 911,
+        "speed": 11.93,
+        "jamFactor": 0.09
+    },
+    {
+        "road_id": 912,
+        "speed": 9.6,
+        "jamFactor": 1.14
+    },
+    {
+        "road_id": 913,
+        "speed": 12.56,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 914,
+        "speed": 13.44,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 915,
+        "speed": 15.57,
+        "jamFactor": 0.65
+    },
+    {
+        "road_id": 916,
+        "speed": 10.12,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 917,
+        "speed": 10.65,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 918,
+        "speed": 9.51,
+        "jamFactor": 1.89
+    },
+    {
+        "road_id": 919,
+        "speed": 5.96,
+        "jamFactor": 1.41
+    },
+    {
+        "road_id": 920,
+        "speed": 13.23,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 921,
+        "speed": 9.76,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 922,
+        "speed": 8.05,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 923,
+        "speed": 7.77,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 924,
+        "speed": 9.47,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 925,
+        "speed": 12.12,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 926,
+        "speed": 7.67,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 927,
+        "speed": 7.9,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 928,
+        "speed": 12.09,
+        "jamFactor": 0.46
+    },
+    {
+        "road_id": 929,
+        "speed": 9.63,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 930,
+        "speed": 7.71,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 931,
+        "speed": 20.28,
+        "jamFactor": 0.32
+    },
+    {
+        "road_id": 932,
+        "speed": 9.18,
+        "jamFactor": 0.32
+    },
+    {
+        "road_id": 933,
+        "speed": 10.75,
+        "jamFactor": 0.8
+    },
+    {
+        "road_id": 934,
+        "speed": 14.02,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 935,
+        "speed": 12.47,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 936,
+        "speed": 13.82,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 937,
+        "speed": 11.95,
+        "jamFactor": 0.26
+    },
+    {
+        "road_id": 938,
+        "speed": 13.41,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 939,
+        "speed": 11.53,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 940,
+        "speed": 13.63,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 941,
+        "speed": 9.24,
+        "jamFactor": 0.61
+    },
+    {
+        "road_id": 942,
+        "speed": 9.1,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 943,
+        "speed": 16.85,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 944,
+        "speed": 12.94,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 945,
+        "speed": 7.93,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 946,
+        "speed": 17.72,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 947,
+        "speed": 13.57,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 948,
+        "speed": 7.3,
+        "jamFactor": 0.06
+    },
+    {
+        "road_id": 949,
+        "speed": 13.42,
+        "jamFactor": 0.28
+    },
+    {
+        "road_id": 950,
+        "speed": 13.91,
+        "jamFactor": 0.09
+    },
+    {
+        "road_id": 951,
+        "speed": 12.87,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 952,
+        "speed": 13.22,
+        "jamFactor": 0.11
+    },
+    {
+        "road_id": 953,
+        "speed": 6.63,
+        "jamFactor": 1.47
+    },
+    {
+        "road_id": 954,
+        "speed": 12.8,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 955,
+        "speed": 11.8,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 956,
+        "speed": 10.92,
+        "jamFactor": 0.52
+    },
+    {
+        "road_id": 957,
+        "speed": 13.06,
+        "jamFactor": 0.61
+    },
+    {
+        "road_id": 958,
+        "speed": 11.17,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 959,
+        "speed": 12.82,
+        "jamFactor": 0.34
+    },
+    {
+        "road_id": 960,
+        "speed": 12.33,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 961,
+        "speed": 13.66,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 962,
+        "speed": 13.43,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 963,
+        "speed": 12.83,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 964,
+        "speed": 7.78,
+        "jamFactor": 1.38
+    },
+    {
+        "road_id": 965,
+        "speed": 7.77,
+        "jamFactor": 1.61
+    },
+    {
+        "road_id": 966,
+        "speed": 9.34,
+        "jamFactor": 1.55
+    },
+    {
+        "road_id": 967,
+        "speed": 22.52,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 968,
+        "speed": 20.24,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 969,
+        "speed": 19.84,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 970,
+        "speed": 14.4,
+        "jamFactor": 0.46
+    },
+    {
+        "road_id": 971,
+        "speed": 15.01,
+        "jamFactor": 0.52
+    },
+    {
+        "road_id": 972,
+        "speed": 21.14,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 973,
+        "speed": 11.35,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 974,
+        "speed": 11.17,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 975,
+        "speed": 22.64,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 976,
+        "speed": 20.32,
+        "jamFactor": 0.44
+    },
+    {
+        "road_id": 977,
+        "speed": 11.41,
+        "jamFactor": 0.7
+    },
+    {
+        "road_id": 978,
+        "speed": 11.11,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 979,
+        "speed": 8.38,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 980,
+        "speed": 10.16,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 981,
+        "speed": 13.75,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 982,
+        "speed": 11.24,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 983,
+        "speed": 12.98,
+        "jamFactor": 0.23
+    },
+    {
+        "road_id": 984,
+        "speed": 11.02,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 985,
+        "speed": 7.91,
+        "jamFactor": 0.63
+    },
+    {
+        "road_id": 986,
+        "speed": 11.16,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 987,
+        "speed": 7.88,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 988,
+        "speed": 13.42,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 989,
+        "speed": 9.74,
+        "jamFactor": 0.4
+    },
+    {
+        "road_id": 990,
+        "speed": 12.74,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 991,
+        "speed": 9.78,
+        "jamFactor": 0.65
+    },
+    {
+        "road_id": 992,
+        "speed": 10.24,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 993,
+        "speed": 14.65,
+        "jamFactor": 0.03
+    },
+    {
+        "road_id": 994,
+        "speed": 17.18,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 995,
+        "speed": 7.59,
+        "jamFactor": 0.38
+    },
+    {
+        "road_id": 996,
+        "speed": 7.78,
+        "jamFactor": 0.46
+    },
+    {
+        "road_id": 997,
+        "speed": 6.67,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 998,
+        "speed": 13.94,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 999,
+        "speed": 10.93,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 1000,
+        "speed": 9.3,
+        "jamFactor": 1.3
+    },
+    {
+        "road_id": 1001,
+        "speed": 7.83,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 1002,
+        "speed": 7.36,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 1003,
+        "speed": 6.92,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 1004,
+        "speed": 8.5,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 1005,
+        "speed": 13.41,
+        "jamFactor": 0.65
+    },
+    {
+        "road_id": 1006,
+        "speed": 22.46,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 1007,
+        "speed": 9.72,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 1008,
+        "speed": 7.44,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 1009,
+        "speed": 10.58,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 1010,
+        "speed": 9.72,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 1011,
+        "speed": 8.69,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 1012,
+        "speed": 9.31,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 1013,
+        "speed": 9.01,
+        "jamFactor": 1.41
+    },
+    {
+        "road_id": 1014,
+        "speed": 22.69,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 1015,
+        "speed": 10.23,
+        "jamFactor": 0.32
+    },
+    {
+        "road_id": 1016,
+        "speed": 6.64,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 1017,
+        "speed": 10.23,
+        "jamFactor": 0.44
+    },
+    {
+        "road_id": 1018,
+        "speed": 4.05,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 1019,
+        "speed": 9.78,
+        "jamFactor": 0.19
+    },
+    {
+        "road_id": 1020,
+        "speed": 9.56,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 1021,
+        "speed": 10.08,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 1022,
+        "speed": 7.74,
+        "jamFactor": 1.43
+    },
+    {
+        "road_id": 1023,
+        "speed": 6.73,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 1024,
+        "speed": 20.63,
+        "jamFactor": 1.5
+    },
+    {
+        "road_id": 1025,
+        "speed": 9.2,
+        "jamFactor": 1.52
+    },
+    {
+        "road_id": 1026,
+        "speed": 4.17,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 1027,
+        "speed": 7.6,
+        "jamFactor": 1.46
+    },
+    {
+        "road_id": 1028,
+        "speed": 5.66,
+        "jamFactor": 2.05
+    },
+    {
+        "road_id": 1029,
+        "speed": 10.02,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 1030,
+        "speed": 5.17,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 1031,
+        "speed": 8.73,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 1032,
+        "speed": 6.66,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 1033,
+        "speed": 12.3,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 1034,
+        "speed": 13.62,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 1035,
+        "speed": 21.56,
+        "jamFactor": 0.57
+    },
+    {
+        "road_id": 1036,
+        "speed": 11.3,
+        "jamFactor": 0.79
+    },
+    {
+        "road_id": 1037,
+        "speed": 12.22,
+        "jamFactor": 0.46
+    },
+    {
+        "road_id": 1038,
+        "speed": 13.32,
+        "jamFactor": 0.79
+    },
+    {
+        "road_id": 1039,
+        "speed": 10.02,
+        "jamFactor": 0.88
+    },
+    {
+        "road_id": 1040,
+        "speed": 17.07,
+        "jamFactor": 0.12
+    },
+    {
+        "road_id": 1041,
+        "speed": 17.24,
+        "jamFactor": 0.21
+    },
+    {
+        "road_id": 1042,
+        "speed": 10.06,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 1043,
+        "speed": 10.51,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 1044,
+        "speed": 19.47,
+        "jamFactor": 0.52
+    },
+    {
+        "road_id": 1045,
+        "speed": 20.87,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 1046,
+        "speed": 9.62,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 1047,
+        "speed": 11.21,
+        "jamFactor": 1.26
+    },
+    {
+        "road_id": 1048,
+        "speed": 12.39,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 1049,
+        "speed": 10.5,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 1050,
+        "speed": 12.44,
+        "jamFactor": 0.11
+    },
+    {
+        "road_id": 1051,
+        "speed": 11.02,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 1052,
+        "speed": 8.07,
+        "jamFactor": 1.3
+    },
+    {
+        "road_id": 1053,
+        "speed": 5.84,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 1054,
+        "speed": 12.02,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 1055,
+        "speed": 21.8,
+        "jamFactor": 0.79
+    },
+    {
+        "road_id": 1056,
+        "speed": 11.85,
+        "jamFactor": 1.37
+    },
+    {
+        "road_id": 1057,
+        "speed": 7.47,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 1058,
+        "speed": 6.05,
+        "jamFactor": 0.42
+    },
+    {
+        "road_id": 1059,
+        "speed": 21.49,
+        "jamFactor": 0.26
+    },
+    {
+        "road_id": 1060,
+        "speed": 8.22,
+        "jamFactor": 1.38
+    },
+    {
+        "road_id": 1061,
+        "speed": 12.09,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 1062,
+        "speed": 9.24,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 1063,
+        "speed": 10.96,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 1064,
+        "speed": 8.82,
+        "jamFactor": 1.33
+    },
+    {
+        "road_id": 1065,
+        "speed": 8.51,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 1066,
+        "speed": 21.76,
+        "jamFactor": 0.96
+    },
+    {
+        "road_id": 1067,
+        "speed": 10.06,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 1068,
+        "speed": 8.05,
+        "jamFactor": 1.46
+    },
+    {
+        "road_id": 1069,
+        "speed": 22.53,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 1070,
+        "speed": 11.05,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 1071,
+        "speed": 13.14,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 1072,
+        "speed": 14.42,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 1073,
+        "speed": 10.45,
+        "jamFactor": 1.3
+    },
+    {
+        "road_id": 1074,
+        "speed": 13.71,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 1075,
+        "speed": 8.32,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 1076,
+        "speed": 8.68,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 1077,
+        "speed": 11.43,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 1078,
+        "speed": 10.14,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 1079,
+        "speed": 7.21,
+        "jamFactor": 1.74
+    },
+    {
+        "road_id": 1080,
+        "speed": 9.85,
+        "jamFactor": 1.35
+    },
+    {
+        "road_id": 1081,
+        "speed": 7.71,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 1082,
+        "speed": 6.78,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 1083,
+        "speed": 15.44,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 1084,
+        "speed": 12.19,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 1085,
+        "speed": 9.0,
+        "jamFactor": 0.21
+    },
+    {
+        "road_id": 1086,
+        "speed": 8.64,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 1087,
+        "speed": 7.83,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 1088,
+        "speed": 9.43,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 1089,
+        "speed": 8.5,
+        "jamFactor": 1.23
+    },
+    {
+        "road_id": 1090,
+        "speed": 8.01,
+        "jamFactor": 1.2
+    },
+    {
+        "road_id": 1091,
+        "speed": 9.34,
+        "jamFactor": 1.31
+    },
+    {
+        "road_id": 1092,
+        "speed": 9.02,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 1093,
+        "speed": 8.54,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 1094,
+        "speed": 6.86,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 1095,
+        "speed": 6.95,
+        "jamFactor": 1.54
+    },
+    {
+        "road_id": 1096,
+        "speed": 8.64,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 1097,
+        "speed": 17.87,
+        "jamFactor": 0.13
+    },
+    {
+        "road_id": 1098,
+        "speed": 6.79,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 1099,
+        "speed": 13.04,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 1100,
+        "speed": 14.92,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 1101,
+        "speed": 11.48,
+        "jamFactor": 0.27
+    },
+    {
+        "road_id": 1102,
+        "speed": 7.68,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 1103,
+        "speed": 9.19,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 1104,
+        "speed": 15.02,
+        "jamFactor": 0.03
+    },
+    {
+        "road_id": 1105,
+        "speed": 12.52,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 1106,
+        "speed": 8.11,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 1107,
+        "speed": 15.36,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 1108,
+        "speed": 8.75,
+        "jamFactor": 0.3
+    },
+    {
+        "road_id": 1109,
+        "speed": 8.56,
+        "jamFactor": 0.54
+    },
+    {
+        "road_id": 1110,
+        "speed": 11.14,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 1111,
+        "speed": 12.04,
+        "jamFactor": 0.12
+    },
+    {
+        "road_id": 1112,
+        "speed": 16.33,
+        "jamFactor": 0.06
+    },
+    {
+        "road_id": 1113,
+        "speed": 9.16,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 1114,
+        "speed": 13.96,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 1115,
+        "speed": 13.38,
+        "jamFactor": 0.75
+    },
+    {
+        "road_id": 1116,
+        "speed": 13.91,
+        "jamFactor": 0.14
+    },
+    {
+        "road_id": 1117,
+        "speed": 12.62,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 1118,
+        "speed": 15.13,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 1119,
+        "speed": 12.56,
+        "jamFactor": 1.74
+    },
+    {
+        "road_id": 1120,
+        "speed": 22.24,
+        "jamFactor": 0.52
+    },
+    {
+        "road_id": 1121,
+        "speed": 13.9,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 1122,
+        "speed": 13.76,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 1123,
+        "speed": 9.23,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 1124,
+        "speed": 13.09,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 1125,
+        "speed": 10.15,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 1126,
+        "speed": 11.76,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 1127,
+        "speed": 9.11,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 1128,
+        "speed": 10.64,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 1129,
+        "speed": 4.59,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 1130,
+        "speed": 5.86,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 1131,
+        "speed": 10.58,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 1132,
+        "speed": 15.93,
+        "jamFactor": 0.09
+    },
+    {
+        "road_id": 1133,
+        "speed": 12.27,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 1134,
+        "speed": 12.71,
+        "jamFactor": 1.14
+    },
+    {
+        "road_id": 1135,
+        "speed": 9.21,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 1136,
+        "speed": 11.52,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 1137,
+        "speed": 10.15,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 1138,
+        "speed": 11.95,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 1139,
+        "speed": 9.17,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 1140,
+        "speed": 12.74,
+        "jamFactor": 0.21
+    },
+    {
+        "road_id": 1141,
+        "speed": 8.13,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 1142,
+        "speed": 9.68,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 1143,
+        "speed": 11.83,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 1144,
+        "speed": 8.26,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 1145,
+        "speed": 9.65,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 1146,
+        "speed": 7.09,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 1147,
+        "speed": 13.19,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 1148,
+        "speed": 7.69,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 1149,
+        "speed": 10.83,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 1150,
+        "speed": 9.12,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 1151,
+        "speed": 8.72,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 1152,
+        "speed": 7.65,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 1153,
+        "speed": 8.05,
+        "jamFactor": 1.14
+    },
+    {
+        "road_id": 1154,
+        "speed": 15.63,
+        "jamFactor": 0.32
+    },
+    {
+        "road_id": 1155,
+        "speed": 12.23,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 1156,
+        "speed": 10.7,
+        "jamFactor": 1.76
+    },
+    {
+        "road_id": 1157,
+        "speed": 9.81,
+        "jamFactor": 0.81
+    },
+    {
+        "road_id": 1158,
+        "speed": 9.84,
+        "jamFactor": 1.8
+    },
+    {
+        "road_id": 1159,
+        "speed": 10.41,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 1160,
+        "speed": 11.74,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 1161,
+        "speed": 10.46,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 1162,
+        "speed": 9.52,
+        "jamFactor": 1.48
+    },
+    {
+        "road_id": 1163,
+        "speed": 8.25,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 1164,
+        "speed": 6.16,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 1165,
+        "speed": 9.19,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 1166,
+        "speed": 7.65,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 1167,
+        "speed": 6.63,
+        "jamFactor": 1.47
+    },
+    {
+        "road_id": 1168,
+        "speed": 10.68,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 1169,
+        "speed": 9.63,
+        "jamFactor": 1.55
+    },
+    {
+        "road_id": 1170,
+        "speed": 11.12,
+        "jamFactor": 1.1
+    },
+    {
+        "road_id": 1171,
+        "speed": 6.05,
+        "jamFactor": 1.5
+    },
+    {
+        "road_id": 1172,
+        "speed": 9.39,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 1173,
+        "speed": 16.72,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 1174,
+        "speed": 12.04,
+        "jamFactor": 1.22
+    },
+    {
+        "road_id": 1175,
+        "speed": 12.6,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 1176,
+        "speed": 9.87,
+        "jamFactor": 0.17
+    },
+    {
+        "road_id": 1177,
+        "speed": 9.4,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 1178,
+        "speed": 9.21,
+        "jamFactor": 0.76
+    },
+    {
+        "road_id": 1179,
+        "speed": 21.13,
+        "jamFactor": 0.29
+    },
+    {
+        "road_id": 1180,
+        "speed": 11.03,
+        "jamFactor": 0.27
+    },
+    {
+        "road_id": 1181,
+        "speed": 10.97,
+        "jamFactor": 0.26
+    },
+    {
+        "road_id": 1182,
+        "speed": 12.14,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 1183,
+        "speed": 6.95,
+        "jamFactor": 1.63
+    },
+    {
+        "road_id": 1184,
+        "speed": 7.34,
+        "jamFactor": 1.65
+    },
+    {
+        "road_id": 1185,
+        "speed": 10.96,
+        "jamFactor": 1.7
+    },
+    {
+        "road_id": 1186,
+        "speed": 11.17,
+        "jamFactor": 0.44
+    },
+    {
+        "road_id": 1187,
+        "speed": 10.64,
+        "jamFactor": 0.65
+    },
+    {
+        "road_id": 1188,
+        "speed": 11.23,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 1189,
+        "speed": 7.94,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 1190,
+        "speed": 10.84,
+        "jamFactor": 0.2
+    },
+    {
+        "road_id": 1191,
+        "speed": 11.52,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 1192,
+        "speed": 12.85,
+        "jamFactor": 0.06
+    },
+    {
+        "road_id": 1193,
+        "speed": 7.2,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 1194,
+        "speed": 22.31,
+        "jamFactor": 0.46
+    },
+    {
+        "road_id": 1195,
+        "speed": 10.5,
+        "jamFactor": 1.21
+    },
+    {
+        "road_id": 1196,
+        "speed": 9.52,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 1197,
+        "speed": 22.53,
+        "jamFactor": 0.38
+    },
+    {
+        "road_id": 1198,
+        "speed": 10.08,
+        "jamFactor": 1.24
+    },
+    {
+        "road_id": 1199,
+        "speed": 10.02,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 1200,
+        "speed": 5.58,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 1201,
+        "speed": 14.39,
+        "jamFactor": 0.57
+    },
+    {
+        "road_id": 1202,
+        "speed": 8.66,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 1203,
+        "speed": 7.14,
+        "jamFactor": 1.83
+    },
+    {
+        "road_id": 1204,
+        "speed": 11.14,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 1205,
+        "speed": 10.91,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 1206,
+        "speed": 8.97,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 1207,
+        "speed": 8.43,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 1208,
+        "speed": 8.52,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 1209,
+        "speed": 8.69,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 1210,
+        "speed": 10.78,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 1211,
+        "speed": 15.25,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 1212,
+        "speed": 14.74,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 1213,
+        "speed": 6.65,
+        "jamFactor": 1.89
+    },
+    {
+        "road_id": 1214,
+        "speed": 11.36,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 1215,
+        "speed": 5.69,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 1216,
+        "speed": 6.86,
+        "jamFactor": 1.58
+    },
+    {
+        "road_id": 1217,
+        "speed": 7.42,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 1218,
+        "speed": 6.96,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 1219,
+        "speed": 12.5,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 1220,
+        "speed": 11.39,
+        "jamFactor": 0.05
+    },
+    {
+        "road_id": 1221,
+        "speed": 10.66,
+        "jamFactor": 0.27
+    },
+    {
+        "road_id": 1222,
+        "speed": 18.17,
+        "jamFactor": 0.32
+    },
+    {
+        "road_id": 1223,
+        "speed": 8.11,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 1224,
+        "speed": 9.12,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 1225,
+        "speed": 16.48,
+        "jamFactor": 0.78
+    },
+    {
+        "road_id": 1226,
+        "speed": 15.73,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 1227,
+        "speed": 22.95,
+        "jamFactor": 0.75
+    },
+    {
+        "road_id": 1228,
+        "speed": 12.07,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 1229,
+        "speed": 11.36,
+        "jamFactor": 0.18
+    },
+    {
+        "road_id": 1230,
+        "speed": 11.2,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 1231,
+        "speed": 12.27,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 1232,
+        "speed": 13.52,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 1233,
+        "speed": 11.02,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 1234,
+        "speed": 6.93,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 1235,
+        "speed": 18.61,
+        "jamFactor": 0.1
+    },
+    {
+        "road_id": 1236,
+        "speed": 10.55,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 1237,
+        "speed": 8.65,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 1238,
+        "speed": 13.26,
+        "jamFactor": 0.03
+    },
+    {
+        "road_id": 1239,
+        "speed": 7.46,
+        "jamFactor": 0.3
+    },
+    {
+        "road_id": 1240,
+        "speed": 8.18,
+        "jamFactor": 0.38
+    },
+    {
+        "road_id": 1241,
+        "speed": 13.82,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 1242,
+        "speed": 10.03,
+        "jamFactor": 0.53
+    },
+    {
+        "road_id": 1243,
+        "speed": 12.87,
+        "jamFactor": 0.19
+    },
+    {
+        "road_id": 1244,
+        "speed": 9.59,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 1245,
+        "speed": 14.39,
+        "jamFactor": 0.1
+    },
+    {
+        "road_id": 1246,
+        "speed": 14.28,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 1247,
+        "speed": 11.56,
+        "jamFactor": 0.18
+    },
+    {
+        "road_id": 1248,
+        "speed": 12.93,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 1249,
+        "speed": 13.54,
+        "jamFactor": 0.03
+    },
+    {
+        "road_id": 1250,
+        "speed": 10.22,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 1251,
+        "speed": 13.71,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 1252,
+        "speed": 11.95,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 1253,
+        "speed": 11.72,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 1254,
+        "speed": 7.98,
+        "jamFactor": 1.53
+    },
+    {
+        "road_id": 1255,
+        "speed": 22.98,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 1256,
+        "speed": 10.38,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 1257,
+        "speed": 11.12,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 1258,
+        "speed": 7.02,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 1259,
+        "speed": 10.54,
+        "jamFactor": 0.15
+    },
+    {
+        "road_id": 1260,
+        "speed": 12.35,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 1261,
+        "speed": 12.18,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 1262,
+        "speed": 13.77,
+        "jamFactor": 0.06
+    },
+    {
+        "road_id": 1263,
+        "speed": 13.74,
+        "jamFactor": 0.08
+    },
+    {
+        "road_id": 1264,
+        "speed": 9.41,
+        "jamFactor": 0.29
+    },
+    {
+        "road_id": 1265,
+        "speed": 9.84,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 1266,
+        "speed": 9.06,
+        "jamFactor": 1.42
+    },
+    {
+        "road_id": 1267,
+        "speed": 21.73,
+        "jamFactor": 0.34
+    },
+    {
+        "road_id": 1268,
+        "speed": 11.53,
+        "jamFactor": 0.42
+    },
+    {
+        "road_id": 1269,
+        "speed": 10.9,
+        "jamFactor": 0.3
+    },
+    {
+        "road_id": 1270,
+        "speed": 11.95,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 1271,
+        "speed": 13.96,
+        "jamFactor": 0.22
+    },
+    {
+        "road_id": 1272,
+        "speed": 10.87,
+        "jamFactor": 0.57
+    },
+    {
+        "road_id": 1273,
+        "speed": 13.7,
+        "jamFactor": 0.19
+    },
+    {
+        "road_id": 1274,
+        "speed": 9.92,
+        "jamFactor": 0.38
+    },
+    {
+        "road_id": 1275,
+        "speed": 7.98,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 1276,
+        "speed": 12.23,
+        "jamFactor": 0.24
+    },
+    {
+        "road_id": 1277,
+        "speed": 13.13,
+        "jamFactor": 0.23
+    },
+    {
+        "road_id": 1278,
+        "speed": 13.98,
+        "jamFactor": 0.4
+    },
+    {
+        "road_id": 1279,
+        "speed": 10.3,
+        "jamFactor": 0.3
+    },
+    {
+        "road_id": 1280,
+        "speed": 10.3,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 1281,
+        "speed": 15.45,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 1282,
+        "speed": 22.56,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 1283,
+        "speed": 13.0,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 1284,
+        "speed": 8.8,
+        "jamFactor": 1.77
+    },
+    {
+        "road_id": 1285,
+        "speed": 9.48,
+        "jamFactor": 1.53
+    },
+    {
+        "road_id": 1286,
+        "speed": 14.3,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 1287,
+        "speed": 12.52,
+        "jamFactor": 1.51
+    },
+    {
+        "road_id": 1288,
+        "speed": 11.58,
+        "jamFactor": 1.15
+    },
+    {
+        "road_id": 1289,
+        "speed": 10.17,
+        "jamFactor": 1.22
+    },
+    {
+        "road_id": 1290,
+        "speed": 12.02,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 1291,
+        "speed": 5.97,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 1292,
+        "speed": 14.75,
+        "jamFactor": 0.41
+    },
+    {
+        "road_id": 1293,
+        "speed": 11.62,
+        "jamFactor": 1.42
+    },
+    {
+        "road_id": 1294,
+        "speed": 8.76,
+        "jamFactor": 0.94
+    },
+    {
+        "road_id": 1295,
+        "speed": 7.15,
+        "jamFactor": 1.76
+    },
+    {
+        "road_id": 1296,
+        "speed": 8.91,
+        "jamFactor": 1.27
+    },
+    {
+        "road_id": 1297,
+        "speed": 7.58,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 1298,
+        "speed": 8.17,
+        "jamFactor": 1.38
+    },
+    {
+        "road_id": 1299,
+        "speed": 9.35,
+        "jamFactor": 1.39
+    },
+    {
+        "road_id": 1300,
+        "speed": 8.93,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 1301,
+        "speed": 7.01,
+        "jamFactor": 1.54
+    },
+    {
+        "road_id": 1302,
+        "speed": 8.03,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 1303,
+        "speed": 9.26,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 1304,
+        "speed": 9.01,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 1305,
+        "speed": 9.94,
+        "jamFactor": 1.35
+    },
+    {
+        "road_id": 1306,
+        "speed": 8.0,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 1307,
+        "speed": 14.37,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 1308,
+        "speed": 10.17,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 1309,
+        "speed": 19.98,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 1310,
+        "speed": 9.69,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 1311,
+        "speed": 7.15,
+        "jamFactor": 1.29
+    },
+    {
+        "road_id": 1312,
+        "speed": 15.59,
+        "jamFactor": 0.09
+    },
+    {
+        "road_id": 1313,
+        "speed": 13.83,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 1314,
+        "speed": 8.38,
+        "jamFactor": 0.62
+    },
+    {
+        "road_id": 1315,
+        "speed": 9.38,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 1316,
+        "speed": 11.35,
+        "jamFactor": 1.53
+    },
+    {
+        "road_id": 1317,
+        "speed": 6.72,
+        "jamFactor": 0.51
+    },
+    {
+        "road_id": 1318,
+        "speed": 10.18,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 1319,
+        "speed": 8.51,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 1320,
+        "speed": 9.92,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 1321,
+        "speed": 22.98,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 1322,
+        "speed": 9.96,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 1323,
+        "speed": 9.06,
+        "jamFactor": 0.9
+    },
+    {
+        "road_id": 1324,
+        "speed": 7.31,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 1325,
+        "speed": 8.71,
+        "jamFactor": 0.56
+    },
+    {
+        "road_id": 1326,
+        "speed": 10.19,
+        "jamFactor": 1.43
+    },
+    {
+        "road_id": 1327,
+        "speed": 4.98,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 1328,
+        "speed": 10.35,
+        "jamFactor": 0.11
+    },
+    {
+        "road_id": 1329,
+        "speed": 11.74,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 1330,
+        "speed": 10.14,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 1331,
+        "speed": 9.31,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 1332,
+        "speed": 8.05,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 1333,
+        "speed": 10.19,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 1334,
+        "speed": 14.34,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 1335,
+        "speed": 11.28,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 1336,
+        "speed": 10.47,
+        "jamFactor": 1.47
+    },
+    {
+        "road_id": 1337,
+        "speed": 6.05,
+        "jamFactor": 1.64
+    },
+    {
+        "road_id": 1338,
+        "speed": 7.63,
+        "jamFactor": 0.91
+    },
+    {
+        "road_id": 1339,
+        "speed": 9.74,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 1340,
+        "speed": 20.86,
+        "jamFactor": 0.79
+    },
+    {
+        "road_id": 1341,
+        "speed": 9.34,
+        "jamFactor": 1.13
+    },
+    {
+        "road_id": 1342,
+        "speed": 7.61,
+        "jamFactor": 1.28
+    },
+    {
+        "road_id": 1343,
+        "speed": 8.22,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 1344,
+        "speed": 8.63,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 1345,
+        "speed": 14.23,
+        "jamFactor": 0.02
+    },
+    {
+        "road_id": 1346,
+        "speed": 9.53,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 1347,
+        "speed": 8.73,
+        "jamFactor": 1.3
+    },
+    {
+        "road_id": 1348,
+        "speed": 20.16,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 1349,
+        "speed": 11.14,
+        "jamFactor": 1.17
+    },
+    {
+        "road_id": 1350,
+        "speed": 14.55,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 1351,
+        "speed": 22.69,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 1352,
+        "speed": 10.26,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 1353,
+        "speed": 6.91,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 1354,
+        "speed": 8.59,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 1355,
+        "speed": 16.27,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 1356,
+        "speed": 14.55,
+        "jamFactor": 0.78
+    },
+    {
+        "road_id": 1357,
+        "speed": 14.34,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 1358,
+        "speed": 8.79,
+        "jamFactor": 1.3
+    },
+    {
+        "road_id": 1359,
+        "speed": 7.52,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 1360,
+        "speed": 12.51,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 1361,
+        "speed": 15.33,
+        "jamFactor": 0.79
+    },
+    {
+        "road_id": 1362,
+        "speed": 21.86,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 1363,
+        "speed": 11.96,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 1364,
+        "speed": 7.89,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 1365,
+        "speed": 13.76,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 1366,
+        "speed": 11.42,
+        "jamFactor": 0.84
+    },
+    {
+        "road_id": 1367,
+        "speed": 9.73,
+        "jamFactor": 0.73
+    },
+    {
+        "road_id": 1368,
+        "speed": 15.78,
+        "jamFactor": 0.11
+    },
+    {
+        "road_id": 1369,
+        "speed": 10.77,
+        "jamFactor": 0.25
+    },
+    {
+        "road_id": 1370,
+        "speed": 11.41,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 1371,
+        "speed": 12.4,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 1372,
+        "speed": 12.7,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 1373,
+        "speed": 11.68,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 1374,
+        "speed": 11.76,
+        "jamFactor": 0.79
+    },
+    {
+        "road_id": 1375,
+        "speed": 9.87,
+        "jamFactor": 0.83
+    },
+    {
+        "road_id": 1376,
+        "speed": 12.32,
+        "jamFactor": 0.44
+    },
+    {
+        "road_id": 1377,
+        "speed": 10.17,
+        "jamFactor": 0.63
+    },
+    {
+        "road_id": 1378,
+        "speed": 12.46,
+        "jamFactor": 0.69
+    },
+    {
+        "road_id": 1379,
+        "speed": 8.25,
+        "jamFactor": 1.27
+    },
+    {
+        "road_id": 1380,
+        "speed": 8.76,
+        "jamFactor": 1.8
+    },
+    {
+        "road_id": 1381,
+        "speed": 8.53,
+        "jamFactor": 2.41
+    },
+    {
+        "road_id": 1382,
+        "speed": 14.6,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 1383,
+        "speed": 20.68,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 1384,
+        "speed": 21.47,
+        "jamFactor": 0.46
+    },
+    {
+        "road_id": 1385,
+        "speed": 8.39,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 1386,
+        "speed": 13.16,
+        "jamFactor": 0.66
+    },
+    {
+        "road_id": 1387,
+        "speed": 12.54,
+        "jamFactor": 0.24
+    },
+    {
+        "road_id": 1388,
+        "speed": 9.09,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 1389,
+        "speed": 13.4,
+        "jamFactor": 0.03
+    },
+    {
+        "road_id": 1390,
+        "speed": 11.6,
+        "jamFactor": 0.88
+    },
+    {
+        "road_id": 1391,
+        "speed": 13.71,
+        "jamFactor": 0.24
+    },
+    {
+        "road_id": 1392,
+        "speed": 11.85,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 1393,
+        "speed": 14.11,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 1394,
+        "speed": 10.54,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 1395,
+        "speed": 14.34,
+        "jamFactor": 0.06
+    },
+    {
+        "road_id": 1396,
+        "speed": 10.48,
+        "jamFactor": 0.13
+    },
+    {
+        "road_id": 1397,
+        "speed": 9.15,
+        "jamFactor": 1.44
+    },
+    {
+        "road_id": 1398,
+        "speed": 14.31,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 1399,
+        "speed": 12.96,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 1400,
+        "speed": 8.64,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 1401,
+        "speed": 7.62,
+        "jamFactor": 1.42
+    },
+    {
+        "road_id": 1402,
+        "speed": 11.94,
+        "jamFactor": 0.67
+    },
+    {
+        "road_id": 1403,
+        "speed": 11.8,
+        "jamFactor": 1.26
+    },
+    {
+        "road_id": 1404,
+        "speed": 11.87,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 1405,
+        "speed": 7.25,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 1406,
+        "speed": 21.63,
+        "jamFactor": 0.27
+    },
+    {
+        "road_id": 1407,
+        "speed": 9.93,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 1408,
+        "speed": 7.15,
+        "jamFactor": 0.77
+    },
+    {
+        "road_id": 1409,
+        "speed": 7.32,
+        "jamFactor": 1.49
+    },
+    {
+        "road_id": 1410,
+        "speed": 9.66,
+        "jamFactor": 1.07
+    },
+    {
+        "road_id": 1411,
+        "speed": 6.9,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 1412,
+        "speed": 9.96,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 1413,
+        "speed": 20.24,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 1414,
+        "speed": 15.75,
+        "jamFactor": 0.55
+    },
+    {
+        "road_id": 1415,
+        "speed": 12.37,
+        "jamFactor": 0.47
+    },
+    {
+        "road_id": 1416,
+        "speed": 12.6,
+        "jamFactor": 0.88
+    },
+    {
+        "road_id": 1417,
+        "speed": 19.91,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 1418,
+        "speed": 6.28,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 1419,
+        "speed": 5.6,
+        "jamFactor": 1.39
+    },
+    {
+        "road_id": 1420,
+        "speed": 8.72,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 1421,
+        "speed": 11.02,
+        "jamFactor": 0.87
+    },
+    {
+        "road_id": 1422,
+        "speed": 8.92,
+        "jamFactor": 1.54
+    },
+    {
+        "road_id": 1423,
+        "speed": 9.01,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 1424,
+        "speed": 16.24,
+        "jamFactor": 0.12
+    },
+    {
+        "road_id": 1425,
+        "speed": 22.58,
+        "jamFactor": 0.71
+    },
+    {
+        "road_id": 1426,
+        "speed": 9.13,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 1427,
+        "speed": 16.07,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 1428,
+        "speed": 10.12,
+        "jamFactor": 1.23
+    },
+    {
+        "road_id": 1429,
+        "speed": 7.15,
+        "jamFactor": 0.78
+    },
+    {
+        "road_id": 1430,
+        "speed": 7.76,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 1431,
+        "speed": 8.5,
+        "jamFactor": 1.3
+    },
+    {
+        "road_id": 1432,
+        "speed": 8.19,
+        "jamFactor": 1.28
+    },
+    {
+        "road_id": 1433,
+        "speed": 10.04,
+        "jamFactor": 0.78
+    },
+    {
+        "road_id": 1434,
+        "speed": 9.79,
+        "jamFactor": 0.68
+    },
+    {
+        "road_id": 1435,
+        "speed": 6.63,
+        "jamFactor": 1.57
+    },
+    {
+        "road_id": 1436,
+        "speed": 7.13,
+        "jamFactor": 1.44
+    },
+    {
+        "road_id": 1437,
+        "speed": 10.21,
+        "jamFactor": 0.34
+    },
+    {
+        "road_id": 1438,
+        "speed": 10.47,
+        "jamFactor": 0.92
+    },
+    {
+        "road_id": 1439,
+        "speed": 13.37,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 1440,
+        "speed": 12.77,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 1441,
+        "speed": 10.89,
+        "jamFactor": 0.21
+    },
+    {
+        "road_id": 1442,
+        "speed": 11.41,
+        "jamFactor": 0.28
+    },
+    {
+        "road_id": 1443,
+        "speed": 13.83,
+        "jamFactor": 0.0
+    },
+    {
+        "road_id": 1444,
+        "speed": 12.7,
+        "jamFactor": 0.08
+    },
+    {
+        "road_id": 1445,
+        "speed": 13.08,
+        "jamFactor": 0.09
+    },
+    {
+        "road_id": 1446,
+        "speed": 8.28,
+        "jamFactor": 0.62
+    },
+    {
+        "road_id": 1447,
+        "speed": 9.41,
+        "jamFactor": 0.48
+    },
+    {
+        "road_id": 1448,
+        "speed": 12.41,
+        "jamFactor": 1.11
+    },
+    {
+        "road_id": 1449,
+        "speed": 12.01,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 1450,
+        "speed": 12.14,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 1451,
+        "speed": 12.26,
+        "jamFactor": 0.64
+    },
+    {
+        "road_id": 1452,
+        "speed": 13.62,
+        "jamFactor": 0.59
+    },
+    {
+        "road_id": 1453,
+        "speed": 15.66,
+        "jamFactor": 0.39
+    },
+    {
+        "road_id": 1454,
+        "speed": 8.93,
+        "jamFactor": 1.23
+    },
+    {
+        "road_id": 1455,
+        "speed": 11.17,
+        "jamFactor": 1.08
+    },
+    {
+        "road_id": 1456,
+        "speed": 10.29,
+        "jamFactor": 1.53
+    },
+    {
+        "road_id": 1457,
+        "speed": 7.32,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 1458,
+        "speed": 10.81,
+        "jamFactor": 1.73
+    },
+    {
+        "road_id": 1459,
+        "speed": 9.87,
+        "jamFactor": 1.37
+    },
+    {
+        "road_id": 1460,
+        "speed": 15.79,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 1461,
+        "speed": 16.77,
+        "jamFactor": 0.72
+    },
+    {
+        "road_id": 1462,
+        "speed": 8.31,
+        "jamFactor": 0.81
+    },
+    {
+        "road_id": 1463,
+        "speed": 10.86,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 1464,
+        "speed": 9.87,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 1465,
+        "speed": 10.26,
+        "jamFactor": 1.32
+    },
+    {
+        "road_id": 1466,
+        "speed": 6.14,
+        "jamFactor": 1.35
+    },
+    {
+        "road_id": 1467,
+        "speed": 21.53,
+        "jamFactor": 0.93
+    },
+    {
+        "road_id": 1468,
+        "speed": 8.63,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 1469,
+        "speed": 21.57,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 1470,
+        "speed": 11.09,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 1471,
+        "speed": 10.03,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 1472,
+        "speed": 21.48,
+        "jamFactor": 0.57
+    },
+    {
+        "road_id": 1473,
+        "speed": 11.26,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 1474,
+        "speed": 9.54,
+        "jamFactor": 1.05
+    },
+    {
+        "road_id": 1475,
+        "speed": 11.23,
+        "jamFactor": 0.8
+    },
+    {
+        "road_id": 1476,
+        "speed": 10.55,
+        "jamFactor": 0.99
+    },
+    {
+        "road_id": 1477,
+        "speed": 11.76,
+        "jamFactor": 1.0
+    },
+    {
+        "road_id": 1478,
+        "speed": 8.36,
+        "jamFactor": 1.26
+    },
+    {
+        "road_id": 1479,
+        "speed": 10.2,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 1480,
+        "speed": 9.29,
+        "jamFactor": 1.09
+    },
+    {
+        "road_id": 1481,
+        "speed": 9.88,
+        "jamFactor": 1.33
+    },
+    {
+        "road_id": 1482,
+        "speed": 8.11,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 1483,
+        "speed": 14.27,
+        "jamFactor": 0.43
+    },
+    {
+        "road_id": 1484,
+        "speed": 10.41,
+        "jamFactor": 1.47
+    },
+    {
+        "road_id": 1485,
+        "speed": 7.59,
+        "jamFactor": 2.01
+    },
+    {
+        "road_id": 1486,
+        "speed": 10.74,
+        "jamFactor": 2.08
+    },
+    {
+        "road_id": 1487,
+        "speed": 9.23,
+        "jamFactor": 0.45
+    },
+    {
+        "road_id": 1488,
+        "speed": 11.66,
+        "jamFactor": 0.97
+    },
+    {
+        "road_id": 1489,
+        "speed": 13.2,
+        "jamFactor": 0.74
+    },
+    {
+        "road_id": 1490,
+        "speed": 12.04,
+        "jamFactor": 0.5
+    },
+    {
+        "road_id": 1491,
+        "speed": 9.98,
+        "jamFactor": 0.85
+    },
+    {
+        "road_id": 1492,
+        "speed": 22.5,
+        "jamFactor": 0.51
+    },
+    {
+        "road_id": 1493,
+        "speed": 8.44,
+        "jamFactor": 1.5
+    },
+    {
+        "road_id": 1494,
+        "speed": 7.91,
+        "jamFactor": 1.69
+    },
+    {
+        "road_id": 1495,
+        "speed": 14.68,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 1496,
+        "speed": 10.39,
+        "jamFactor": 0.22
+    },
+    {
+        "road_id": 1497,
+        "speed": 11.7,
+        "jamFactor": 0.33
+    },
+    {
+        "road_id": 1498,
+        "speed": 11.92,
+        "jamFactor": 0.04
+    },
+    {
+        "road_id": 1499,
+        "speed": 13.61,
+        "jamFactor": 0.01
+    },
+    {
+        "road_id": 1500,
+        "speed": 13.5,
+        "jamFactor": 0.34
+    },
+    {
+        "road_id": 1501,
+        "speed": 7.86,
+        "jamFactor": 1.23
+    },
+    {
+        "road_id": 1502,
+        "speed": 23.86,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 1503,
+        "speed": 23.84,
+        "jamFactor": 0.34
+    },
+    {
+        "road_id": 1504,
+        "speed": 9.49,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 1505,
+        "speed": 14.59,
+        "jamFactor": 0.07
+    },
+    {
+        "road_id": 1506,
+        "speed": 10.83,
+        "jamFactor": 0.75
+    },
+    {
+        "road_id": 1507,
+        "speed": 10.46,
+        "jamFactor": 0.37
+    },
+    {
+        "road_id": 1508,
+        "speed": 9.79,
+        "jamFactor": 0.31
+    },
+    {
+        "road_id": 1509,
+        "speed": 10.2,
+        "jamFactor": 0.36
+    },
+    {
+        "road_id": 1510,
+        "speed": 8.77,
+        "jamFactor": 0.81
+    },
+    {
+        "road_id": 1511,
+        "speed": 12.33,
+        "jamFactor": 0.82
+    },
+    {
+        "road_id": 1512,
+        "speed": 11.94,
+        "jamFactor": 1.14
+    },
+    {
+        "road_id": 1513,
+        "speed": 9.12,
+        "jamFactor": 0.44
+    },
+    {
+        "road_id": 1514,
+        "speed": 21.72,
+        "jamFactor": 0.58
+    },
+    {
+        "road_id": 1515,
+        "speed": 13.75,
+        "jamFactor": 0.62
+    },
+    {
+        "road_id": 1516,
+        "speed": 12.26,
+        "jamFactor": 1.4
+    },
+    {
+        "road_id": 1517,
+        "speed": 15.0,
+        "jamFactor": 0.6
+    },
+    {
+        "road_id": 1518,
+        "speed": 11.94,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 1519,
+        "speed": 8.79,
+        "jamFactor": 1.04
+    },
+    {
+        "road_id": 1520,
+        "speed": 9.15,
+        "jamFactor": 1.02
+    },
+    {
+        "road_id": 1521,
+        "speed": 6.79,
+        "jamFactor": 1.06
+    },
+    {
+        "road_id": 1522,
+        "speed": 7.5,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 1523,
+        "speed": 12.2,
+        "jamFactor": 1.2
+    },
+    {
+        "road_id": 1524,
+        "speed": 10.29,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 1525,
+        "speed": 10.34,
+        "jamFactor": 1.16
+    },
+    {
+        "road_id": 1526,
+        "speed": 10.24,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 1527,
+        "speed": 8.33,
+        "jamFactor": 0.88
+    },
+    {
+        "road_id": 1528,
+        "speed": 9.16,
+        "jamFactor": 1.03
+    },
+    {
+        "road_id": 1529,
+        "speed": 10.61,
+        "jamFactor": 0.86
+    },
+    {
+        "road_id": 1530,
+        "speed": 11.28,
+        "jamFactor": 1.01
+    },
+    {
+        "road_id": 1531,
+        "speed": 9.48,
+        "jamFactor": 1.19
+    },
+    {
+        "road_id": 1532,
+        "speed": 7.85,
+        "jamFactor": 1.25
+    },
+    {
+        "road_id": 1533,
+        "speed": 7.48,
+        "jamFactor": 0.89
+    },
+    {
+        "road_id": 1534,
+        "speed": 7.65,
+        "jamFactor": 0.98
+    },
+    {
+        "road_id": 1535,
+        "speed": 9.42,
+        "jamFactor": 1.12
+    },
+    {
+        "road_id": 1536,
+        "speed": 11.02,
+        "jamFactor": 0.95
+    },
+    {
+        "road_id": 1537,
+        "speed": 10.51,
+        "jamFactor": 0.7
+    },
+    {
+        "road_id": 1538,
+        "speed": 21.76,
+        "jamFactor": 0.49
+    },
+    {
+        "road_id": 1539,
+        "speed": 12.29,
+        "jamFactor": 1.18
+    },
+    {
+        "road_id": 1540,
+        "speed": 8.19,
+        "jamFactor": 1.3
+    }
+]

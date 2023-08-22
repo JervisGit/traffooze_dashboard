@@ -9,7 +9,6 @@ import {
 import { common } from '@mui/material/colors';
 import { alpha } from '@mui/material/styles';
 
-// colors.js
 const withAlphas = (color) => {
   return {
     ...color,
@@ -354,33 +353,20 @@ export const indigo = withAlphas({
 });
   
 export const success = withAlphas({
-    lightest: '#F0FDF9',
-    light: '#3FC79A',
     main: '#10B981',
-    dark: '#0B815A',
-    darkest: '#134E48',
     contrastText: '#FFFFFF'
 });
   
 export const warning = withAlphas({
-    lightest: '#FFFAEB',
-    light: '#FEF0C7',
     main: '#F79009',
-    dark: '#B54708',
-    darkest: '#7A2E0E',
     contrastText: '#FFFFFF'
 });
   
 export const error = withAlphas({
-    lightest: '#FEF3F2',
-    light: '#FEE4E2',
     main: '#F04438',
-    dark: '#B42318',
-    darkest: '#7A271A',
     contrastText: '#FFFFFF'
 });
 
-// create-palette.js
 export function createPalette() {
     return {
         action: {
@@ -410,7 +396,6 @@ export function createPalette() {
       };
 }
 
-// create-typography.js
 export const createTypography = () => {
 
     const customStyles = {
@@ -441,7 +426,6 @@ export const createTypography = () => {
         fontWeight: 700,
         lineHeight: 1.2,
       }
-      // ... (other custom styles)
   };
 
     return {

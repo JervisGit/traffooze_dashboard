@@ -41,7 +41,7 @@ export const AverageFlowCard  = ({ selectedRoad }) => {
               Average Speed
             </Typography>
             <Typography variant="h5">
-              {averageSpeed}
+              {averageSpeed} m/s
             </Typography>
             </Stack>
             <Stack spacing={1}>

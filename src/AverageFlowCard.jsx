@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { FcComboChart } from "react-icons/fc";
 import {AiOutlineLineChart} from 'react-icons/ai';
 import { Avatar, Card, CardContent, Stack, SvgIcon, Typography } from '@mui/material';
 import flowData from './traffic_flow_statistics.json'

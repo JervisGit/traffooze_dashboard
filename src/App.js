@@ -26,7 +26,6 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/favorite" element={<FavoriteLocations />} />
         <Route path="/mapcontainer" element={<MapContainer />} />
-        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   );

@@ -9,10 +9,8 @@ import {
     Autocomplete, 
   } from '@mui/material';
 import { TrafficFlowCard } from './TrafficFlowCard';
-import { AverageJamFactor } from './AverageJamFactor';
 import { AverageFlowCard } from './AverageFlowCard';
 import ForecastChart from './ForecastChart';
-import DateTimeInput from './DatetimeInput';
 import dayjs from 'dayjs';  
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers';

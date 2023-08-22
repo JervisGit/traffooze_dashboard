@@ -44,7 +44,7 @@ const AccountProfileDetails = () => {
   };
 
   useEffect(() => {
-    if (isLoggedIn && loggedInUsername) {
+    if (isLoggedIn && loggedInUsername && !loggedInEmail) {
       const fetchEmail = async () => {
         try {
           const emailResponse = await axios.get(
@@ -67,7 +67,7 @@ const AccountProfileDetails = () => {
 
       fetchEmail();
     }
-  }, [isLoggedIn, loggedInUsername]);
+  }, [isLoggedIn, loggedInUsername, loggedInEmail]);
 
   const handleLoginSubmit = async (event) => {
     event.preventDefault();

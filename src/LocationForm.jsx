@@ -11,6 +11,7 @@ import {
   Unstable_Grid2 as Grid
 } from '@mui/material';
 import { AddressAutofill } from '@mapbox/search-js-react';
+import Swal from 'sweetalert2';
 import axios from 'axios';
 
 const LocationForm = () => {
@@ -33,8 +34,12 @@ const LocationForm = () => {
   const handleSaveDetails = async () => {
     const username = localStorage.getItem('username');
     if (!username) {
-        console.error("Username not found in localStorage.");
-        return;
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Username not found!',
+      });
+      return;
     }
 
     // Get current addresses
@@ -43,7 +48,11 @@ const LocationForm = () => {
         const response = await axios.post('https://traffoozebackend.vercel.app/get-address/', { username });
         currentAddresses = response.data;
     } catch (error) {
-        console.error("Error fetching current addresses:", error);
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Error fetching current addresses!',
+      });
     }
 
     // Prepare data for API call
@@ -56,9 +65,13 @@ const LocationForm = () => {
     // Update addresses
     try {
         await axios.post('https://traffoozebackend.vercel.app/update-address/', data);
-        console.log("Addresses updated successfully.");
+        Swal.fire('Success', 'Addresses updated successfully!', 'success');
     } catch (error) {
-        console.error("Error updating addresses:", error);
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Error updating addresses!',
+      });
     }
   };
 
@@ -89,7 +102,7 @@ const LocationForm = () => {
                         fullWidth 
                         label="Address" 
                         value={homeAddress}
-                        onChange={(event) => setWorkAddress(event.target.value)}
+                        onChange={(event) => setHomeAddress(event.target.value)}
                     />
                   
                   </AddressAutofill>

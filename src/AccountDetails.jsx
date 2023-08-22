@@ -87,6 +87,7 @@ const AccountProfileDetails = () => {
   
       if (response.status === 200) {
         localStorage.setItem('token', response.data.token);
+        localStorage.setItem('username', username);
         setLoggedInUsername(username);
         setIsLoggedIn(true);
         setShowUpdateAccountCard(true);
@@ -174,7 +175,7 @@ const AccountProfileDetails = () => {
   
     try {
       const token = localStorage.getItem('token'); // Retrieve the token from localStorage
-      const username = loggedInUsername; // Retrieve the username from state
+      const username = localStorage.getItem('username'); // Retrieve the username from state
   
       if (newEmail && !validateEmail(newEmail)) {
         Swal.fire('Error', 'Please enter a valid email address.', 'error');
@@ -190,8 +191,8 @@ const AccountProfileDetails = () => {
         'https://traffoozebackend.vercel.app/change-password-and-email/',
         {
           username: username,
-          new_email: newEmail,
-          new_password: newPassword,
+          email: newEmail,
+          password: newPassword,
         },
         {
           headers: {
@@ -216,20 +217,8 @@ const AccountProfileDetails = () => {
       Swal.fire('Error', 'An unexpected error occurred. Please try again.', 'error');
     }
   };
-      const handleLogout = () => {
-        try {
-          localStorage.removeItem('token');
-          setIsLoggedIn(false);
-          setLoggedInUsername('');
-          setLoggedInEmail('');
-          setShowUpdateAccountCard(false);
-          Swal.fire('Success', 'Logged out successfully', 'success');
-        } catch (error) {
-          console.error('An error occurred during logout:', error);
-          Swal.fire('Error', 'An error occurred during logout', 'error');
-        }
-      };
-  /*const handleLogout = async () => {
+
+  const handleLogout = async () => {
     try {
       const token = localStorage.getItem('token'); // Retrieve the token from localStorage
   
@@ -238,7 +227,8 @@ const AccountProfileDetails = () => {
         {},
         {
           headers: {
-            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json',
+            'Authorization': `Token ${localStorage.getItem('token')}`,
           },
         }
       );
@@ -257,7 +247,7 @@ const AccountProfileDetails = () => {
       console.error('An error occurred during logout:', error);
       Swal.fire('Error', 'An unexpected error occurred. Please try again.', 'error');
     }
-  };*/
+  };
 
   return (
     <Grid>

@@ -157,6 +157,8 @@ const AccountProfileDetails = () => {
       Swal.fire('Error', 'Failed to register. Please try again.', 'error');
     }
   };
+
+
   const validateEmail = (email) => {
     if (!email.trim()) return false;  // Check if email is only spaces
   
@@ -166,8 +168,9 @@ const AccountProfileDetails = () => {
   
   const validatePassword = (password) => {
     if (!password.trim()) return false;  // Check if password is only spaces
-    return password.length >= 8;
+    return password.length >= 1;
   };
+
   const handleUpdateAccountSubmit = async (event) => {
     event.preventDefault();
   
@@ -177,12 +180,14 @@ const AccountProfileDetails = () => {
       const token = localStorage.getItem('token'); // Retrieve the token from localStorage
       const username = localStorage.getItem('username'); // Retrieve the username from state
   
-      if (newEmail && !validateEmail(newEmail)) {
+      // Only check for email validity if newEmail is provided and not empty
+      if (newEmail && newEmail.length > 0 && !validateEmail(newEmail)) {
         Swal.fire('Error', 'Please enter a valid email address.', 'error');
         return;
       }
-  
-      if (newPassword && !validatePassword(newPassword)) {
+      
+      // Only check for password validity if newPassword is provided and not empty
+      if (newPassword && newPassword.length > 0 && !validatePassword(newPassword)) {
         Swal.fire('Error', 'Password must be at least 8 characters long.', 'error');
         return;
       }
@@ -191,8 +196,8 @@ const AccountProfileDetails = () => {
         'https://traffoozebackend.vercel.app/change-password-and-email/',
         {
           username: username,
-          email: newEmail,
-          password: newPassword,
+          email: newEmail ? newEmail : '', 
+          password: newPassword ? newPassword : '',
         },
         {
           headers: {
@@ -202,8 +207,10 @@ const AccountProfileDetails = () => {
       );
   
       if (response.status === 200) {
-        // Update loggedInEmail with the new email
-        setLoggedInEmail(newEmail);
+        if (newEmail && newEmail.length > 0) {
+          // Update loggedInEmail with the new email
+          setLoggedInEmail(newEmail);
+        }
   
         // Clear newEmail and newPassword in updateValues state
         setUpdateValues({ newEmail: '', newPassword: '' });
@@ -217,6 +224,8 @@ const AccountProfileDetails = () => {
       Swal.fire('Error', 'An unexpected error occurred. Please try again.', 'error');
     }
   };
+
+
 
   const handleLogout = async () => {
     try {

@@ -10,6 +10,7 @@ import { MapIcon } from '@heroicons/react/24/solid'
 import {AiOutlineAreaChart}from 'react-icons/ai';
 import { FaTrafficLight } from 'react-icons/fa';
 import { BiNavigation } from 'react-icons/bi';
+import { ArrowRightOnRectangleIcon } from '@heroicons/react/24/solid';
 import CurrencyDollarIcon from '@heroicons/react/24/solid/CurrencyDollarIcon';
 
 const SideNav = ({ open, onClose }) => {
@@ -22,7 +23,7 @@ const SideNav = ({ open, onClose }) => {
   const items = [
     {
       title: 'Traffic Flow Forecast',
-      path: '/flow',
+      path: '/',
       icon: (
         <SvgIcon fontSize="small">
           <ChartBarIcon />
@@ -89,6 +90,15 @@ const SideNav = ({ open, onClose }) => {
       icon: (
         <SvgIcon fontSize="small">
           <MapPinIcon />
+        </SvgIcon>
+      )
+    },
+    {
+      title: 'Login',
+      path: '/login',
+      icon: (
+        <SvgIcon fontSize="small">
+          <ArrowRightOnRectangleIcon />
         </SvgIcon>
       )
     },

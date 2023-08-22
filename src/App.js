@@ -17,9 +17,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/trafficUpdates" element={<UpdatesMap />} />
-        <Route path="/flow" element={<TrafficFlowForecast />} />
+        <Route path="/" element={<TrafficFlowForecast />} />
         <Route path="/count" element={<TrafficCountForecast />} />
         <Route path="/traffic_updates" element={<TrafficUpdatesTable />} />
         <Route path="/updates_map" element={<TrafficUpdatesMap />} />
@@ -28,6 +26,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/favorite" element={<FavoriteLocations />} />
         <Route path="/mapcontainer" element={<MapContainer />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   );

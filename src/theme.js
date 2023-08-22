@@ -368,11 +368,7 @@ export const warning = withAlphas({
 });
   
 export const error = withAlphas({
-    lightest: '#FEF3F2',
-    light: '#FEE4E2',
     main: '#F04438',
-    dark: '#B42318',
-    darkest: '#7A271A',
     contrastText: '#FFFFFF'
 });
 

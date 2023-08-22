@@ -11,23 +11,22 @@ const FavoriteLocations = ({ currentUser }) => {
   const [favoriteLocations, setFavoriteLocations] = useState([]);
 
   useEffect(() => {
-    // Simulate loading content for a few seconds
-    setTimeout(async () => {
+    const username = localStorage.getItem('username');
+    if (username) {
+      // Simulate loading content for a few seconds
+      setTimeout(async () => {
+        setIsLoading(false);
+        const userFavoriteLocations = await getFavoriteLocationsForUser(username);
+        setFavoriteLocations(userFavoriteLocations);
+      }, 1000);
+    } else {
       setIsLoading(false);
-      // Assuming currentUser has an identifier (e.g., user ID)
-      const userFavoriteLocations = await getFavoriteLocationsForUser(currentUser);
-      setFavoriteLocations(userFavoriteLocations);
-    }, 1000);
-  }, [currentUser]);  
+    }
+  }, []);  
 
-  const getFavoriteLocationsForUser = async (user) => {
+  const getFavoriteLocationsForUser = async (username) => {
     try {
-      const username = localStorage.getItem('username');
-      
-      if(!username) {
-        throw new Error("Username not found in local storage");
-      }
-  
+      console.log(username);
       const response = await axios.post('https://traffoozebackend.vercel.app/get-address/', {
         username: username
       });
@@ -41,7 +40,7 @@ const FavoriteLocations = ({ currentUser }) => {
       }
     } catch (error) {
       console.error("Error fetching favorite locations", error);
-      return []; // Return an empty array in case of an error
+      return [];
     }
   };
 

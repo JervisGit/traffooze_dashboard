@@ -22,9 +22,9 @@ const AccountProfileDetails = () => {
   });
 
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('token') !== null);
-  const [loggedInUsername, setLoggedInUsername] = useState('');
+  const [loggedInUsername, setLoggedInUsername] = useState(localStorage.getItem('username') || '');
   const [loggedInEmail, setLoggedInEmail] = useState('');
-  const [showUpdateAccountCard, setShowUpdateAccountCard] = useState(false);
+  const [showUpdateAccountCard, setShowUpdateAccountCard] = useState(localStorage.getItem('token') !== null);
   const [emailToUpdate, setEmailToUpdate] = useState('');
   const [passwordToUpdate, setPasswordToUpdate] = useState('');
 
@@ -87,6 +87,7 @@ const AccountProfileDetails = () => {
   
       if (response.status === 200) {
         localStorage.setItem('token', response.data.token);
+        localStorage.setItem('username', username);
         setLoggedInUsername(username);
         setIsLoggedIn(true);
         setShowUpdateAccountCard(true);
@@ -156,6 +157,8 @@ const AccountProfileDetails = () => {
       Swal.fire('Error', 'Failed to register. Please try again.', 'error');
     }
   };
+
+
   const validateEmail = (email) => {
     if (!email.trim()) return false;  // Check if email is only spaces
   
@@ -165,8 +168,9 @@ const AccountProfileDetails = () => {
   
   const validatePassword = (password) => {
     if (!password.trim()) return false;  // Check if password is only spaces
-    return password.length >= 8;
+    return password.length >= 1;
   };
+
   const handleUpdateAccountSubmit = async (event) => {
     event.preventDefault();
   
@@ -174,14 +178,21 @@ const AccountProfileDetails = () => {
   
     try {
       const token = localStorage.getItem('token'); // Retrieve the token from localStorage
-      const username = loggedInUsername; // Retrieve the username from state
-  
-      if (newEmail && !validateEmail(newEmail)) {
-        Swal.fire('Error', 'Please enter a valid email address.', 'error');
+      const username = localStorage.getItem('username'); // Retrieve the username from state
+
+      if (newEmail.length == 0 && newPassword.length == 0) {
+        Swal.fire('Error', 'Please enter something to update.', 'error');
         return;
       }
   
-      if (newPassword && !validatePassword(newPassword)) {
+      // Only check for email validity if newEmail is provided and not empty
+      if (newEmail && newEmail.length > 0 && !validateEmail(newEmail)) {
+        Swal.fire('Error', 'Please enter a valid email address.', 'error');
+        return;
+      }
+      
+      // Only check for password validity if newPassword is provided and not empty
+      if (newPassword && newPassword.length > 0 && !validatePassword(newPassword)) {
         Swal.fire('Error', 'Password must be at least 8 characters long.', 'error');
         return;
       }
@@ -190,8 +201,8 @@ const AccountProfileDetails = () => {
         'https://traffoozebackend.vercel.app/change-password-and-email/',
         {
           username: username,
-          new_email: newEmail,
-          new_password: newPassword,
+          email: newEmail ? newEmail : '', 
+          password: newPassword ? newPassword : '',
         },
         {
           headers: {
@@ -201,8 +212,10 @@ const AccountProfileDetails = () => {
       );
   
       if (response.status === 200) {
-        // Update loggedInEmail with the new email
-        setLoggedInEmail(newEmail);
+        if (newEmail && newEmail.length > 0) {
+          // Update loggedInEmail with the new email
+          setLoggedInEmail(newEmail);
+        }
   
         // Clear newEmail and newPassword in updateValues state
         setUpdateValues({ newEmail: '', newPassword: '' });
@@ -216,20 +229,10 @@ const AccountProfileDetails = () => {
       Swal.fire('Error', 'An unexpected error occurred. Please try again.', 'error');
     }
   };
-      const handleLogout = () => {
-        try {
-          localStorage.removeItem('token');
-          setIsLoggedIn(false);
-          setLoggedInUsername('');
-          setLoggedInEmail('');
-          setShowUpdateAccountCard(false);
-          Swal.fire('Success', 'Logged out successfully', 'success');
-        } catch (error) {
-          console.error('An error occurred during logout:', error);
-          Swal.fire('Error', 'An error occurred during logout', 'error');
-        }
-      };
-  /*const handleLogout = async () => {
+
+
+
+  const handleLogout = async () => {
     try {
       const token = localStorage.getItem('token'); // Retrieve the token from localStorage
   
@@ -238,13 +241,15 @@ const AccountProfileDetails = () => {
         {},
         {
           headers: {
-            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json',
+            'Authorization': `Token ${localStorage.getItem('token')}`,
           },
         }
       );
   
       if (response.status === 200) {
         localStorage.removeItem('token');
+        localStorage.removeItem('username');
         setIsLoggedIn(false);
         setLoggedInUsername('');
         setLoggedInEmail('');
@@ -257,14 +262,14 @@ const AccountProfileDetails = () => {
       console.error('An error occurred during logout:', error);
       Swal.fire('Error', 'An unexpected error occurred. Please try again.', 'error');
     }
-  };*/
+  };
 
   return (
     <Grid>
       <Box sx={{ mr: 3 }}>
         {isLoggedIn ? (
           <div>
-            <h2>Welcome, {loggedInUsername}!</h2>
+            <h2>Welcome, {localStorage.getItem('username')}!</h2>
             {showUpdateAccountCard && (
               <Card sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
                 <CardHeader subheader="Update your account" title="Update Account" />

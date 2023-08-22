@@ -65,17 +65,7 @@ const LocationForm = () => {
     // Update addresses
     try {
         await axios.post('https://traffoozebackend.vercel.app/update-address/', data);
-        Swal.fire({
-          title: 'Success',
-          text: `Address for ${addressType} updated successfully!`,
-          icon: 'success',
-          confirmButtonText: 'OK'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                // Reload the page when OK is clicked.
-                window.location.reload();
-            }
-        });
+        Swal.fire('Success', 'Addresses updated successfully!', 'success');
     } catch (error) {
       Swal.fire({
         icon: 'error',
@@ -104,21 +94,10 @@ const LocationForm = () => {
 
     try {
         await axios.post('https://traffoozebackend.vercel.app/update-address/', data);
+        Swal.fire('Success', `Address for ${addressType} deleted successfully!`, 'success');
 
         if (addressType === 'home') setHomeAddress('');  // clear the home address in the UI
         if (addressType === 'work') setWorkAddress('');  // clear the work address in the UI
-
-        Swal.fire({
-          title: 'Success',
-          text: `Address for ${addressType} deleted successfully!`,
-          icon: 'success',
-          confirmButtonText: 'OK'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                // Reload the page when OK is clicked.
-                window.location.reload();
-            }
-        });
 
     } catch (error) {
       Swal.fire({

@@ -117,6 +117,7 @@ const AccountProfileDetails = () => {
   
           if (emailResponse.data && emailResponse.data.email) {
             setLoggedInEmail(emailResponse.data.email);
+            localStorage.setItem('email', emailResponse.data.email);
           }
         } catch (emailError) {
           console.error('Error fetching email:', emailError);

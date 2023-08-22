@@ -75,6 +75,40 @@ const LocationForm = () => {
     }
   };
 
+  const handleDeleteDetails = async (addressType) => {
+    const username = localStorage.getItem('username');
+    if (!username) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Username not found!',
+      });
+      return;
+    }
+
+    const data = {
+        username: username,
+        homeAddress: addressType === 'home' ? '' : homeAddress,
+        workAddress: addressType === 'work' ? '' : workAddress,
+    };
+
+    try {
+        await axios.post('https://traffoozebackend.vercel.app/update-address/', data);
+        Swal.fire('Success', `Address for ${addressType} deleted successfully!`, 'success');
+
+        if (addressType === 'home') setHomeAddress('');  // clear the home address in the UI
+        if (addressType === 'work') setWorkAddress('');  // clear the work address in the UI
+
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: `Error deleting ${addressType} address!`,
+      });
+    }
+  };
+
+
   const handleTextFieldBlur = () => {
     console.log('Text Field Value:', textFieldValue);
   };
@@ -171,6 +205,18 @@ const LocationForm = () => {
           <Button variant="contained" onClick={handleSaveDetails}>Save details</Button>
 
         </CardActions>
+        <CardActions sx={{ justifyContent: 'flex-end' }}>
+          <Button 
+            variant="contained" 
+            color="error" 
+            onClick={() => handleDeleteDetails('home')}
+            sx={{ marginRight: '1em' }}
+          >
+            Delete Home
+          </Button>
+          <Button variant="contained" onClick={handleSaveDetails}>Save details</Button>
+        </CardActions>
+
       </Card>
     </form>
     </Box>
@@ -266,6 +312,18 @@ const LocationForm = () => {
           <Button variant="contained" onClick={handleSaveDetails}>Save details</Button>
 
         </CardActions>
+        <CardActions sx={{ justifyContent: 'flex-end' }}>
+          <Button 
+            variant="contained" 
+            color="error" 
+            onClick={() => handleDeleteDetails('work')}
+            sx={{ marginRight: '1em' }}
+          >
+            Delete Work
+          </Button>
+          <Button variant="contained" onClick={handleSaveDetails}>Save details</Button>
+        </CardActions>
+
       </Card>
     </form>
     </Box>

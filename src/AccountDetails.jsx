@@ -113,7 +113,6 @@ const AccountProfileDetails = () => {
           if (emailResponse.data && emailResponse.data.email) {
             setLoggedInEmail(emailResponse.data.email);
             localStorage.setItem('email', emailResponse.data.email);
-            window.location.reload();
           }
         } catch (emailError) {
           console.error('Error fetching email:', emailError);
@@ -121,6 +120,7 @@ const AccountProfileDetails = () => {
         }
   
         Swal.fire('Success', 'Logged in successfully', 'success');
+        window.location.reload();
       } else {
         Swal.fire('Error', 'Invalid credentials', 'error');
       }
@@ -228,6 +228,7 @@ const AccountProfileDetails = () => {
         setUpdateValues({ newEmail: '', newPassword: '' });
   
         Swal.fire('Success', 'Account updated successfully', 'success');
+        window.location.reload();
       } else {
         Swal.fire('Error', 'Failed to update account. Please try again.', 'error');
       }

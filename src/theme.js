@@ -9,7 +9,6 @@ import {
 import { common } from '@mui/material/colors';
 import { alpha } from '@mui/material/styles';
 
-// colors.js
 const withAlphas = (color) => {
   return {
     ...color,
@@ -368,7 +367,6 @@ export const error = withAlphas({
     contrastText: '#FFFFFF'
 });
 
-// create-palette.js
 export function createPalette() {
     return {
         action: {
@@ -398,7 +396,6 @@ export function createPalette() {
       };
 }
 
-// create-typography.js
 export const createTypography = () => {
 
     const customStyles = {
@@ -429,7 +426,6 @@ export const createTypography = () => {
         fontWeight: 700,
         lineHeight: 1.2,
       }
-      // ... (other custom styles)
   };
 
     return {

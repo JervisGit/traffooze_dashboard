@@ -10,6 +10,7 @@ import {
   } from '@mui/material';
 import { AverageSpeed } from './AverageSpeed';
 import { AverageJamFactor } from './AverageJamFactor';
+import { AverageFlowCard } from './AverageFlowCard';
 import ForecastChart from './ForecastChart';
 import DateTimeInput from './DatetimeInput';
 import dayjs from 'dayjs';  
@@ -127,10 +128,7 @@ const handleGenerateForecast = () => {
         />
         </Grid>
         <Grid xs={12} sm={6} lg={5}>
-        <AverageJamFactor
-            value={1.5}
-            sx={{ height: '100%' }}
-        />
+         <AverageFlowCard selectedRoad={selectedRoad} />
         </Grid>
         <Grid
             xs={12}

@@ -44,34 +44,30 @@ const AccountProfileDetails = () => {
   };
 
   useEffect(() => {
-    const fetchEmail = async () => {
-      if (!loggedInUsername) return;  // Ensure that there's a username to fetch the email for
-  
-      try {
-        const emailResponse = await axios.get(
-          'https://traffoozebackend.vercel.app/get-email-by-username/',
-          {
-            params: { username: loggedInUsername },
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem('token')}`,
-            },
+    if (isLoggedIn && loggedInUsername) {
+      const fetchEmail = async () => {
+        try {
+          const emailResponse = await axios.get(
+            'https://traffoozebackend.vercel.app/get-email-by-username/',
+            {
+              params: { username: loggedInUsername },
+              headers: {
+                Authorization: `Bearer ${localStorage.getItem('token')}`,
+              },
+            }
+          );
+
+          if (emailResponse.status === 200) {
+            setLoggedInEmail(emailResponse.data.email);
           }
-        );
-  
-        if (emailResponse.status === 200) {
-          setLoggedInEmail(emailResponse.data.email);
-          localStorage.setItem('email', emailResponse.data.email);
+        } catch (emailError) {
+          console.error(emailError);
         }
-      } catch (emailError) {
-        console.error(emailError);
-      }
-    };
-  
-    // If the user is logged in but we don't have their email, fetch it
-    if (isLoggedIn && loggedInUsername && !loggedInEmail) {
+      };
+
       fetchEmail();
     }
-  }, [isLoggedIn, loggedInUsername, loggedInEmail]); 
+  }, [isLoggedIn, loggedInUsername]);
 
   const handleLoginSubmit = async (event) => {
     event.preventDefault();
@@ -112,7 +108,6 @@ const AccountProfileDetails = () => {
   
           if (emailResponse.data && emailResponse.data.email) {
             setLoggedInEmail(emailResponse.data.email);
-            localStorage.setItem('email', emailResponse.data.email);
           }
         } catch (emailError) {
           console.error('Error fetching email:', emailError);
@@ -120,7 +115,6 @@ const AccountProfileDetails = () => {
         }
   
         Swal.fire('Success', 'Logged in successfully', 'success');
-        window.location.reload();
       } else {
         Swal.fire('Error', 'Invalid credentials', 'error');
       }
@@ -129,7 +123,6 @@ const AccountProfileDetails = () => {
       Swal.fire('Error', 'An error occurred', 'error');
     }
   };
-  
   
 
   const handleRegisterSubmit = async (event) => {
@@ -221,14 +214,12 @@ const AccountProfileDetails = () => {
         if (newEmail && newEmail.length > 0) {
           // Update loggedInEmail with the new email
           setLoggedInEmail(newEmail);
-          localStorage.setItem('email', response.data.email);
         }
   
         // Clear newEmail and newPassword in updateValues state
         setUpdateValues({ newEmail: '', newPassword: '' });
   
         Swal.fire('Success', 'Account updated successfully', 'success');
-        window.location.reload();
       } else {
         Swal.fire('Error', 'Failed to update account. Please try again.', 'error');
       }
@@ -258,7 +249,6 @@ const AccountProfileDetails = () => {
       if (response.status === 200) {
         localStorage.removeItem('token');
         localStorage.removeItem('username');
-        localStorage.removeItem('email');
         setIsLoggedIn(false);
         setLoggedInUsername('');
         setLoggedInEmail('');
@@ -285,7 +275,7 @@ const AccountProfileDetails = () => {
                 <Divider />
                 <CardContent>
                   <Stack spacing={3} sx={{ maxWidth: 400 }}>
-                  <p>Email: {localStorage.getItem('email')}</p>
+                  <p>Email: {loggedInEmail}</p>
 
                   <TextField
                     fullWidth

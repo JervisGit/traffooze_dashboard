@@ -45,13 +45,13 @@ const AccountProfileDetails = () => {
 
   useEffect(() => {
     const fetchEmail = async () => {
-      if (!loggedInUsername) return;  // Ensure that there's a username to fetch the email for
+      if (!localStorage.getItem('username')) return;  // Ensure that there's a username to fetch the email for
   
       try {
         const emailResponse = await axios.get(
           'https://traffoozebackend.vercel.app/get-email-by-username/',
           {
-            params: { username: loggedInUsername },
+            params: { username: localStorage.getItem('username') },
             headers: {
               Authorization: `Bearer ${localStorage.getItem('token')}`,
             },

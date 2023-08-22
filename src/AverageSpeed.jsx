@@ -22,9 +22,11 @@ export const AverageSpeed = (props) => {
               Speed
             </Typography>
             <Typography variant="h4">
-              {value} km/h
+              {value} m/s
             </Typography>
-            <Typography
+          </Stack>
+          <Stack spacing={1}>
+          <Typography
               variant="overline"
               color="text.secondary"
             >
@@ -34,7 +36,6 @@ export const AverageSpeed = (props) => {
             {jam}
             </Typography>
           </Stack>
-
           <Avatar
             sx={{
               width: 56,

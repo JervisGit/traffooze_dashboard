@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useMediaQuery } from 'react-responsive'
+import SideNavHeader from './SideNavHeader'
 import { Box, Button, Divider, Drawer, Stack, SvgIcon, Typography } from '@mui/material';
 import ChartBarIcon from '@heroicons/react/24/solid/ChartBarIcon';
 import MapPinIcon from '@heroicons/react/24/solid/MapPinIcon';
 import UserIcon from '@heroicons/react/24/solid/UserIcon';
-import UserPlusIcon from '@heroicons/react/24/solid/UserPlusIcon';
 import { MapIcon } from '@heroicons/react/24/solid'
 import {AiOutlineAreaChart}from 'react-icons/ai';
 import { FaTrafficLight } from 'react-icons/fa';
 import { BiNavigation } from 'react-icons/bi';
+import { ArrowRightOnRectangleIcon } from '@heroicons/react/24/solid';
 import CurrencyDollarIcon from '@heroicons/react/24/solid/CurrencyDollarIcon';
-import Logo from './Logo';
 
 const SideNav = ({ open, onClose }) => {
 
@@ -23,7 +23,7 @@ const SideNav = ({ open, onClose }) => {
   const items = [
     {
       title: 'Traffic Flow Forecast',
-      path: '/flow',
+      path: '/',
       icon: (
         <SvgIcon fontSize="small">
           <ChartBarIcon />
@@ -93,7 +93,50 @@ const SideNav = ({ open, onClose }) => {
         </SvgIcon>
       )
     },
+    {
+      title: 'Login',
+      path: '/login',
+      icon: (
+        <SvgIcon fontSize="small">
+          <ArrowRightOnRectangleIcon />
+        </SvgIcon>
+      )
+    },
   ];
+
+  const styles = {
+    button: {
+      
+    },
+    link: {
+      display: 'flex',
+      alignItems: 'center',
+      borderRadius: 1,
+      justifyContent: 'flex-start',
+      width: '100%',
+      paddingLeft: '16px',
+      paddingTop: '6px',
+      paddingRight: '16px',
+      textAlign: 'left',
+    },
+    hoverEffect: {
+      backgroundColor: 'rgba(255, 255, 255, 0.04)',
+    },
+    iconContainer: {
+      alignItems: 'center',
+      display: 'inline-flex',
+      justifyContent: 'center',
+      mr: 2,
+    },
+    linkTitle: {
+      flexGrow: 1,
+      fontSize: 14,
+      fontWeight: 600,
+      lineHeight: '24px',
+      whiteSpace: 'nowrap',
+    },
+    
+  };
 
   return (
     <Drawer
@@ -102,7 +145,7 @@ const SideNav = ({ open, onClose }) => {
       onClose={isDesktopOrLaptop ? undefined : onClose}
       PaperProps={{
         sx: {
-          backgroundColor: 'neutral.800',
+          backgroundColor: '#1C2536',
           color: 'common.white',
           width: 280,
         },
@@ -117,51 +160,19 @@ const SideNav = ({ open, onClose }) => {
           flexDirection: 'column',
         }}
       >
-        <Box sx={{ p: 3 }}>
-          <Box
-            component="a"
-            href="/"
-            sx={{
-              display: 'inline-flex',
-              height: 32,
-              width: 32,
-            }}
-          >
-          </Box>
-        
-            <div>
-              <Typography color="inherit" variant="subtitle1">
-                Traffooze
-              </Typography>
-              <Typography color="neutral.400" variant="body2">
-                Dashboard
-              </Typography>
-              <div style={{display:'flex', marginTop:'-85px', justifyContent: 'flex-end'}}><Logo/></div>
-            </div>
-
-        </Box>
-        <Divider sx={{ borderColor: 'neutral.700' }} />
+        <SideNavHeader />
+        <Divider sx={{ borderColor: '#2F3746' }} />
         <Box component="nav" sx={{  px: 2, py: 3, flexGrow: 1 }}>
           <Stack component="ul" sx={{ listStyle: 'none', m: 0, p: 0 }} spacing={0.5}>
             {items.map((item) => (
               <li key={item.title}>
                 <Button
                   sx={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    borderRadius: 1,
-                    justifyContent: 'flex-start',
-                    width: '100%',
-                    pl: '16px',
-                    py: '6px',
-                    pr: '16px',
-                    textAlign: 'left',
+                    ...styles.link,
                     ...(item.path === window.location.pathname && {
                       backgroundColor: 'rgba(255, 255, 255, 0.04)',
                     }),
-                    '&:hover': {
-                      backgroundColor: 'rgba(255, 255, 255, 0.04)',
-                    },
+                    '&:hover': styles.hoverEffect,
                   }}
                   component="a"
                   href={item.path}
@@ -170,11 +181,8 @@ const SideNav = ({ open, onClose }) => {
                     <Box
                       component="span"
                       sx={{
-                        alignItems: 'center',
-                        color: item.path === window.location.pathname ? 'primary.main' : 'neutral.400',
-                        display: 'inline-flex',
-                        justifyContent: 'center',
-                        mr: 2,
+                        ...styles.iconContainer,
+                        color: item.path === window.location.pathname ? 'primary.main' : '#9DA4AE',
                       }}
                     >
                       {item.icon}
@@ -183,12 +191,8 @@ const SideNav = ({ open, onClose }) => {
                   <Box
                     component="span"
                     sx={{
-                      color: item.path === window.location.pathname ? 'common.white' : 'neutral.400',
-                      flexGrow: 1,
-                      fontSize: 14,
-                      fontWeight: 600,
-                      lineHeight: '24px',
-                      whiteSpace: 'nowrap',
+                      color: item.path === window.location.pathname ? 'common.white' : '#9DA4AE',
+                      ...styles.linkTitle,
                       fontFamily: (theme) => theme.typography.fontFamily,
                     }}
                   >
@@ -201,7 +205,7 @@ const SideNav = ({ open, onClose }) => {
         </Box>
       </Box>
       <Box>
-        <Typography color="neutral.600" variant="body2">
+        <Typography color="#4D5761" variant="body2">
           Credit to LTA DataMall, HERE, OpenWeatherMap, Open Meteo, Lordicon
         </Typography>
       </Box>

@@ -10,7 +10,7 @@ import {
     Button, 
   } from '@mui/material';
 import { TrafficCountCard } from './TrafficCountCard';
-import { AverageJamFactor } from './AverageJamFactor';
+import { AverageCountCard } from './AverageCountCard';
 import ForecastChart from './ForecastChart';
 import DateTimeInput from './DatetimeInput';
 import dayjs from 'dayjs';  
@@ -112,6 +112,7 @@ const TrafficCountForecast = () => {
             />
           </Grid>
           <Grid xs={12} sm={6} lg={5}>
+            <AverageCountCard selectedCamera={selectedCamera}/>
           </Grid>
           
             <Grid xs={12} lg={4}>

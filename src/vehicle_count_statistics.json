@@ -1,0 +1,447 @@
+[
+    {
+        "Camera_ID": 1001,
+        "Average_Vehicle_Count": 0,
+        "Max_Vehicle_Count": 12
+    },
+    {
+        "Camera_ID": 1002,
+        "Average_Vehicle_Count": 2,
+        "Max_Vehicle_Count": 14
+    },
+    {
+        "Camera_ID": 1003,
+        "Average_Vehicle_Count": 5,
+        "Max_Vehicle_Count": 31
+    },
+    {
+        "Camera_ID": 1004,
+        "Average_Vehicle_Count": 5,
+        "Max_Vehicle_Count": 21
+    },
+    {
+        "Camera_ID": 1005,
+        "Average_Vehicle_Count": 7,
+        "Max_Vehicle_Count": 27
+    },
+    {
+        "Camera_ID": 1006,
+        "Average_Vehicle_Count": 5,
+        "Max_Vehicle_Count": 24
+    },
+    {
+        "Camera_ID": 1111,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 21
+    },
+    {
+        "Camera_ID": 1112,
+        "Average_Vehicle_Count": 12,
+        "Max_Vehicle_Count": 49
+    },
+    {
+        "Camera_ID": 1113,
+        "Average_Vehicle_Count": 2,
+        "Max_Vehicle_Count": 19
+    },
+    {
+        "Camera_ID": 1501,
+        "Average_Vehicle_Count": 1,
+        "Max_Vehicle_Count": 11
+    },
+    {
+        "Camera_ID": 1502,
+        "Average_Vehicle_Count": 0,
+        "Max_Vehicle_Count": 6
+    },
+    {
+        "Camera_ID": 1503,
+        "Average_Vehicle_Count": 3,
+        "Max_Vehicle_Count": 18
+    },
+    {
+        "Camera_ID": 1504,
+        "Average_Vehicle_Count": 2,
+        "Max_Vehicle_Count": 19
+    },
+    {
+        "Camera_ID": 1505,
+        "Average_Vehicle_Count": 0,
+        "Max_Vehicle_Count": 6
+    },
+    {
+        "Camera_ID": 1701,
+        "Average_Vehicle_Count": 19,
+        "Max_Vehicle_Count": 56
+    },
+    {
+        "Camera_ID": 1702,
+        "Average_Vehicle_Count": 20,
+        "Max_Vehicle_Count": 57
+    },
+    {
+        "Camera_ID": 1703,
+        "Average_Vehicle_Count": 19,
+        "Max_Vehicle_Count": 54
+    },
+    {
+        "Camera_ID": 1704,
+        "Average_Vehicle_Count": 10,
+        "Max_Vehicle_Count": 41
+    },
+    {
+        "Camera_ID": 1705,
+        "Average_Vehicle_Count": 16,
+        "Max_Vehicle_Count": 59
+    },
+    {
+        "Camera_ID": 1706,
+        "Average_Vehicle_Count": 13,
+        "Max_Vehicle_Count": 40
+    },
+    {
+        "Camera_ID": 1707,
+        "Average_Vehicle_Count": 6,
+        "Max_Vehicle_Count": 27
+    },
+    {
+        "Camera_ID": 1709,
+        "Average_Vehicle_Count": 17,
+        "Max_Vehicle_Count": 52
+    },
+    {
+        "Camera_ID": 1711,
+        "Average_Vehicle_Count": 16,
+        "Max_Vehicle_Count": 51
+    },
+    {
+        "Camera_ID": 2701,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 40
+    },
+    {
+        "Camera_ID": 2702,
+        "Average_Vehicle_Count": 7,
+        "Max_Vehicle_Count": 32
+    },
+    {
+        "Camera_ID": 2703,
+        "Average_Vehicle_Count": 11,
+        "Max_Vehicle_Count": 43
+    },
+    {
+        "Camera_ID": 2704,
+        "Average_Vehicle_Count": 3,
+        "Max_Vehicle_Count": 38
+    },
+    {
+        "Camera_ID": 2705,
+        "Average_Vehicle_Count": 9,
+        "Max_Vehicle_Count": 41
+    },
+    {
+        "Camera_ID": 2707,
+        "Average_Vehicle_Count": 16,
+        "Max_Vehicle_Count": 50
+    },
+    {
+        "Camera_ID": 2708,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 30
+    },
+    {
+        "Camera_ID": 3702,
+        "Average_Vehicle_Count": 6,
+        "Max_Vehicle_Count": 26
+    },
+    {
+        "Camera_ID": 3704,
+        "Average_Vehicle_Count": 8,
+        "Max_Vehicle_Count": 37
+    },
+    {
+        "Camera_ID": 3705,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 22
+    },
+    {
+        "Camera_ID": 3793,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 20
+    },
+    {
+        "Camera_ID": 3795,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 29
+    },
+    {
+        "Camera_ID": 3796,
+        "Average_Vehicle_Count": 6,
+        "Max_Vehicle_Count": 37
+    },
+    {
+        "Camera_ID": 3797,
+        "Average_Vehicle_Count": 10,
+        "Max_Vehicle_Count": 42
+    },
+    {
+        "Camera_ID": 3798,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 22
+    },
+    {
+        "Camera_ID": 4701,
+        "Average_Vehicle_Count": 11,
+        "Max_Vehicle_Count": 44
+    },
+    {
+        "Camera_ID": 4702,
+        "Average_Vehicle_Count": 5,
+        "Max_Vehicle_Count": 27
+    },
+    {
+        "Camera_ID": 4703,
+        "Average_Vehicle_Count": 10,
+        "Max_Vehicle_Count": 47
+    },
+    {
+        "Camera_ID": 4704,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 21
+    },
+    {
+        "Camera_ID": 4705,
+        "Average_Vehicle_Count": 5,
+        "Max_Vehicle_Count": 29
+    },
+    {
+        "Camera_ID": 4706,
+        "Average_Vehicle_Count": 9,
+        "Max_Vehicle_Count": 36
+    },
+    {
+        "Camera_ID": 4707,
+        "Average_Vehicle_Count": 2,
+        "Max_Vehicle_Count": 17
+    },
+    {
+        "Camera_ID": 4708,
+        "Average_Vehicle_Count": 9,
+        "Max_Vehicle_Count": 34
+    },
+    {
+        "Camera_ID": 4709,
+        "Average_Vehicle_Count": 9,
+        "Max_Vehicle_Count": 46
+    },
+    {
+        "Camera_ID": 4710,
+        "Average_Vehicle_Count": 10,
+        "Max_Vehicle_Count": 41
+    },
+    {
+        "Camera_ID": 4712,
+        "Average_Vehicle_Count": 3,
+        "Max_Vehicle_Count": 37
+    },
+    {
+        "Camera_ID": 4713,
+        "Average_Vehicle_Count": 9,
+        "Max_Vehicle_Count": 43
+    },
+    {
+        "Camera_ID": 4714,
+        "Average_Vehicle_Count": 8,
+        "Max_Vehicle_Count": 35
+    },
+    {
+        "Camera_ID": 4716,
+        "Average_Vehicle_Count": 2,
+        "Max_Vehicle_Count": 20
+    },
+    {
+        "Camera_ID": 4798,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 20
+    },
+    {
+        "Camera_ID": 4799,
+        "Average_Vehicle_Count": 6,
+        "Max_Vehicle_Count": 32
+    },
+    {
+        "Camera_ID": 5794,
+        "Average_Vehicle_Count": 7,
+        "Max_Vehicle_Count": 39
+    },
+    {
+        "Camera_ID": 5795,
+        "Average_Vehicle_Count": 17,
+        "Max_Vehicle_Count": 49
+    },
+    {
+        "Camera_ID": 5797,
+        "Average_Vehicle_Count": 15,
+        "Max_Vehicle_Count": 42
+    },
+    {
+        "Camera_ID": 5798,
+        "Average_Vehicle_Count": 14,
+        "Max_Vehicle_Count": 64
+    },
+    {
+        "Camera_ID": 5799,
+        "Average_Vehicle_Count": 27,
+        "Max_Vehicle_Count": 62
+    },
+    {
+        "Camera_ID": 6701,
+        "Average_Vehicle_Count": 9,
+        "Max_Vehicle_Count": 48
+    },
+    {
+        "Camera_ID": 6703,
+        "Average_Vehicle_Count": 11,
+        "Max_Vehicle_Count": 44
+    },
+    {
+        "Camera_ID": 6704,
+        "Average_Vehicle_Count": 18,
+        "Max_Vehicle_Count": 54
+    },
+    {
+        "Camera_ID": 6705,
+        "Average_Vehicle_Count": 10,
+        "Max_Vehicle_Count": 42
+    },
+    {
+        "Camera_ID": 6706,
+        "Average_Vehicle_Count": 16,
+        "Max_Vehicle_Count": 53
+    },
+    {
+        "Camera_ID": 6708,
+        "Average_Vehicle_Count": 6,
+        "Max_Vehicle_Count": 40
+    },
+    {
+        "Camera_ID": 6710,
+        "Average_Vehicle_Count": 8,
+        "Max_Vehicle_Count": 39
+    },
+    {
+        "Camera_ID": 6711,
+        "Average_Vehicle_Count": 7,
+        "Max_Vehicle_Count": 24
+    },
+    {
+        "Camera_ID": 6712,
+        "Average_Vehicle_Count": 9,
+        "Max_Vehicle_Count": 33
+    },
+    {
+        "Camera_ID": 6713,
+        "Average_Vehicle_Count": 5,
+        "Max_Vehicle_Count": 35
+    },
+    {
+        "Camera_ID": 6714,
+        "Average_Vehicle_Count": 8,
+        "Max_Vehicle_Count": 44
+    },
+    {
+        "Camera_ID": 6715,
+        "Average_Vehicle_Count": 3,
+        "Max_Vehicle_Count": 33
+    },
+    {
+        "Camera_ID": 6716,
+        "Average_Vehicle_Count": 6,
+        "Max_Vehicle_Count": 40
+    },
+    {
+        "Camera_ID": 7791,
+        "Average_Vehicle_Count": 5,
+        "Max_Vehicle_Count": 29
+    },
+    {
+        "Camera_ID": 7793,
+        "Average_Vehicle_Count": 6,
+        "Max_Vehicle_Count": 34
+    },
+    {
+        "Camera_ID": 7794,
+        "Average_Vehicle_Count": 6,
+        "Max_Vehicle_Count": 30
+    },
+    {
+        "Camera_ID": 7795,
+        "Average_Vehicle_Count": 7,
+        "Max_Vehicle_Count": 32
+    },
+    {
+        "Camera_ID": 7796,
+        "Average_Vehicle_Count": 10,
+        "Max_Vehicle_Count": 43
+    },
+    {
+        "Camera_ID": 7797,
+        "Average_Vehicle_Count": 6,
+        "Max_Vehicle_Count": 28
+    },
+    {
+        "Camera_ID": 7798,
+        "Average_Vehicle_Count": 8,
+        "Max_Vehicle_Count": 36
+    },
+    {
+        "Camera_ID": 8701,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 36
+    },
+    {
+        "Camera_ID": 8702,
+        "Average_Vehicle_Count": 7,
+        "Max_Vehicle_Count": 33
+    },
+    {
+        "Camera_ID": 8704,
+        "Average_Vehicle_Count": 5,
+        "Max_Vehicle_Count": 34
+    },
+    {
+        "Camera_ID": 8706,
+        "Average_Vehicle_Count": 3,
+        "Max_Vehicle_Count": 17
+    },
+    {
+        "Camera_ID": 9701,
+        "Average_Vehicle_Count": 9,
+        "Max_Vehicle_Count": 37
+    },
+    {
+        "Camera_ID": 9702,
+        "Average_Vehicle_Count": 10,
+        "Max_Vehicle_Count": 39
+    },
+    {
+        "Camera_ID": 9703,
+        "Average_Vehicle_Count": 4,
+        "Max_Vehicle_Count": 23
+    },
+    {
+        "Camera_ID": 9704,
+        "Average_Vehicle_Count": 7,
+        "Max_Vehicle_Count": 36
+    },
+    {
+        "Camera_ID": 9705,
+        "Average_Vehicle_Count": 10,
+        "Max_Vehicle_Count": 40
+    },
+    {
+        "Camera_ID": 9706,
+        "Average_Vehicle_Count": 13,
+        "Max_Vehicle_Count": 48
+    }
+]

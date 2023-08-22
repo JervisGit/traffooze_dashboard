@@ -2,6 +2,7 @@ import {
     Box,
     Button,
     Card,
+    Divider,
     Grid, 
     Stack, 
     TextField 
@@ -198,10 +199,16 @@ const NavigationMap = () => {
                     {routes.map((route, index) => (
                         <Card
                             key={index}
-                            sx={{ margin: '0 10px', padding: '10px', border: '1px solid #ccc', cursor: 'pointer' , bgcolor:'white'}}
+                            sx={{ width: '250px', margin: '0 10px', padding: '10px', border: '1px solid #ccc', cursor: 'pointer' , bgcolor:'white'}}
                             onClick={() => setSelectedRoute(route)}
                         >   
                             <h3>Route {String.fromCharCode(65 + index)}</h3>
+                            <Divider />
+                            <p>
+                                <div></div>
+                                <div></div>
+                            </p>
+                            <Divider />
                             <div>Distance: {route.distance} meters</div>
                             <div>Normal Travel Time: {route.normal_duration} mins</div>
                             <div>Predicted Travel Time: {route.predicted_duration} mins</div>

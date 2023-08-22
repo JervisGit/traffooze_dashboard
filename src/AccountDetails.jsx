@@ -45,13 +45,13 @@ const AccountProfileDetails = () => {
 
   useEffect(() => {
     const fetchEmail = async () => {
-      if (!localStorage.getItem('username')) return;  // Ensure that there's a username to fetch the email for
+      if (!loggedInUsername) return;  // Ensure that there's a username to fetch the email for
   
       try {
         const emailResponse = await axios.get(
           'https://traffoozebackend.vercel.app/get-email-by-username/',
           {
-            params: { username: localStorage.getItem('username') },
+            params: { username: loggedInUsername },
             headers: {
               Authorization: `Bearer ${localStorage.getItem('token')}`,
             },
@@ -71,12 +71,7 @@ const AccountProfileDetails = () => {
     if (isLoggedIn && loggedInUsername && !loggedInEmail) {
       fetchEmail();
     }
-    
-    // Also fetch the email when the component mounts if the user is logged in
-    if (isLoggedIn && loggedInUsername) {
-      fetchEmail();
-    }
-  }, [isLoggedIn, loggedInUsername]);  
+  }, [isLoggedIn, loggedInUsername, loggedInEmail]); 
 
   const handleLoginSubmit = async (event) => {
     event.preventDefault();
@@ -225,6 +220,7 @@ const AccountProfileDetails = () => {
         if (newEmail && newEmail.length > 0) {
           // Update loggedInEmail with the new email
           setLoggedInEmail(newEmail);
+          localStorage.setItem('email', response.data.email);
         }
   
         // Clear newEmail and newPassword in updateValues state

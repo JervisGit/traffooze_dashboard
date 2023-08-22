@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaTachometerAlt } from 'react-icons/fa';
 import { Avatar, Card, CardContent, Stack, SvgIcon, Typography } from '@mui/material';
 
-export const AverageSpeed = (props) => {
+export const TrafficFlowCard = (props) => {
   const { value, sx, jam } = props;
 
   return (
@@ -53,7 +53,7 @@ export const AverageSpeed = (props) => {
   );
 };
 
-AverageSpeed.propTypes = {
+TrafficFlowCard.propTypes = {
   value: PropTypes.string.isRequired,
   sx: PropTypes.object,
 };

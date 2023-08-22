@@ -202,10 +202,6 @@ const LocationForm = () => {
         </CardContent>
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button variant="contained" onClick={handleSaveDetails}>Save details</Button>
-
-        </CardActions>
-        <CardActions sx={{ justifyContent: 'flex-end' }}>
           <Button 
             variant="contained" 
             color="error" 
@@ -308,10 +304,6 @@ const LocationForm = () => {
           </Box>
         </CardContent>
         <Divider />
-        <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button variant="contained" onClick={handleSaveDetails}>Save details</Button>
-
-        </CardActions>
         <CardActions sx={{ justifyContent: 'flex-end' }}>
           <Button 
             variant="contained" 

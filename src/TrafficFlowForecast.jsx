@@ -19,6 +19,7 @@ import { useMediaQuery } from 'react-responsive';
 import { FaBars } from 'react-icons/fa';
 import { SvgIcon } from '@mui/material';
 import Loading from './Loading';
+import { filter } from '@chakra-ui/react';
 
 const TrafficFlowForecast = () => {
   const [openNav, setOpenNav] = useState(true);
@@ -118,6 +119,8 @@ const handleGenerateForecast = () => {
       data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     }
   ];
+
+  const filteredRoads = roads.filter(road => road.description !== "12");
   
   return (
     <div className="app-container">
@@ -160,7 +163,7 @@ const handleGenerateForecast = () => {
             xs={12}
             lg={4}>
           <Autocomplete
-            options={roads}
+            options={filteredRoads}
             getOptionLabel={(road) => road.description}
             renderInput={(params) => <TextField {...params} label="Select a road" />}
             isOptionEqualToValue={(option, value) => option.road_id === value.road_id}

@@ -8,12 +8,16 @@ import {
   TableHead,
   TableRow,
   TextField,
+  Typography,
   Paper,
 } from '@mui/material';
 
 import axios from 'axios';
 
 import SideNav from './SideNav';
+import { useMediaQuery } from 'react-responsive';
+import { FaBars } from 'react-icons/fa';
+import { SvgIcon } from '@mui/material';
 import Loading from './Loading';
 
 function ErpTable() {
@@ -23,6 +27,10 @@ function ErpTable() {
   const [data, setErpData] = useState([]);
   const [timeRanges, setTimeRanges] = useState([]);
   const [uniqueZoneIDs, setUniqueZoneIDs] = useState([]);
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  });
 
   useEffect(() => {
     setIsLoading(true);
@@ -112,9 +120,33 @@ function ErpTable() {
   return (
     <div className="app-container">
     <div style={{ display: 'flex' }}>
+      {!isDesktopOrLaptop && (
+                    <button
+                      style={{
+                        display: 'block', // Display only on small screens
+                        padding: '10px',
+                        position: 'fixed',
+                        zIndex: 9999,
+                        top: 10,
+                        left: 10,
+                        height: 46,
+                        backgroundColor: '#6A5ACD',
+                        borderRadius: '5px',
+                        borderColor: 'white'
+                      }}
+                      onClick={() => setOpenNav(!openNav)}
+                    >
+                      <SvgIcon fontSize='medium'>
+                      <FaBars color='white'/>
+                      </SvgIcon>
+                    </button>
+                  )}
       <SideNav onClose={() => setOpenNav(false)} open={openNav}/> 
       <div style={{ flex: '1', paddingLeft: '300px', paddingTop: '50px'}}>
-    <TableContainer component={Paper}>
+      <Typography variant="h5" gutterBottom>
+        ERP Gantry Rates
+      </Typography>
+    <TableContainer component={Paper} style={{ marginBottom: '20px' }}>
       <Table>
         <TableHead>
           <TableRow>
@@ -182,6 +214,81 @@ function ErpTable() {
         </TableBody>
       </Table>
     </TableContainer>
+    <Typography variant="h5" gutterBottom>
+                Zone Locations
+    </Typography>
+    <Table>
+      <TableHead>
+          <TableRow>
+            <TableCell>Zone ID</TableCell>
+            <TableCell>Locations</TableCell>
+          </TableRow>
+      </TableHead>
+      <TableBody>
+          <TableRow>
+              <TableCell>AY1</TableCell>
+              <TableCell>
+                AYE to City before Alexandra Road
+              </TableCell>
+          </TableRow>
+          <TableRow>
+              <TableCell>AYC</TableCell>
+              <TableCell>
+                Clementi Avenue 6 into AYE (City),<br/>
+                Clementi Avenue 6 into AYE (City),<br/>
+                AYE to City Before Clementi Avenue 6
+              </TableCell>
+          </TableRow>
+          <TableRow>
+              <TableCell>AYT</TableCell>
+              <TableCell>
+                AYE to Tuas Before Clementi Road
+              </TableCell>
+          </TableRow>
+          <TableRow>
+              <TableCell>BKE</TableCell>
+              <TableCell>
+                Bt Timah Expressway (Sb betw Dairy Farm Rd and PIE)
+              </TableCell>
+          </TableRow>
+          <TableRow>
+              <TableCell>BKZ</TableCell>
+              <TableCell>
+                Upper Boon Keng Road
+              </TableCell>
+          </TableRow>
+          <TableRow>
+              <TableCell>BMC</TableCell>
+              <TableCell>
+                Victoria Street,<br/>
+                Nicoll Highway,<br/>
+                Bencoolen Street,<br/>
+                Queen Street,<br/>
+                North Bridge Road,<br/>
+                Beach Road,<br/>
+                Temasek Boulevard,<br/>
+                Republic Boulevard,<br/>
+                River Valley Road
+              </TableCell>
+          </TableRow>
+          <TableRow>
+              <TableCell>CBD</TableCell>
+              <TableCell>
+                Eu Tong Sen Street,<br/>
+                Lim Teck Kim Road,<br/>
+                Anson Road,<br/>
+                Tanjong Pagar Road,<br/>
+                Havelock Road/Clemenceau Ave,<br/>
+                Havelock Road/CTE Exit,<br/>
+                Merchant Road/Clemenceau Ave,<br/>
+                Merchant Road/CTE Exit,<br/>
+                Central Boulevard,<br/>
+                Slip Road from Westbound MCE towards Maxwell Road,<br/>
+                Sheares Avenue towards Sheares Link
+              </TableCell>
+          </TableRow>
+      </TableBody>
+    </Table>
     </div>
     </div>
     {isLoading && <Loading />}

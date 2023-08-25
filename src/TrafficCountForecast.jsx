@@ -17,6 +17,9 @@ import dayjs from 'dayjs';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
+import { useMediaQuery } from 'react-responsive';
+import { FaBars } from 'react-icons/fa';
+import { SvgIcon } from '@mui/material';
 import Loading from './Loading';
 
 const TrafficCountForecast = () => {
@@ -27,6 +30,10 @@ const TrafficCountForecast = () => {
   const [selectedDatetime, setSelectedDatetime] = useState(null);
   const [forecastTimestamp, setForecastTimestamp] = useState([]);
   const [forecastCount, setForecastCount] = useState([]);
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  });
 
   const today = dayjs();
   const tomorrow = dayjs().add(5, 'day').set('hour', 23).set('minute', 50);
@@ -102,6 +109,27 @@ const TrafficCountForecast = () => {
   return (
     <div className="app-container">
     <div style={{ display: 'flex' }}>
+      {!isDesktopOrLaptop && (
+                <button
+                  style={{
+                    display: 'block', // Display only on small screens
+                    padding: '10px',
+                    position: 'fixed',
+                    zIndex: 9999,
+                    top: 10,
+                    left: 10,
+                    height: 46,
+                    backgroundColor: '#6A5ACD',
+                    borderRadius: '5px',
+                    borderColor: 'white'
+                  }}
+                  onClick={() => setOpenNav(!openNav)}
+                >
+                  <SvgIcon fontSize='medium'>
+                  <FaBars color='white'/>
+                  </SvgIcon>
+                </button>
+              )}
       <SideNav onClose={() => setOpenNav(false)} open={openNav}/> 
       <div style={{ flex: '1', paddingLeft: '300px', paddingTop: '50px'}}>
         <Grid container spacing={3}>

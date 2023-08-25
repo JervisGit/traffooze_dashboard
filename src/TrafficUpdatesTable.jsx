@@ -23,6 +23,8 @@ import {
 import MagnifyingGlassIcon from '@heroicons/react/24/solid/MagnifyingGlassIcon';
 import { AdjustmentsHorizontalIcon } from '@heroicons/react/24/solid';
 import axios from 'axios';
+import { useMediaQuery } from 'react-responsive';
+import { FaBars } from 'react-icons/fa';
 import Loading from './Loading';
 
 /*
@@ -40,6 +42,10 @@ const TrafficUpdates = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [trafficJamData, setTrafficJamData] = useState([]);
   const [searchKeyword, setSearchKeyword] = useState('');
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  });
 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
@@ -82,6 +88,27 @@ const TrafficUpdates = () => {
   return (
     <div className="app-container">
     <div style={{ display: 'flex' }}>
+      {!isDesktopOrLaptop && (
+                  <button
+                    style={{
+                      display: 'block', // Display only on small screens
+                      padding: '10px',
+                      position: 'fixed',
+                      zIndex: 9999,
+                      top: 10,
+                      left: 10,
+                      height: 46,
+                      backgroundColor: '#6A5ACD',
+                      borderRadius: '5px',
+                      borderColor: 'white'
+                    }}
+                    onClick={() => setOpenNav(!openNav)}
+                  >
+                    <SvgIcon fontSize='medium'>
+                    <FaBars color='white'/>
+                    </SvgIcon>
+                  </button>
+                )}
       <SideNav onClose={() => setOpenNav(false)} open={openNav}/> 
       <div style={{ flex: '1', paddingLeft: '300px', paddingTop: '50px'}}>
         <Card sx={{ p: 2 }}>

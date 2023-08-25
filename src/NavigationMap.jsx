@@ -26,6 +26,10 @@ import Loading from './Loading';
 
 import SideNav from './SideNav';
 
+import { useMediaQuery } from 'react-responsive';
+import { FaBars } from 'react-icons/fa';
+import { SvgIcon } from '@mui/material';
+
 const apiKey = process.env.REACT_APP_APIKEY;
 
 const access_token = process.env.REACT_APP_MAPBOX_API_KEY;
@@ -44,6 +48,10 @@ const NavigationMap = () => {
     const [selectedRoute, setSelectedRoute] = useState(null);
   
     const [map, setMap] = useState(null);
+
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-width: 1224px)'
+    });
 
     const today = dayjs();
     const tomorrow = dayjs().add(4, 'day').set('hour', 23).set('minute', 50);
@@ -160,6 +168,27 @@ const NavigationMap = () => {
     return (
         <div className="app-container">
         <div style={{ display: 'flex' , paddingLeft: '290px', paddingTop: '20px'}}>
+        {!isDesktopOrLaptop && (
+                        <button
+                          style={{
+                            display: 'block', // Display only on small screens
+                            padding: '10px',
+                            position: 'fixed',
+                            zIndex: 9999,
+                            top: 10,
+                            left: 10,
+                            height: 46,
+                            backgroundColor: '#6A5ACD',
+                            borderRadius: '5px',
+                            borderColor: 'white'
+                          }}
+                          onClick={() => setOpenNav(!openNav)}
+                        >
+                          <SvgIcon fontSize='medium'>
+                          <FaBars color='white'/>
+                          </SvgIcon>
+                        </button>
+                      )}
         <SideNav onClose={() => setOpenNav(false)} open={openNav}/>
         <LoadScript googleMapsApiKey={apiKey}>
             <div style={containerStyle}>
